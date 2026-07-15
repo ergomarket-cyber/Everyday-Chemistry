@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Team {
+  id       String    @id
+  grade    Int
+  name     String
+  song     String
+  topic    String
+  color    String
+  avatar   String
+  lyrics   String
+  audioUrl String?
+  students Student[]
+  votes    Vote[]
+  teacherVote TeacherVote?
+}
+
+model Student {
+  id       String @id @default(cuid())
+  name     String
+  grade    Int
+  pin      String
+  isCaptain Boolean @default(false)
+  teamId   String
+  team     Team   @relation(fields: [teamId], references: [id])
+  hasVoted Boolean @default(false)
+  votes    Vote[]
+}
+
+model Vote {
+  id           String  @id @default(cuid())
+  studentId    String
+  student      Student @relation(fields: [studentId], references: [id])
+  teamId       String
+  team         Team    @relation(fields: [teamId], references: [id])
+  scienceScore Int
+  bangerScore  Int
+  createdAt    DateTime @default(now())
+
+  @@unique([studentId, teamId]) // One vote per student per team
+}
+
+model TeacherVote {
+  id            String @id @default(cuid())
+  teamId        String @unique
+  team          Team   @relation(fields: [teamId], references: [id])
+  contentScore  Int
+  accuracyScore Int
+}
