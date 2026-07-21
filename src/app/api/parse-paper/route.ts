@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenAI } from '@google/genai';
 import { prisma } from '@/lib/prisma';
 
+export const maxDuration = 60; // Allow max 60 seconds on Vercel Hobby tier
+
 // Initialize the new SDK
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 

@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { GoogleGenAI } from '@google/genai';
 
+export const maxDuration = 60; // Allow max 60 seconds on Vercel Hobby tier
+
 export async function POST(request: Request) {
   try {
     const { studentId, questionId, studentAnswer } = await request.json();
