@@ -318,6 +318,15 @@ function LoginScreen({ students10, students11, onLogin }: any) {
   );
 }
 
+const formatAudioUrl = (url: string) => {
+  if (!url) return '';
+  const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+  if (match && match[1]) {
+    return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+  }
+  return url;
+};
+
 function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit }: any) {
   const [showLyrics, setShowLyrics] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
@@ -339,7 +348,7 @@ function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit 
   return (
     <div className={`backdrop-blur-xl border rounded-3xl p-5 shadow-xl transition-all duration-300 relative overflow-hidden ${isMyTeam ? 'bg-purple-900/10 border-purple-500/30' : 'bg-white/[0.03] border-white/10 hover:bg-white/[0.05]'}`}>
       {team.audioUrl && (
-        <audio ref={audioRef} src={team.audioUrl} loop onEnded={onPlay} />
+        <audio ref={audioRef} src={formatAudioUrl(team.audioUrl)} loop onEnded={onPlay} />
       )}
       
 
@@ -561,7 +570,8 @@ function EditTeamModal({ team, onClose, students, currentUser }: any) {
     topic: team.topic,
     avatar: team.avatar,
     lyrics: team.lyrics,
-    audioUrl: team.audioUrl || ''
+    audioUrl: team.audioUrl || '',
+    song: team.song
   });
   const [isSaving, setIsSaving] = useState(false);
   const [selectedMembers, setSelectedMembers] = useState<string[]>([]);
@@ -616,6 +626,16 @@ return (
           <h2 className="text-2xl font-bold mb-6 text-white">Edit Team Profile</h2>
           
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="text-xs font-bold text-slate-400 uppercase mb-1 block">Track Name (Song)</label>
+              <input 
+                type="text" 
+                value={formData.song} 
+                onChange={(e) => setFormData({...formData, song: e.target.value})}
+                className="w-full bg-slate-800 border border-white/5 rounded-xl px-4 py-3 text-white outline-none focus:border-purple-500" 
+              />
+            </div>
+
             <div>
               <label className="text-xs font-bold text-slate-400 uppercase mb-1 block">Team Name</label>
               <input 

@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { teamId, name, topic, avatar, lyrics, audioUrl } = data;
+    const { teamId, name, topic, avatar, lyrics, audioUrl, song } = data;
 
     if (!teamId) {
       return NextResponse.json({ error: 'Team ID is required' }, { status: 400 });
@@ -17,7 +17,8 @@ export async function POST(request: Request) {
         topic,
         avatar,
         lyrics,
-        audioUrl
+        audioUrl,
+        song
       }
     });
 

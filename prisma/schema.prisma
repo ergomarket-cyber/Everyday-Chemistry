@@ -34,6 +34,7 @@ model Student {
   hasVoted  Boolean @default(false)
   team      Team?   @relation(fields: [teamId], references: [id], onDelete: Restrict)
   votes     Vote[]
+  attempts  StudentAttempt[]
 }
 
 model Vote {
@@ -56,3 +57,46 @@ model TeacherVote {
   accuracyScore Int
   team          Team   @relation(fields: [teamId], references: [id])
 }
+
+model Topic {
+  id          String     @id @default(uuid())
+  name        String
+  description String?
+  subtopics   Subtopic[]
+}
+
+model Subtopic {
+  id          String         @id @default(uuid())
+  name        String
+  topicId     String
+  topic       Topic          @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  questions   ExamQuestion[]
+}
+
+model ExamQuestion {
+  id               String   @id @default(uuid())
+  subtopicId       String
+  subtopic         Subtopic @relation(fields: [subtopicId], references: [id], onDelete: Restrict)
+  
+  questionText     String?
+  questionImgUrl   String?
+  markSchemeText   String?
+  markSchemeImgUrl String?
+  maxMarks         Int
+  
+  attempts         StudentAttempt[]
+}
+
+model StudentAttempt {
+  id               String   @id @default(uuid())
+  studentId        String
+  questionId       String
+  studentAnswer    String
+  aiScore          Int
+  aiFeedback       String
+  createdAt        DateTime @default(now())
+  
+  student          Student  @relation(fields: [studentId], references: [id])
+  question         ExamQuestion @relation(fields: [questionId], references: [id])
+}
+

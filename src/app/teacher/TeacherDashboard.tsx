@@ -85,19 +85,25 @@ export default function TeacherDashboard({ initialTeams, roster, simpleTeams }: 
           <a href="/" className="text-slate-400 hover:text-white underline">Back to Arena</a>
         </div>
 
-        <div className="flex gap-4 border-b border-slate-800 pb-2">
+        <div className="flex gap-4 border-b border-slate-800 pb-2 overflow-x-auto">
           <button 
             onClick={() => setActiveTab('evaluations')}
-            className={`font-bold pb-2 border-b-2 transition-colors ${activeTab === 'evaluations' ? 'border-purple-500 text-purple-400' : 'border-transparent text-slate-500 hover:text-slate-300'}`}
+            className={`whitespace-nowrap font-bold pb-2 border-b-2 transition-colors ${activeTab === 'evaluations' ? 'border-purple-500 text-purple-400' : 'border-transparent text-slate-500 hover:text-slate-300'}`}
           >
             Evaluations & Votes
           </button>
           <button 
             onClick={() => setActiveTab('roster')}
-            className={`font-bold pb-2 border-b-2 transition-colors ${activeTab === 'roster' ? 'border-purple-500 text-purple-400' : 'border-transparent text-slate-500 hover:text-slate-300'}`}
+            className={`whitespace-nowrap font-bold pb-2 border-b-2 transition-colors ${activeTab === 'roster' ? 'border-purple-500 text-purple-400' : 'border-transparent text-slate-500 hover:text-slate-300'}`}
           >
             Student Roster
           </button>
+          <a 
+            href="/teacher/analytics"
+            className="whitespace-nowrap font-bold pb-2 border-b-2 border-transparent text-emerald-500 hover:text-emerald-400 flex items-center gap-2 transition-colors"
+          >
+            Exam Analytics
+          </a>
         </div>
 
         {activeTab === 'evaluations' && (
