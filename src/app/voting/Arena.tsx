@@ -330,6 +330,8 @@ const formatAudioUrl = (url: string) => {
 function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit }: any) {
   const [showLyrics, setShowLyrics] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
   const isMyTeam = team.members.includes(currentUser.name);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -345,10 +347,43 @@ function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit 
     }
   }, [isPlaying]);
 
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setProgress(audioRef.current.currentTime);
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  };
+
+  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newTime = Number(e.target.value);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+      setProgress(newTime);
+    }
+  };
+
+  const formatTime = (time: number) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  };
+
   return (
     <div className={`backdrop-blur-xl border rounded-3xl p-5 shadow-xl transition-all duration-300 relative overflow-hidden ${isMyTeam ? 'bg-purple-900/10 border-purple-500/30' : 'bg-white/[0.03] border-white/10 hover:bg-white/[0.05]'}`}>
       {team.audioUrl && (
-        <audio ref={audioRef} src={formatAudioUrl(team.audioUrl)} loop onEnded={onPlay} />
+        <audio 
+          ref={audioRef} 
+          src={formatAudioUrl(team.audioUrl)} 
+          loop 
+          onEnded={onPlay}
+          onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={handleLoadedMetadata}
+        />
       )}
       
 
@@ -379,6 +414,27 @@ function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit 
           {isPlaying ? <Pause className="w-5 h-5 fill-current" /> : <Play className="w-5 h-5 fill-current ml-1" />}
         </button>
       </div>
+
+      {/* Audio Progress Bar */}
+      {team.audioUrl && (
+        <div className="mb-6">
+          <div className="flex items-center gap-3">
+            <span className="text-[10px] font-medium text-slate-400 w-8 text-right">{formatTime(progress)}</span>
+            <input
+              type="range"
+              min="0"
+              max={duration || 100}
+              value={progress}
+              onChange={handleSeek}
+              className="w-full h-1.5 bg-white/10 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:bg-white [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-[0_0_10px_rgba(255,255,255,0.5)] hover:[&::-webkit-slider-thumb]:scale-125 transition-all focus:outline-none"
+              style={{
+                background: `linear-gradient(to right, white ${(progress / (duration || 1)) * 100}%, rgba(255,255,255,0.1) ${(progress / (duration || 1)) * 100}%)`
+              }}
+            />
+            <span className="text-[10px] font-medium text-slate-400 w-8">{formatTime(duration)}</span>
+          </div>
+        </div>
+      )}
 
       <div className={`flex items-end justify-center gap-1 h-8 transition-all duration-300 overflow-hidden ${isPlaying ? 'opacity-100 mb-4' : 'opacity-0 h-0 mb-0'}`}>
         {[...Array(12)].map((_, i) => (
