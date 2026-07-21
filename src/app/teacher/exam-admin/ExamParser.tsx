@@ -61,16 +61,74 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     setParsedQuestions(null);
 
     try {
-      const res = await fetch('/api/parse-paper', {
+      // Step 1: Download PDFs and get API key from our backend
+      const prepRes = await fetch('/api/prepare-parse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ paperUrl, markschemeUrl }),
       });
+      const prepData = await prepRes.json();
+      if (!prepRes.ok) throw new Error(prepData.error || 'Failed to download PDFs');
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Failed to parse');
+      const { paperBase64, markschemeBase64, contextStr, apiKey } = prepData;
 
-      setParsedQuestions(data.questions.map((q: any) => ({...q, questionImgUrl: '', markSchemeImgUrl: ''})));
+      const prompt = `
+You are an expert Chemistry examiner for Edexcel IGCSE 4CH1.
+I have provided two PDF documents: an Exam Paper and its corresponding Mark Scheme.
+
+Your task is to parse both documents, match every single question with its corresponding answer in the mark scheme, and output a strict JSON array.
+
+Please extract the following for each question (e.g., 1a, 1b, 1c(i), etc.):
+- "questionText": The exact text of the question.
+- "markSchemeText": The exact acceptable answers and rules from the mark scheme for this specific question.
+- "maxMarks": An integer representing the maximum marks available for this question.
+- "suggestedSubtopicId": The ID of the subtopic that best matches this question, chosen ONLY from the list below. If you cannot decide, leave it empty string.
+
+Here is the list of valid Topics and Subtopics:
+${contextStr}
+
+Respond ONLY with a valid JSON array of objects. Do not include markdown code blocks like \`\`\`json or any conversational text. Just the raw JSON array.
+Format example:
+[
+  {
+    "questionText": "State the meaning of the term atomic number.",
+    "markSchemeText": "number of protons (in the nucleus)",
+    "maxMarks": 1,
+    "suggestedSubtopicId": "uuid-here"
+  }
+]
+`;
+
+      // Step 2: Call Gemini API directly from the browser to bypass Vercel 60s timeout
+      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [
+            {
+              role: 'user',
+              parts: [
+                { inlineData: { mimeType: 'application/pdf', data: paperBase64 } },
+                { inlineData: { mimeType: 'application/pdf', data: markschemeBase64 } },
+                { text: prompt }
+              ]
+            }
+          ]
+        })
+      });
+
+      const geminiData = await geminiRes.json();
+      if (!geminiRes.ok) throw new Error(geminiData.error?.message || 'Gemini API Error');
+
+      let text = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      
+      if (text.startsWith('```json')) text = text.substring(7);
+      if (text.startsWith('```')) text = text.substring(3);
+      if (text.endsWith('```')) text = text.substring(0, text.length - 3);
+      text = text.trim();
+
+      const questions = JSON.parse(text);
+      setParsedQuestions(questions.map((q: any) => ({...q, questionImgUrl: '', markSchemeImgUrl: ''})));
     } catch (err: any) {
       setError(err.message || 'An error occurred during parsing.');
     } finally {
