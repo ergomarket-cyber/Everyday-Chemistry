@@ -13,8 +13,8 @@ interface ParsedQuestion {
 }
 
 export default function ExamParser({ topics, pastPapers: initialPastPapers }: { topics: any[], pastPapers: any[] }) {
-  const [paperUrl, setPaperUrl] = useState('');
-  const [markschemeUrl, setMarkschemeUrl] = useState('');
+  const [paperFile, setPaperFile] = useState<File | null>(null);
+  const [markschemeFile, setMarkschemeFile] = useState<File | null>(null);
   const [isParsing, setIsParsing] = useState(false);
   const [parsedQuestions, setParsedQuestions] = useState<ParsedQuestion[] | null>(null);
   const [isSaving, setIsSaving] = useState(false);
@@ -46,9 +46,22 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     }
   };
 
+  const fileToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        let result = reader.result as string;
+        const base64 = result.split(',')[1];
+        resolve(base64);
+      };
+      reader.onerror = error => reject(error);
+    });
+  };
+
   const handleParse = async () => {
-    if (!paperUrl || !markschemeUrl) {
-      setError('Please paste Google Drive links for both the Past Paper and Mark Scheme.');
+    if (!paperFile || !markschemeFile) {
+      setError('Please select both a Past Paper PDF and a Mark Scheme PDF.');
       return;
     }
     if (!selectedPaperId) {
@@ -61,16 +74,16 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     setParsedQuestions(null);
 
     try {
-      // Step 1: Download PDFs and get API key from our backend
-      const prepRes = await fetch('/api/prepare-parse', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ paperUrl, markschemeUrl }),
-      });
-      const prepData = await prepRes.json();
-      if (!prepRes.ok) throw new Error(prepData.error || 'Failed to download PDFs');
+      // Step 1: Read files locally into Base64 (bypasses Vercel 4.5MB limit)
+      const paperBase64 = await fileToBase64(paperFile);
+      const markschemeBase64 = await fileToBase64(markschemeFile);
 
-      const { paperBase64, markschemeBase64, contextStr, apiKey } = prepData;
+      // Step 2: Get API key and context from our backend
+      const prepRes = await fetch('/api/prepare-parse');
+      const prepData = await prepRes.json();
+      if (!prepRes.ok) throw new Error(prepData.error || 'Failed to get API context');
+
+      const { contextStr, apiKey } = prepData;
 
       const prompt = `
 You are an expert Chemistry examiner for Edexcel IGCSE 4CH1.
@@ -99,7 +112,7 @@ Format example:
 ]
 `;
 
-      // Step 2: Call Gemini API directly from the browser to bypass Vercel 60s timeout
+      // Step 3: Call Gemini API directly from the browser to bypass Vercel 60s timeout
       const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -174,8 +187,8 @@ Format example:
 
       alert(`Successfully saved ${data.count} questions!`);
       setParsedQuestions(null);
-      setPaperUrl('');
-      setMarkschemeUrl('');
+      setPaperFile(null);
+      setMarkschemeFile(null);
       
       // Force reload the page to see the new questions
       window.location.reload();
@@ -259,31 +272,29 @@ Format example:
       {!parsedQuestions ? (
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
-            <label className="text-sm font-bold text-slate-300">1. Past Paper — Google Drive Link</label>
+            <label className="text-sm font-bold text-slate-300">1. Past Paper — PDF File</label>
             <input 
-              type="text"
-              placeholder="https://drive.google.com/file/d/..."
-              value={paperUrl}
-              onChange={(e) => setPaperUrl(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-emerald-500 outline-none placeholder:text-slate-600"
+              type="file"
+              accept=".pdf"
+              onChange={(e) => setPaperFile(e.target.files?.[0] || null)}
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-emerald-500 outline-none file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-emerald-500 file:text-white hover:file:bg-emerald-600"
             />
-            <p className="text-xs text-slate-500">Откройте PDF на Google Drive → Поделиться → Скопировать ссылку</p>
+            <p className="text-xs text-slate-500">Выберите PDF-файл с самим экзаменом с вашего компьютера</p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
-            <label className="text-sm font-bold text-slate-300">2. Mark Scheme — Google Drive Link</label>
+            <label className="text-sm font-bold text-slate-300">2. Mark Scheme — PDF File</label>
             <input 
-              type="text"
-              placeholder="https://drive.google.com/file/d/..."
-              value={markschemeUrl}
-              onChange={(e) => setMarkschemeUrl(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-blue-500 outline-none placeholder:text-slate-600"
+              type="file"
+              accept=".pdf"
+              onChange={(e) => setMarkschemeFile(e.target.files?.[0] || null)}
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-blue-500 outline-none file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-blue-500 file:text-white hover:file:bg-blue-600"
             />
-            <p className="text-xs text-slate-500">Откройте Mark Scheme на Google Drive → Поделиться → Скопировать ссылку</p>
+            <p className="text-xs text-slate-500">Выберите PDF-файл с ответами (Mark Scheme)</p>
           </div>
           <div className="md:col-span-2">
             <button 
               onClick={handleParse}
-              disabled={isParsing || !paperUrl || !markschemeUrl || !selectedPaperId}
+              disabled={isParsing || !paperFile || !markschemeFile || !selectedPaperId}
               className="w-full py-4 bg-white text-black hover:bg-slate-200 rounded-2xl font-black text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {isParsing ? (
