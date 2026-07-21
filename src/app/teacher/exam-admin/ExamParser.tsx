@@ -1,28 +1,58 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Upload, X, Check, Save, Loader2, AlertCircle } from 'lucide-react';
+import { Upload, X, Check, Save, Loader2, AlertCircle, Plus } from 'lucide-react';
 
 interface ParsedQuestion {
   questionText: string;
+  questionImgUrl?: string;
   markSchemeText: string;
+  markSchemeImgUrl?: string;
   maxMarks: number;
   suggestedSubtopicId: string;
 }
 
-export default function ExamParser({ topics }: { topics: any[] }) {
+export default function ExamParser({ topics, pastPapers: initialPastPapers }: { topics: any[], pastPapers: any[] }) {
   const [paperFile, setPaperFile] = useState<File | null>(null);
   const [markschemeFile, setMarkschemeFile] = useState<File | null>(null);
   const [isParsing, setIsParsing] = useState(false);
   const [parsedQuestions, setParsedQuestions] = useState<ParsedQuestion[] | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState('');
+  
+  // Paper Selection State
+  const [pastPapers, setPastPapers] = useState(initialPastPapers);
+  const [selectedPaperId, setSelectedPaperId] = useState('');
+  const [isCreatingPaper, setIsCreatingPaper] = useState(false);
+  const [newPaperYear, setNewPaperYear] = useState(new Date().getFullYear());
+  const [newPaperMonth, setNewPaperMonth] = useState('June');
+  const [newPaperRef, setNewPaperRef] = useState('');
 
-  const subtopics = topics.flatMap(t => t.subtopics);
+  const handleCreatePaper = async () => {
+    try {
+      const res = await fetch('/api/past-papers', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ year: newPaperYear, month: newPaperMonth, reference: newPaperRef })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      
+      setPastPapers([data, ...pastPapers]);
+      setSelectedPaperId(data.id);
+      setIsCreatingPaper(false);
+    } catch (err: any) {
+      setError(err.message || 'Failed to create paper');
+    }
+  };
 
   const handleParse = async () => {
     if (!paperFile || !markschemeFile) {
       setError('Please select both a Past Paper PDF and a Mark Scheme PDF.');
+      return;
+    }
+    if (!selectedPaperId) {
+      setError('Please select or create a Past Paper first.');
       return;
     }
 
@@ -43,7 +73,7 @@ export default function ExamParser({ topics }: { topics: any[] }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to parse');
 
-      setParsedQuestions(data.questions);
+      setParsedQuestions(data.questions.map((q: any) => ({...q, questionImgUrl: '', markSchemeImgUrl: ''})));
     } catch (err: any) {
       setError(err.message || 'An error occurred during parsing.');
     } finally {
@@ -52,18 +82,36 @@ export default function ExamParser({ topics }: { topics: any[] }) {
   };
 
   const handleSave = async () => {
-    if (!parsedQuestions || parsedQuestions.length === 0) return;
+    if (!parsedQuestions || parsedQuestions.length === 0 || !selectedPaperId) return;
 
     setIsSaving(true);
     setError('');
 
     try {
-      const validQuestions = parsedQuestions.filter(q => q.questionText && q.markSchemeText && q.suggestedSubtopicId);
+      // Validate
+      const validQuestions = parsedQuestions.filter(q => (q.questionText || q.questionImgUrl) && q.suggestedSubtopicId);
+      
+      // Auto-format Google Drive Links just in case
+      const formatGoogleDriveLink = (url: string) => {
+        if (!url) return url;
+        const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)\//);
+        if (match && match[1]) {
+          return `https://drive.google.com/uc?export=view&id=${match[1]}`;
+        }
+        return url;
+      };
+
+      const finalQuestions = validQuestions.map(q => ({
+        ...q,
+        paperId: selectedPaperId,
+        questionImgUrl: formatGoogleDriveLink(q.questionImgUrl || ''),
+        markSchemeImgUrl: formatGoogleDriveLink(q.markSchemeImgUrl || '')
+      }));
       
       const res = await fetch('/api/questions/bulk', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ questions: validQuestions }),
+        body: JSON.stringify({ questions: finalQuestions }),
       });
 
       const data = await res.json();
@@ -99,8 +147,8 @@ export default function ExamParser({ topics }: { topics: any[] }) {
 
   return (
     <div className="bg-slate-900 border border-white/10 rounded-3xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-white mb-4">AI PDF Parser</h2>
-      <p className="text-slate-400 mb-6 text-sm">Upload an Edexcel 4CH1 Past Paper and its Mark Scheme. Gemini will automatically extract the questions, match them with the correct answers, and suggest the appropriate topic.</p>
+      <h2 className="text-2xl font-bold text-white mb-4">AI PDF Parser & Metadata</h2>
+      <p className="text-slate-400 mb-6 text-sm">Upload an Edexcel 4CH1 Past Paper, assign it to a Paper Reference, and add optional Image URLs. (Google Drive links will be automatically formatted for you!)</p>
 
       {error && (
         <div className="bg-red-500/20 text-red-400 p-4 rounded-xl mb-6 flex items-center gap-3">
@@ -108,6 +156,50 @@ export default function ExamParser({ topics }: { topics: any[] }) {
           <p className="text-sm font-bold">{error}</p>
         </div>
       )}
+
+      {/* Paper Metadata Selection */}
+      <div className="bg-black/30 border border-white/5 rounded-2xl p-5 mb-6">
+        <label className="text-sm font-bold text-slate-300 block mb-3">Past Paper Reference</label>
+        
+        {isCreatingPaper ? (
+          <div className="flex gap-4 items-end">
+            <div>
+              <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Year</label>
+              <input type="number" value={newPaperYear} onChange={e => setNewPaperYear(Number(e.target.value))} className="w-24 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:border-emerald-500 outline-none" />
+            </div>
+            <div>
+              <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Month</label>
+              <input type="text" placeholder="June" value={newPaperMonth} onChange={e => setNewPaperMonth(e.target.value)} className="w-32 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:border-emerald-500 outline-none" />
+            </div>
+            <div className="flex-1">
+              <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Reference (e.g. 4CH1/1C)</label>
+              <input type="text" value={newPaperRef} onChange={e => setNewPaperRef(e.target.value)} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:border-emerald-500 outline-none" />
+            </div>
+            <button onClick={handleCreatePaper} className="bg-emerald-500 text-slate-950 font-bold px-6 py-2 rounded-xl flex items-center gap-2 hover:bg-emerald-400 transition-colors">
+              <Check size={18} /> Save Paper
+            </button>
+            <button onClick={() => setIsCreatingPaper(false)} className="bg-white/10 text-white font-bold px-4 py-2 rounded-xl hover:bg-white/20 transition-colors">
+              Cancel
+            </button>
+          </div>
+        ) : (
+          <div className="flex gap-4">
+            <select 
+              value={selectedPaperId}
+              onChange={(e) => setSelectedPaperId(e.target.value)}
+              className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-emerald-500 outline-none"
+            >
+              <option value="">-- Select a Past Paper --</option>
+              {pastPapers.map(p => (
+                <option key={p.id} value={p.id}>{p.year} {p.month} - {p.reference}</option>
+              ))}
+            </select>
+            <button onClick={() => setIsCreatingPaper(true)} className="bg-white/10 text-white font-bold px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-white/20 transition-colors">
+              <Plus size={18} /> Create New
+            </button>
+          </div>
+        )}
+      </div>
 
       {!parsedQuestions ? (
         <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -132,7 +224,7 @@ export default function ExamParser({ topics }: { topics: any[] }) {
           <div className="md:col-span-2">
             <button 
               onClick={handleParse}
-              disabled={isParsing || !paperFile || !markschemeFile}
+              disabled={isParsing || !paperFile || !markschemeFile || !selectedPaperId}
               className="w-full py-4 bg-white text-black hover:bg-slate-200 rounded-2xl font-black text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {isParsing ? (
@@ -161,7 +253,7 @@ export default function ExamParser({ topics }: { topics: any[] }) {
             </button>
           </div>
 
-          <div className="max-h-[600px] overflow-y-auto space-y-4 pr-2">
+          <div className="max-h-[800px] overflow-y-auto space-y-6 pr-2">
             {parsedQuestions.map((q, idx) => (
               <div key={idx} className="bg-black/40 border border-white/10 rounded-2xl p-5 relative">
                 <button 
@@ -172,22 +264,49 @@ export default function ExamParser({ topics }: { topics: any[] }) {
                   <X size={16} />
                 </button>
 
-                <div className="grid md:grid-cols-2 gap-4 mb-4 pr-8">
-                  <div>
-                    <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Question Text</label>
-                    <textarea 
-                      value={q.questionText}
-                      onChange={(e) => updateQuestion(idx, 'questionText', e.target.value)}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm text-slate-200 min-h-[100px] focus:border-emerald-500 outline-none"
-                    />
+                <div className="grid md:grid-cols-2 gap-6 mb-4 pr-8">
+                  {/* Question Column */}
+                  <div className="space-y-3">
+                    <div>
+                      <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Question Text</label>
+                      <textarea 
+                        value={q.questionText}
+                        onChange={(e) => updateQuestion(idx, 'questionText', e.target.value)}
+                        className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm text-slate-200 min-h-[100px] focus:border-emerald-500 outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Question Image URL (Optional)</label>
+                      <input 
+                        type="text"
+                        placeholder="https://drive.google.com/... or any image link"
+                        value={q.questionImgUrl || ''}
+                        onChange={(e) => updateQuestion(idx, 'questionImgUrl', e.target.value)}
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-blue-300 focus:border-blue-500 outline-none"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Mark Scheme / Answer</label>
-                    <textarea 
-                      value={q.markSchemeText}
-                      onChange={(e) => updateQuestion(idx, 'markSchemeText', e.target.value)}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm text-emerald-400 min-h-[100px] focus:border-emerald-500 outline-none"
-                    />
+                  
+                  {/* Markscheme Column */}
+                  <div className="space-y-3">
+                    <div>
+                      <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Mark Scheme / Answer</label>
+                      <textarea 
+                        value={q.markSchemeText}
+                        onChange={(e) => updateQuestion(idx, 'markSchemeText', e.target.value)}
+                        className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm text-emerald-400 min-h-[100px] focus:border-emerald-500 outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-slate-500 font-bold uppercase mb-1 block">Mark Scheme Image URL (Optional)</label>
+                      <input 
+                        type="text"
+                        placeholder="https://drive.google.com/... or any image link"
+                        value={q.markSchemeImgUrl || ''}
+                        onChange={(e) => updateQuestion(idx, 'markSchemeImgUrl', e.target.value)}
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-blue-300 focus:border-blue-500 outline-none"
+                      />
+                    </div>
                   </div>
                 </div>
 

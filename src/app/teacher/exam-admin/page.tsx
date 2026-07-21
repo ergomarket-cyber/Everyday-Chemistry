@@ -9,6 +9,14 @@ export default async function ExamAdminPage() {
     include: { subtopics: true }
   });
 
+  const pastPapers = await prisma.pastPaper.findMany({
+    orderBy: [
+      { year: 'desc' },
+      { month: 'desc' },
+      { reference: 'asc' }
+    ]
+  });
+
   const questions = await prisma.examQuestion.findMany({
     include: {
       subtopic: {
@@ -37,7 +45,7 @@ export default async function ExamAdminPage() {
           </Link>
         </div>
 
-        <ExamParser topics={topics} />
+        <ExamParser topics={topics} pastPapers={pastPapers} />
 
 
         <div className="grid gap-6">

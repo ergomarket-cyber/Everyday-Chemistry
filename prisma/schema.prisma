@@ -73,11 +73,22 @@ model Subtopic {
   questions   ExamQuestion[]
 }
 
+model PastPaper {
+  id        String   @id @default(uuid())
+  year      Int
+  month     String   // e.g., "January", "June"
+  reference String   // e.g., "4CH1/1C"
+  questions ExamQuestion[]
+}
+
 model ExamQuestion {
   id               String   @id @default(uuid())
   subtopicId       String
   subtopic         Subtopic @relation(fields: [subtopicId], references: [id], onDelete: Restrict)
   
+  paperId          String?
+  paper            PastPaper? @relation(fields: [paperId], references: [id], onDelete: SetNull)
+
   questionText     String?
   questionImgUrl   String?
   markSchemeText   String?

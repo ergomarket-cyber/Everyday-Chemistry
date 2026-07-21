@@ -14,10 +14,12 @@ export async function POST(req: NextRequest) {
         return prisma.examQuestion.create({
           data: {
             questionText: q.questionText,
+            questionImgUrl: q.questionImgUrl || null,
             markSchemeText: q.markSchemeText,
-            maxMarks: parseInt(q.maxMarks, 10),
+            markSchemeImgUrl: q.markSchemeImgUrl || null,
+            maxMarks: parseInt(q.maxMarks, 10) || 0,
             subtopicId: q.suggestedSubtopicId,
-            // Assuming no images for now since text-only parsing
+            paperId: q.paperId || null,
           }
         });
       })
