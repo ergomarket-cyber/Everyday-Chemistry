@@ -116,8 +116,8 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
 
       alert(`Successfully saved ${data.count} questions!`);
       setParsedQuestions(null);
-      setPaperFile(null);
-      setMarkschemeFile(null);
+      setPaperUrl('');
+      setMarkschemeUrl('');
       
       // Force reload the page to see the new questions
       window.location.reload();
