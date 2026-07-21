@@ -62,7 +62,7 @@ Do not include any markdown formatting around the JSON (e.g., no \`\`\`json). Ju
     while (retries > 0) {
       try {
         result = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
+            model: 'gemini-flash-latest',
             contents: prompt,
         });
         break;
