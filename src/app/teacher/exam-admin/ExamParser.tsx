@@ -13,8 +13,8 @@ interface ParsedQuestion {
 }
 
 export default function ExamParser({ topics, pastPapers: initialPastPapers }: { topics: any[], pastPapers: any[] }) {
-  const [paperFile, setPaperFile] = useState<File | null>(null);
-  const [markschemeFile, setMarkschemeFile] = useState<File | null>(null);
+  const [paperUrl, setPaperUrl] = useState('');
+  const [markschemeUrl, setMarkschemeUrl] = useState('');
   const [isParsing, setIsParsing] = useState(false);
   const [parsedQuestions, setParsedQuestions] = useState<ParsedQuestion[] | null>(null);
   const [isSaving, setIsSaving] = useState(false);
@@ -47,8 +47,8 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
   };
 
   const handleParse = async () => {
-    if (!paperFile || !markschemeFile) {
-      setError('Please select both a Past Paper PDF and a Mark Scheme PDF.');
+    if (!paperUrl || !markschemeUrl) {
+      setError('Please paste Google Drive links for both the Past Paper and Mark Scheme.');
       return;
     }
     if (!selectedPaperId) {
@@ -61,13 +61,10 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     setParsedQuestions(null);
 
     try {
-      const formData = new FormData();
-      formData.append('paper', paperFile);
-      formData.append('markscheme', markschemeFile);
-
       const res = await fetch('/api/parse-paper', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ paperUrl, markschemeUrl }),
       });
 
       const data = await res.json();
@@ -204,33 +201,37 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
       {!parsedQuestions ? (
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
-            <label className="text-sm font-bold text-slate-300">1. Past Paper (PDF)</label>
+            <label className="text-sm font-bold text-slate-300">1. Past Paper — Google Drive Link</label>
             <input 
-              type="file" 
-              accept="application/pdf"
-              onChange={(e) => setPaperFile(e.target.files?.[0] || null)}
-              className="text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-emerald-500/20 file:text-emerald-400 hover:file:bg-emerald-500/30 cursor-pointer"
+              type="url"
+              placeholder="https://drive.google.com/file/d/..."
+              value={paperUrl}
+              onChange={(e) => setPaperUrl(e.target.value)}
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-emerald-500 outline-none placeholder:text-slate-600"
             />
+            <p className="text-xs text-slate-500">Откройте PDF на Google Drive → Поделиться → Скопировать ссылку</p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
-            <label className="text-sm font-bold text-slate-300">2. Mark Scheme (PDF)</label>
+            <label className="text-sm font-bold text-slate-300">2. Mark Scheme — Google Drive Link</label>
             <input 
-              type="file" 
-              accept="application/pdf"
-              onChange={(e) => setMarkschemeFile(e.target.files?.[0] || null)}
-              className="text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-500/20 file:text-blue-400 hover:file:bg-blue-500/30 cursor-pointer"
+              type="url"
+              placeholder="https://drive.google.com/file/d/..."
+              value={markschemeUrl}
+              onChange={(e) => setMarkschemeUrl(e.target.value)}
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-blue-300 focus:border-blue-500 outline-none placeholder:text-slate-600"
             />
+            <p className="text-xs text-slate-500">Откройте Mark Scheme на Google Drive → Поделиться → Скопировать ссылку</p>
           </div>
           <div className="md:col-span-2">
             <button 
               onClick={handleParse}
-              disabled={isParsing || !paperFile || !markschemeFile || !selectedPaperId}
+              disabled={isParsing || !paperUrl || !markschemeUrl || !selectedPaperId}
               className="w-full py-4 bg-white text-black hover:bg-slate-200 rounded-2xl font-black text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {isParsing ? (
                 <>
                   <Loader2 className="animate-spin" size={24} />
-                  Parsing with Gemini AI...
+                  Parsing with Gemini AI... (may take ~30s)
                 </>
               ) : (
                 <>

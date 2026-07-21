@@ -4,32 +4,46 @@ import { prisma } from '@/lib/prisma';
 
 export const maxDuration = 60; // Allow max 60 seconds on Vercel Hobby tier
 
-// Initialize the new SDK
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+
+// Convert a Google Drive share URL to a direct download URL
+function toDirectUrl(url: string): string {
+  const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+  if (match) {
+    return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+  }
+  return url;
+}
+
+async function fetchPdfAsBase64(url: string): Promise<string> {
+  const directUrl = toDirectUrl(url);
+  const res = await fetch(directUrl, { redirect: 'follow' });
+  if (!res.ok) throw new Error(`Failed to download PDF from URL: ${res.status} ${res.statusText}`);
+  const buffer = await res.arrayBuffer();
+  return Buffer.from(buffer).toString('base64');
+}
 
 export async function POST(req: NextRequest) {
   try {
-    const formData = await req.formData();
-    const paperFile = formData.get('paper') as File | null;
-    const markschemeFile = formData.get('markscheme') as File | null;
+    const body = await req.json();
+    const { paperUrl, markschemeUrl } = body;
 
-    if (!paperFile || !markschemeFile) {
-      return NextResponse.json({ error: 'Both paper and markscheme PDFs are required.' }, { status: 400 });
+    if (!paperUrl || !markschemeUrl) {
+      return NextResponse.json({ error: 'Both paperUrl and markschemeUrl are required.' }, { status: 400 });
     }
 
-    // Convert files to base64
-    const paperBuffer = Buffer.from(await paperFile.arrayBuffer());
-    const markschemeBuffer = Buffer.from(await markschemeFile.arrayBuffer());
-    
-    const paperBase64 = paperBuffer.toString('base64');
-    const markschemeBase64 = markschemeBuffer.toString('base64');
+    // Download PDFs from URLs and convert to base64
+    const [paperBase64, markschemeBase64] = await Promise.all([
+      fetchPdfAsBase64(paperUrl),
+      fetchPdfAsBase64(markschemeUrl),
+    ]);
 
     // Fetch all topics and subtopics for context
     const topics = await prisma.topic.findMany({
       include: { subtopics: true }
     });
 
-    const contextStr = topics.map(t => 
+    const contextStr = topics.map(t =>
       `Topic: ${t.name}\nSubtopics:\n` + t.subtopics.map(st => ` - ID: ${st.id} | Name: ${st.name}`).join('\n')
     ).join('\n\n');
 
@@ -66,28 +80,16 @@ Format example:
         {
           role: 'user',
           parts: [
-            {
-              inlineData: {
-                mimeType: 'application/pdf',
-                data: paperBase64
-              }
-            },
-            {
-              inlineData: {
-                mimeType: 'application/pdf',
-                data: markschemeBase64
-              }
-            },
-            {
-              text: prompt
-            }
+            { inlineData: { mimeType: 'application/pdf', data: paperBase64 } },
+            { inlineData: { mimeType: 'application/pdf', data: markschemeBase64 } },
+            { text: prompt }
           ]
         }
       ],
     });
 
     let text = result?.text || '';
-    
+
     // Clean up potential markdown formatting
     if (text.startsWith('```json')) text = text.substring(7);
     if (text.startsWith('```')) text = text.substring(3);
@@ -95,7 +97,6 @@ Format example:
     text = text.trim();
 
     const questions = JSON.parse(text);
-
     return NextResponse.json({ questions });
 
   } catch (error: any) {
