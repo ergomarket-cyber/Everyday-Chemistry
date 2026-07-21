@@ -26,8 +26,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Question not found' }, { status: 404 });
     }
 
-    // Initialize Gemini 2.5 Flash
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    // Initialize Gemini 1.5 Flash (gemini-2.5-flash is an invalid model ID)
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `
 You are an expert Cambridge/Edexcel IGCSE Chemistry examiner.
