@@ -46,17 +46,18 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     }
   };
 
-  const fileToBase64 = (file: File): Promise<string> => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        let result = reader.result as string;
-        const base64 = result.split(',')[1];
-        resolve(base64);
-      };
-      reader.onerror = error => reject(error);
+  const uploadToGemini = async (file: File, apiKey: string): Promise<string> => {
+    const uploadUrl = `https://generativelanguage.googleapis.com/upload/v1beta/files?uploadType=media&key=${apiKey}`;
+    const res = await fetch(uploadUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': file.type || 'application/pdf',
+      },
+      body: file,
     });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error?.message || 'Failed to upload file to Gemini');
+    return data.file.uri;
   };
 
   const handleParse = async () => {
@@ -74,16 +75,16 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
     setParsedQuestions(null);
 
     try {
-      // Step 1: Read files locally into Base64 (bypasses Vercel 4.5MB limit)
-      const paperBase64 = await fileToBase64(paperFile);
-      const markschemeBase64 = await fileToBase64(markschemeFile);
-
-      // Step 2: Get API key and context from our backend
+      // Step 1: Get API key and context from our backend
       const prepRes = await fetch('/api/prepare-parse');
       const prepData = await prepRes.json();
       if (!prepRes.ok) throw new Error(prepData.error || 'Failed to get API context');
 
       const { contextStr, apiKey } = prepData;
+
+      // Step 2: Upload PDFs to Gemini directly using File API (bypasses payload size limits)
+      const paperUri = await uploadToGemini(paperFile, apiKey);
+      const markschemeUri = await uploadToGemini(markschemeFile, apiKey);
 
       const prompt = `
 You are an expert Chemistry examiner for Edexcel IGCSE 4CH1.
@@ -121,8 +122,8 @@ Format example:
             {
               role: 'user',
               parts: [
-                { inlineData: { mimeType: 'application/pdf', data: paperBase64 } },
-                { inlineData: { mimeType: 'application/pdf', data: markschemeBase64 } },
+                { fileData: { mimeType: paperFile.type || 'application/pdf', fileUri: paperUri } },
+                { fileData: { mimeType: markschemeFile.type || 'application/pdf', fileUri: markschemeUri } },
                 { text: prompt }
               ]
             }
