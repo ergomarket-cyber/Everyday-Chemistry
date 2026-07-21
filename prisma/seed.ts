@@ -173,14 +173,14 @@ async function main() {
       const memberName = members[i];
       const isCaptain = i === 0;
       const pin = generatePin(memberName, team.grade);
-      studentPins.push({ name: memberName, grade: team.grade, pin, team: team.name, isCaptain } as any);
+      studentPins.push({ name: memberName, grade: team.grade, pin, team: isCaptain ? team.name : 'Unassigned', isCaptain } as any);
       
       await prisma.student.create({
         data: {
           name: memberName,
           grade: team.grade,
           pin,
-          teamId: team.id,
+          teamId: isCaptain ? team.id : null,
           isCaptain
         }
       });

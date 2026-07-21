@@ -1,0 +1,5357 @@
+[
+  {
+    "id": "sym_1",
+    "element": "H",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Hydrogen?",
+    "answers": [
+      "H",
+      "Hx",
+      "Hy",
+      "Option 68"
+    ],
+    "correct_answer": "H",
+    "points": 1
+  },
+  {
+    "id": "num_1",
+    "element": "H",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Hydrogen?",
+    "answers": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": "1",
+    "points": 2
+  },
+  {
+    "id": "grp_1",
+    "element": "H",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Hydrogen belong to?",
+    "answers": [
+      "Halogen",
+      "1",
+      "Transition",
+      "2"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_2",
+    "element": "He",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Helium?",
+    "answers": [
+      "H",
+      "He",
+      "Hex",
+      "Option 85"
+    ],
+    "correct_answer": "He",
+    "points": 1
+  },
+  {
+    "id": "num_2",
+    "element": "He",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Helium?",
+    "answers": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "correct_answer": "2",
+    "points": 2
+  },
+  {
+    "id": "grp_2",
+    "element": "He",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Helium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "19",
+      "18"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_3",
+    "element": "Li",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Lithium?",
+    "answers": [
+      "Li",
+      "L",
+      "Lix",
+      "Option 66"
+    ],
+    "correct_answer": "Li",
+    "points": 1
+  },
+  {
+    "id": "num_3",
+    "element": "Li",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Lithium?",
+    "answers": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "correct_answer": "3",
+    "points": 2
+  },
+  {
+    "id": "grp_3",
+    "element": "Li",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Lithium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "2",
+      "1"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_4",
+    "element": "Be",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Beryllium?",
+    "answers": [
+      "Be",
+      "B",
+      "Bex",
+      "Option 25"
+    ],
+    "correct_answer": "Be",
+    "points": 1
+  },
+  {
+    "id": "num_4",
+    "element": "Be",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Beryllium?",
+    "answers": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "correct_answer": "4",
+    "points": 2
+  },
+  {
+    "id": "grp_4",
+    "element": "Be",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Beryllium belong to?",
+    "answers": [
+      "2",
+      "Halogen",
+      "3",
+      "Transition"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_5",
+    "element": "B",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Boron?",
+    "answers": [
+      "B",
+      "Bx",
+      "Bo",
+      "Option 11"
+    ],
+    "correct_answer": "B",
+    "points": 1
+  },
+  {
+    "id": "num_5",
+    "element": "B",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Boron?",
+    "answers": [
+      "7",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "5",
+    "points": 2
+  },
+  {
+    "id": "grp_5",
+    "element": "B",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Boron belong to?",
+    "answers": [
+      "13",
+      "Halogen",
+      "14",
+      "Transition"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_6",
+    "element": "C",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Carbon?",
+    "answers": [
+      "Ca",
+      "Cx",
+      "C",
+      "Option 14"
+    ],
+    "correct_answer": "C",
+    "points": 1
+  },
+  {
+    "id": "num_6",
+    "element": "C",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Carbon?",
+    "answers": [
+      "6",
+      "7",
+      "5",
+      "8"
+    ],
+    "correct_answer": "6",
+    "points": 2
+  },
+  {
+    "id": "grp_6",
+    "element": "C",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Carbon belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "15",
+      "14"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_7",
+    "element": "N",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Nitrogen?",
+    "answers": [
+      "N",
+      "Nx",
+      "Ni",
+      "Option 53"
+    ],
+    "correct_answer": "N",
+    "points": 1
+  },
+  {
+    "id": "num_7",
+    "element": "N",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Nitrogen?",
+    "answers": [
+      "7",
+      "9",
+      "6",
+      "8"
+    ],
+    "correct_answer": "7",
+    "points": 2
+  },
+  {
+    "id": "grp_7",
+    "element": "N",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Nitrogen belong to?",
+    "answers": [
+      "Halogen",
+      "15",
+      "16",
+      "Transition"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_8",
+    "element": "O",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Oxygen?",
+    "answers": [
+      "O",
+      "Ox",
+      "Option 95",
+      "Option 41"
+    ],
+    "correct_answer": "O",
+    "points": 1
+  },
+  {
+    "id": "num_8",
+    "element": "O",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Oxygen?",
+    "answers": [
+      "10",
+      "8",
+      "9",
+      "7"
+    ],
+    "correct_answer": "8",
+    "points": 2
+  },
+  {
+    "id": "grp_8",
+    "element": "O",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Oxygen belong to?",
+    "answers": [
+      "16",
+      "17",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_9",
+    "element": "F",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Fluorine?",
+    "answers": [
+      "F",
+      "Fx",
+      "Fl",
+      "Option 99"
+    ],
+    "correct_answer": "F",
+    "points": 1
+  },
+  {
+    "id": "num_9",
+    "element": "F",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Fluorine?",
+    "answers": [
+      "9",
+      "10",
+      "8",
+      "11"
+    ],
+    "correct_answer": "9",
+    "points": 2
+  },
+  {
+    "id": "grp_9",
+    "element": "F",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Fluorine belong to?",
+    "answers": [
+      "17",
+      "Transition",
+      "18",
+      "Halogen"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_10",
+    "element": "Ne",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Neon?",
+    "answers": [
+      "N",
+      "Ne",
+      "Nex",
+      "Option 65"
+    ],
+    "correct_answer": "Ne",
+    "points": 1
+  },
+  {
+    "id": "num_10",
+    "element": "Ne",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Neon?",
+    "answers": [
+      "9",
+      "11",
+      "12",
+      "10"
+    ],
+    "correct_answer": "10",
+    "points": 2
+  },
+  {
+    "id": "grp_10",
+    "element": "Ne",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Neon belong to?",
+    "answers": [
+      "19",
+      "18",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_11",
+    "element": "Na",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Sodium?",
+    "answers": [
+      "Nax",
+      "N",
+      "So",
+      "Na"
+    ],
+    "correct_answer": "Na",
+    "points": 1
+  },
+  {
+    "id": "num_11",
+    "element": "Na",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Sodium?",
+    "answers": [
+      "11",
+      "13",
+      "10",
+      "12"
+    ],
+    "correct_answer": "11",
+    "points": 2
+  },
+  {
+    "id": "grp_11",
+    "element": "Na",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Sodium belong to?",
+    "answers": [
+      "1",
+      "2",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_12",
+    "element": "Mg",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Magnesium?",
+    "answers": [
+      "Ma",
+      "Mgx",
+      "M",
+      "Mg"
+    ],
+    "correct_answer": "Mg",
+    "points": 1
+  },
+  {
+    "id": "num_12",
+    "element": "Mg",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Magnesium?",
+    "answers": [
+      "14",
+      "11",
+      "13",
+      "12"
+    ],
+    "correct_answer": "12",
+    "points": 2
+  },
+  {
+    "id": "grp_12",
+    "element": "Mg",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Magnesium belong to?",
+    "answers": [
+      "Transition",
+      "2",
+      "Halogen",
+      "3"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_13",
+    "element": "Al",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Aluminium?",
+    "answers": [
+      "Alx",
+      "A",
+      "Al",
+      "Option 87"
+    ],
+    "correct_answer": "Al",
+    "points": 1
+  },
+  {
+    "id": "num_13",
+    "element": "Al",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Aluminium?",
+    "answers": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "correct_answer": "13",
+    "points": 2
+  },
+  {
+    "id": "grp_13",
+    "element": "Al",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Aluminium belong to?",
+    "answers": [
+      "13",
+      "14",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_14",
+    "element": "Si",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Silicon?",
+    "answers": [
+      "Six",
+      "S",
+      "Si",
+      "Option 24"
+    ],
+    "correct_answer": "Si",
+    "points": 1
+  },
+  {
+    "id": "num_14",
+    "element": "Si",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Silicon?",
+    "answers": [
+      "13",
+      "16",
+      "15",
+      "14"
+    ],
+    "correct_answer": "14",
+    "points": 2
+  },
+  {
+    "id": "grp_14",
+    "element": "Si",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Silicon belong to?",
+    "answers": [
+      "14",
+      "15",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_15",
+    "element": "P",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Phosphorus?",
+    "answers": [
+      "P",
+      "Px",
+      "Ph",
+      "Option 87"
+    ],
+    "correct_answer": "P",
+    "points": 1
+  },
+  {
+    "id": "num_15",
+    "element": "P",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Phosphorus?",
+    "answers": [
+      "16",
+      "15",
+      "14",
+      "17"
+    ],
+    "correct_answer": "15",
+    "points": 2
+  },
+  {
+    "id": "grp_15",
+    "element": "P",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Phosphorus belong to?",
+    "answers": [
+      "15",
+      "16",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_16",
+    "element": "S",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Sulfur?",
+    "answers": [
+      "Sx",
+      "Su",
+      "S",
+      "Option 51"
+    ],
+    "correct_answer": "S",
+    "points": 1
+  },
+  {
+    "id": "num_16",
+    "element": "S",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Sulfur?",
+    "answers": [
+      "17",
+      "18",
+      "16",
+      "15"
+    ],
+    "correct_answer": "16",
+    "points": 2
+  },
+  {
+    "id": "grp_16",
+    "element": "S",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Sulfur belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "17",
+      "16"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_17",
+    "element": "Cl",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Chlorine?",
+    "answers": [
+      "C",
+      "Clx",
+      "Ch",
+      "Cl"
+    ],
+    "correct_answer": "Cl",
+    "points": 1
+  },
+  {
+    "id": "num_17",
+    "element": "Cl",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Chlorine?",
+    "answers": [
+      "19",
+      "16",
+      "18",
+      "17"
+    ],
+    "correct_answer": "17",
+    "points": 2
+  },
+  {
+    "id": "grp_17",
+    "element": "Cl",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Chlorine belong to?",
+    "answers": [
+      "18",
+      "17",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_18",
+    "element": "Ar",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Argon?",
+    "answers": [
+      "Ar",
+      "A",
+      "Arx",
+      "Option 8"
+    ],
+    "correct_answer": "Ar",
+    "points": 1
+  },
+  {
+    "id": "num_18",
+    "element": "Ar",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Argon?",
+    "answers": [
+      "19",
+      "20",
+      "17",
+      "18"
+    ],
+    "correct_answer": "18",
+    "points": 2
+  },
+  {
+    "id": "grp_18",
+    "element": "Ar",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Argon belong to?",
+    "answers": [
+      "Transition",
+      "19",
+      "18",
+      "Halogen"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_19",
+    "element": "K",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Potassium?",
+    "answers": [
+      "Kx",
+      "Po",
+      "K",
+      "Option 18"
+    ],
+    "correct_answer": "K",
+    "points": 1
+  },
+  {
+    "id": "num_19",
+    "element": "K",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Potassium?",
+    "answers": [
+      "18",
+      "21",
+      "20",
+      "19"
+    ],
+    "correct_answer": "19",
+    "points": 2
+  },
+  {
+    "id": "grp_19",
+    "element": "K",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Potassium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "2",
+      "1"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_20",
+    "element": "Ca",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Calcium?",
+    "answers": [
+      "Cax",
+      "Ca",
+      "C",
+      "Option 94"
+    ],
+    "correct_answer": "Ca",
+    "points": 1
+  },
+  {
+    "id": "num_20",
+    "element": "Ca",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Calcium?",
+    "answers": [
+      "22",
+      "21",
+      "20",
+      "19"
+    ],
+    "correct_answer": "20",
+    "points": 2
+  },
+  {
+    "id": "grp_20",
+    "element": "Ca",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Calcium belong to?",
+    "answers": [
+      "2",
+      "3",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_21",
+    "element": "Sc",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Scandium?",
+    "answers": [
+      "Scx",
+      "Sc",
+      "S",
+      "Option 68"
+    ],
+    "correct_answer": "Sc",
+    "points": 1
+  },
+  {
+    "id": "num_21",
+    "element": "Sc",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Scandium?",
+    "answers": [
+      "22",
+      "21",
+      "23",
+      "20"
+    ],
+    "correct_answer": "21",
+    "points": 2
+  },
+  {
+    "id": "grp_21",
+    "element": "Sc",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Scandium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_22",
+    "element": "Ti",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Titanium?",
+    "answers": [
+      "Tix",
+      "T",
+      "Ti",
+      "Option 22"
+    ],
+    "correct_answer": "Ti",
+    "points": 1
+  },
+  {
+    "id": "num_22",
+    "element": "Ti",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Titanium?",
+    "answers": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correct_answer": "22",
+    "points": 2
+  },
+  {
+    "id": "grp_22",
+    "element": "Ti",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Titanium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "5",
+      "Transition"
+    ],
+    "correct_answer": "4",
+    "points": 3
+  },
+  {
+    "id": "sym_23",
+    "element": "V",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Vanadium?",
+    "answers": [
+      "Va",
+      "Vx",
+      "V",
+      "Option 41"
+    ],
+    "correct_answer": "V",
+    "points": 1
+  },
+  {
+    "id": "num_23",
+    "element": "V",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Vanadium?",
+    "answers": [
+      "25",
+      "22",
+      "24",
+      "23"
+    ],
+    "correct_answer": "23",
+    "points": 2
+  },
+  {
+    "id": "grp_23",
+    "element": "V",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Vanadium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "6",
+      "5"
+    ],
+    "correct_answer": "5",
+    "points": 3
+  },
+  {
+    "id": "sym_24",
+    "element": "Cr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Chromium?",
+    "answers": [
+      "Crx",
+      "Ch",
+      "C",
+      "Cr"
+    ],
+    "correct_answer": "Cr",
+    "points": 1
+  },
+  {
+    "id": "num_24",
+    "element": "Cr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Chromium?",
+    "answers": [
+      "24",
+      "25",
+      "23",
+      "26"
+    ],
+    "correct_answer": "24",
+    "points": 2
+  },
+  {
+    "id": "grp_24",
+    "element": "Cr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Chromium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "7",
+      "6"
+    ],
+    "correct_answer": "6",
+    "points": 3
+  },
+  {
+    "id": "sym_25",
+    "element": "Mn",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Manganese?",
+    "answers": [
+      "Mn",
+      "Ma",
+      "M",
+      "Mnx"
+    ],
+    "correct_answer": "Mn",
+    "points": 1
+  },
+  {
+    "id": "num_25",
+    "element": "Mn",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Manganese?",
+    "answers": [
+      "27",
+      "25",
+      "26",
+      "24"
+    ],
+    "correct_answer": "25",
+    "points": 2
+  },
+  {
+    "id": "grp_25",
+    "element": "Mn",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Manganese belong to?",
+    "answers": [
+      "8",
+      "7",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "7",
+    "points": 3
+  },
+  {
+    "id": "sym_26",
+    "element": "Fe",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Iron?",
+    "answers": [
+      "Fe",
+      "F",
+      "Ir",
+      "Fex"
+    ],
+    "correct_answer": "Fe",
+    "points": 1
+  },
+  {
+    "id": "num_26",
+    "element": "Fe",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Iron?",
+    "answers": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "correct_answer": "26",
+    "points": 2
+  },
+  {
+    "id": "grp_26",
+    "element": "Fe",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Iron belong to?",
+    "answers": [
+      "Halogen",
+      "9",
+      "8",
+      "Transition"
+    ],
+    "correct_answer": "8",
+    "points": 3
+  },
+  {
+    "id": "sym_27",
+    "element": "Co",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Cobalt?",
+    "answers": [
+      "Cox",
+      "C",
+      "Co",
+      "Option 96"
+    ],
+    "correct_answer": "Co",
+    "points": 1
+  },
+  {
+    "id": "num_27",
+    "element": "Co",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Cobalt?",
+    "answers": [
+      "29",
+      "26",
+      "28",
+      "27"
+    ],
+    "correct_answer": "27",
+    "points": 2
+  },
+  {
+    "id": "grp_27",
+    "element": "Co",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Cobalt belong to?",
+    "answers": [
+      "Transition",
+      "10",
+      "Halogen",
+      "9"
+    ],
+    "correct_answer": "9",
+    "points": 3
+  },
+  {
+    "id": "sym_28",
+    "element": "Ni",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Nickel?",
+    "answers": [
+      "Nix",
+      "N",
+      "Ni",
+      "Option 1"
+    ],
+    "correct_answer": "Ni",
+    "points": 1
+  },
+  {
+    "id": "num_28",
+    "element": "Ni",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Nickel?",
+    "answers": [
+      "27",
+      "28",
+      "30",
+      "29"
+    ],
+    "correct_answer": "28",
+    "points": 2
+  },
+  {
+    "id": "grp_28",
+    "element": "Ni",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Nickel belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "10",
+      "11"
+    ],
+    "correct_answer": "10",
+    "points": 3
+  },
+  {
+    "id": "sym_29",
+    "element": "Cu",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Copper?",
+    "answers": [
+      "Co",
+      "Cux",
+      "C",
+      "Cu"
+    ],
+    "correct_answer": "Cu",
+    "points": 1
+  },
+  {
+    "id": "num_29",
+    "element": "Cu",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Copper?",
+    "answers": [
+      "29",
+      "30",
+      "28",
+      "31"
+    ],
+    "correct_answer": "29",
+    "points": 2
+  },
+  {
+    "id": "grp_29",
+    "element": "Cu",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Copper belong to?",
+    "answers": [
+      "11",
+      "12",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "11",
+    "points": 3
+  },
+  {
+    "id": "sym_30",
+    "element": "Zn",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Zinc?",
+    "answers": [
+      "Znx",
+      "Zi",
+      "Z",
+      "Zn"
+    ],
+    "correct_answer": "Zn",
+    "points": 1
+  },
+  {
+    "id": "num_30",
+    "element": "Zn",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Zinc?",
+    "answers": [
+      "30",
+      "29",
+      "31",
+      "32"
+    ],
+    "correct_answer": "30",
+    "points": 2
+  },
+  {
+    "id": "grp_30",
+    "element": "Zn",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Zinc belong to?",
+    "answers": [
+      "Halogen",
+      "13",
+      "Transition",
+      "12"
+    ],
+    "correct_answer": "12",
+    "points": 3
+  },
+  {
+    "id": "sym_31",
+    "element": "Ga",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Gallium?",
+    "answers": [
+      "Gax",
+      "G",
+      "Ga",
+      "Option 81"
+    ],
+    "correct_answer": "Ga",
+    "points": 1
+  },
+  {
+    "id": "num_31",
+    "element": "Ga",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Gallium?",
+    "answers": [
+      "33",
+      "32",
+      "31",
+      "30"
+    ],
+    "correct_answer": "31",
+    "points": 2
+  },
+  {
+    "id": "grp_31",
+    "element": "Ga",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Gallium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "14",
+      "13"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_32",
+    "element": "Ge",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Germanium?",
+    "answers": [
+      "Gex",
+      "G",
+      "Ge",
+      "Option 64"
+    ],
+    "correct_answer": "Ge",
+    "points": 1
+  },
+  {
+    "id": "num_32",
+    "element": "Ge",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Germanium?",
+    "answers": [
+      "32",
+      "33",
+      "34",
+      "31"
+    ],
+    "correct_answer": "32",
+    "points": 2
+  },
+  {
+    "id": "grp_32",
+    "element": "Ge",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Germanium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "15",
+      "14"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_33",
+    "element": "As",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Arsenic?",
+    "answers": [
+      "As",
+      "Ar",
+      "Asx",
+      "A"
+    ],
+    "correct_answer": "As",
+    "points": 1
+  },
+  {
+    "id": "num_33",
+    "element": "As",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Arsenic?",
+    "answers": [
+      "33",
+      "34",
+      "32",
+      "35"
+    ],
+    "correct_answer": "33",
+    "points": 2
+  },
+  {
+    "id": "grp_33",
+    "element": "As",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Arsenic belong to?",
+    "answers": [
+      "15",
+      "16",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_34",
+    "element": "Se",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Selenium?",
+    "answers": [
+      "Se",
+      "S",
+      "Sex",
+      "Option 99"
+    ],
+    "correct_answer": "Se",
+    "points": 1
+  },
+  {
+    "id": "num_34",
+    "element": "Se",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Selenium?",
+    "answers": [
+      "36",
+      "34",
+      "35",
+      "33"
+    ],
+    "correct_answer": "34",
+    "points": 2
+  },
+  {
+    "id": "grp_34",
+    "element": "Se",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Selenium belong to?",
+    "answers": [
+      "Halogen",
+      "17",
+      "16",
+      "Transition"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_35",
+    "element": "Br",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Bromine?",
+    "answers": [
+      "Brx",
+      "B",
+      "Br",
+      "Option 18"
+    ],
+    "correct_answer": "Br",
+    "points": 1
+  },
+  {
+    "id": "num_35",
+    "element": "Br",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Bromine?",
+    "answers": [
+      "37",
+      "35",
+      "36",
+      "34"
+    ],
+    "correct_answer": "35",
+    "points": 2
+  },
+  {
+    "id": "grp_35",
+    "element": "Br",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Bromine belong to?",
+    "answers": [
+      "Transition",
+      "18",
+      "Halogen",
+      "17"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_36",
+    "element": "Kr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Krypton?",
+    "answers": [
+      "Kr",
+      "K",
+      "Krx",
+      "Option 73"
+    ],
+    "correct_answer": "Kr",
+    "points": 1
+  },
+  {
+    "id": "num_36",
+    "element": "Kr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Krypton?",
+    "answers": [
+      "38",
+      "35",
+      "37",
+      "36"
+    ],
+    "correct_answer": "36",
+    "points": 2
+  },
+  {
+    "id": "grp_36",
+    "element": "Kr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Krypton belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "19",
+      "18"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_37",
+    "element": "Rb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Rubidium?",
+    "answers": [
+      "Ru",
+      "Rb",
+      "R",
+      "Rbx"
+    ],
+    "correct_answer": "Rb",
+    "points": 1
+  },
+  {
+    "id": "num_37",
+    "element": "Rb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Rubidium?",
+    "answers": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "correct_answer": "37",
+    "points": 2
+  },
+  {
+    "id": "grp_37",
+    "element": "Rb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Rubidium belong to?",
+    "answers": [
+      "1",
+      "2",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_38",
+    "element": "Sr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Strontium?",
+    "answers": [
+      "Sr",
+      "St",
+      "S",
+      "Srx"
+    ],
+    "correct_answer": "Sr",
+    "points": 1
+  },
+  {
+    "id": "num_38",
+    "element": "Sr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Strontium?",
+    "answers": [
+      "40",
+      "37",
+      "39",
+      "38"
+    ],
+    "correct_answer": "38",
+    "points": 2
+  },
+  {
+    "id": "grp_38",
+    "element": "Sr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Strontium belong to?",
+    "answers": [
+      "Transition",
+      "3",
+      "Halogen",
+      "2"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_39",
+    "element": "Y",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Yttrium?",
+    "answers": [
+      "Yt",
+      "Yx",
+      "Y",
+      "Option 44"
+    ],
+    "correct_answer": "Y",
+    "points": 1
+  },
+  {
+    "id": "num_39",
+    "element": "Y",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Yttrium?",
+    "answers": [
+      "39",
+      "38",
+      "41",
+      "40"
+    ],
+    "correct_answer": "39",
+    "points": 2
+  },
+  {
+    "id": "grp_39",
+    "element": "Y",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Yttrium belong to?",
+    "answers": [
+      "Transition",
+      "4",
+      "Halogen",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_40",
+    "element": "Zr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Zirconium?",
+    "answers": [
+      "Zr",
+      "Zi",
+      "Zrx",
+      "Z"
+    ],
+    "correct_answer": "Zr",
+    "points": 1
+  },
+  {
+    "id": "num_40",
+    "element": "Zr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Zirconium?",
+    "answers": [
+      "40",
+      "41",
+      "42",
+      "39"
+    ],
+    "correct_answer": "40",
+    "points": 2
+  },
+  {
+    "id": "grp_40",
+    "element": "Zr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Zirconium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "Transition",
+      "5"
+    ],
+    "correct_answer": "4",
+    "points": 3
+  },
+  {
+    "id": "sym_41",
+    "element": "Nb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Niobium?",
+    "answers": [
+      "Nb",
+      "N",
+      "Nbx",
+      "Ni"
+    ],
+    "correct_answer": "Nb",
+    "points": 1
+  },
+  {
+    "id": "num_41",
+    "element": "Nb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Niobium?",
+    "answers": [
+      "42",
+      "40",
+      "43",
+      "41"
+    ],
+    "correct_answer": "41",
+    "points": 2
+  },
+  {
+    "id": "grp_41",
+    "element": "Nb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Niobium belong to?",
+    "answers": [
+      "6",
+      "5",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "5",
+    "points": 3
+  },
+  {
+    "id": "sym_42",
+    "element": "Mo",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Molybdenum?",
+    "answers": [
+      "Mox",
+      "M",
+      "Mo",
+      "Option 57"
+    ],
+    "correct_answer": "Mo",
+    "points": 1
+  },
+  {
+    "id": "num_42",
+    "element": "Mo",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Molybdenum?",
+    "answers": [
+      "42",
+      "43",
+      "44",
+      "41"
+    ],
+    "correct_answer": "42",
+    "points": 2
+  },
+  {
+    "id": "grp_42",
+    "element": "Mo",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Molybdenum belong to?",
+    "answers": [
+      "7",
+      "6",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "6",
+    "points": 3
+  },
+  {
+    "id": "sym_43",
+    "element": "Tc",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Technetium?",
+    "answers": [
+      "Tc",
+      "T",
+      "Tcx",
+      "Te"
+    ],
+    "correct_answer": "Tc",
+    "points": 1
+  },
+  {
+    "id": "num_43",
+    "element": "Tc",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Technetium?",
+    "answers": [
+      "45",
+      "42",
+      "44",
+      "43"
+    ],
+    "correct_answer": "43",
+    "points": 2
+  },
+  {
+    "id": "grp_43",
+    "element": "Tc",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Technetium belong to?",
+    "answers": [
+      "7",
+      "Transition",
+      "Halogen",
+      "8"
+    ],
+    "correct_answer": "7",
+    "points": 3
+  },
+  {
+    "id": "sym_44",
+    "element": "Ru",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Ruthenium?",
+    "answers": [
+      "Ru",
+      "R",
+      "Rux",
+      "Option 80"
+    ],
+    "correct_answer": "Ru",
+    "points": 1
+  },
+  {
+    "id": "num_44",
+    "element": "Ru",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Ruthenium?",
+    "answers": [
+      "43",
+      "45",
+      "44",
+      "46"
+    ],
+    "correct_answer": "44",
+    "points": 2
+  },
+  {
+    "id": "grp_44",
+    "element": "Ru",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Ruthenium belong to?",
+    "answers": [
+      "8",
+      "9",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "8",
+    "points": 3
+  },
+  {
+    "id": "sym_45",
+    "element": "Rh",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Rhodium?",
+    "answers": [
+      "Rhx",
+      "Rh",
+      "R",
+      "Option 91"
+    ],
+    "correct_answer": "Rh",
+    "points": 1
+  },
+  {
+    "id": "num_45",
+    "element": "Rh",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Rhodium?",
+    "answers": [
+      "47",
+      "44",
+      "46",
+      "45"
+    ],
+    "correct_answer": "45",
+    "points": 2
+  },
+  {
+    "id": "grp_45",
+    "element": "Rh",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Rhodium belong to?",
+    "answers": [
+      "Transition",
+      "10",
+      "9",
+      "Halogen"
+    ],
+    "correct_answer": "9",
+    "points": 3
+  },
+  {
+    "id": "sym_46",
+    "element": "Pd",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Palladium?",
+    "answers": [
+      "Pa",
+      "Pdx",
+      "P",
+      "Pd"
+    ],
+    "correct_answer": "Pd",
+    "points": 1
+  },
+  {
+    "id": "num_46",
+    "element": "Pd",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Palladium?",
+    "answers": [
+      "47",
+      "46",
+      "48",
+      "45"
+    ],
+    "correct_answer": "46",
+    "points": 2
+  },
+  {
+    "id": "grp_46",
+    "element": "Pd",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Palladium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "11",
+      "10"
+    ],
+    "correct_answer": "10",
+    "points": 3
+  },
+  {
+    "id": "sym_47",
+    "element": "Ag",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Silver?",
+    "answers": [
+      "Si",
+      "Agx",
+      "A",
+      "Ag"
+    ],
+    "correct_answer": "Ag",
+    "points": 1
+  },
+  {
+    "id": "num_47",
+    "element": "Ag",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Silver?",
+    "answers": [
+      "47",
+      "48",
+      "46",
+      "49"
+    ],
+    "correct_answer": "47",
+    "points": 2
+  },
+  {
+    "id": "grp_47",
+    "element": "Ag",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Silver belong to?",
+    "answers": [
+      "Transition",
+      "11",
+      "Halogen",
+      "12"
+    ],
+    "correct_answer": "11",
+    "points": 3
+  },
+  {
+    "id": "sym_48",
+    "element": "Cd",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Cadmium?",
+    "answers": [
+      "Cd",
+      "Cdx",
+      "Ca",
+      "C"
+    ],
+    "correct_answer": "Cd",
+    "points": 1
+  },
+  {
+    "id": "num_48",
+    "element": "Cd",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Cadmium?",
+    "answers": [
+      "50",
+      "49",
+      "48",
+      "47"
+    ],
+    "correct_answer": "48",
+    "points": 2
+  },
+  {
+    "id": "grp_48",
+    "element": "Cd",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Cadmium belong to?",
+    "answers": [
+      "12",
+      "Halogen",
+      "13",
+      "Transition"
+    ],
+    "correct_answer": "12",
+    "points": 3
+  },
+  {
+    "id": "sym_49",
+    "element": "In",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Indium?",
+    "answers": [
+      "In",
+      "I",
+      "Inx",
+      "Option 27"
+    ],
+    "correct_answer": "In",
+    "points": 1
+  },
+  {
+    "id": "num_49",
+    "element": "In",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Indium?",
+    "answers": [
+      "51",
+      "48",
+      "50",
+      "49"
+    ],
+    "correct_answer": "49",
+    "points": 2
+  },
+  {
+    "id": "grp_49",
+    "element": "In",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Indium belong to?",
+    "answers": [
+      "Halogen",
+      "13",
+      "14",
+      "Transition"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_50",
+    "element": "Sn",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Tin?",
+    "answers": [
+      "Sn",
+      "S",
+      "Snx",
+      "Ti"
+    ],
+    "correct_answer": "Sn",
+    "points": 1
+  },
+  {
+    "id": "num_50",
+    "element": "Sn",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Tin?",
+    "answers": [
+      "49",
+      "51",
+      "50",
+      "52"
+    ],
+    "correct_answer": "50",
+    "points": 2
+  },
+  {
+    "id": "grp_50",
+    "element": "Sn",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Tin belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "15",
+      "14"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_51",
+    "element": "Sb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Antimony?",
+    "answers": [
+      "Sb",
+      "An",
+      "S",
+      "Sbx"
+    ],
+    "correct_answer": "Sb",
+    "points": 1
+  },
+  {
+    "id": "num_51",
+    "element": "Sb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Antimony?",
+    "answers": [
+      "53",
+      "50",
+      "52",
+      "51"
+    ],
+    "correct_answer": "51",
+    "points": 2
+  },
+  {
+    "id": "grp_51",
+    "element": "Sb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Antimony belong to?",
+    "answers": [
+      "16",
+      "15",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_52",
+    "element": "Te",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Tellurium?",
+    "answers": [
+      "Te",
+      "T",
+      "Tex",
+      "Option 10"
+    ],
+    "correct_answer": "Te",
+    "points": 1
+  },
+  {
+    "id": "num_52",
+    "element": "Te",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Tellurium?",
+    "answers": [
+      "53",
+      "52",
+      "54",
+      "51"
+    ],
+    "correct_answer": "52",
+    "points": 2
+  },
+  {
+    "id": "grp_52",
+    "element": "Te",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Tellurium belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "17",
+      "16"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_53",
+    "element": "I",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Iodine?",
+    "answers": [
+      "Io",
+      "Ix",
+      "I",
+      "Option 83"
+    ],
+    "correct_answer": "I",
+    "points": 1
+  },
+  {
+    "id": "num_53",
+    "element": "I",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Iodine?",
+    "answers": [
+      "55",
+      "52",
+      "54",
+      "53"
+    ],
+    "correct_answer": "53",
+    "points": 2
+  },
+  {
+    "id": "grp_53",
+    "element": "I",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Iodine belong to?",
+    "answers": [
+      "18",
+      "Transition",
+      "Halogen",
+      "17"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_54",
+    "element": "Xe",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Xenon?",
+    "answers": [
+      "Xex",
+      "X",
+      "Xe",
+      "Option 36"
+    ],
+    "correct_answer": "Xe",
+    "points": 1
+  },
+  {
+    "id": "num_54",
+    "element": "Xe",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Xenon?",
+    "answers": [
+      "54",
+      "56",
+      "55",
+      "53"
+    ],
+    "correct_answer": "54",
+    "points": 2
+  },
+  {
+    "id": "grp_54",
+    "element": "Xe",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Xenon belong to?",
+    "answers": [
+      "Transition",
+      "18",
+      "19",
+      "Halogen"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_55",
+    "element": "Cs",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Cesium?",
+    "answers": [
+      "Cs",
+      "C",
+      "Csx",
+      "Ce"
+    ],
+    "correct_answer": "Cs",
+    "points": 1
+  },
+  {
+    "id": "num_55",
+    "element": "Cs",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Cesium?",
+    "answers": [
+      "55",
+      "56",
+      "54",
+      "57"
+    ],
+    "correct_answer": "55",
+    "points": 2
+  },
+  {
+    "id": "grp_55",
+    "element": "Cs",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Cesium belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "2",
+      "1"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_56",
+    "element": "Ba",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Barium?",
+    "answers": [
+      "Bax",
+      "Ba",
+      "B",
+      "Option 76"
+    ],
+    "correct_answer": "Ba",
+    "points": 1
+  },
+  {
+    "id": "num_56",
+    "element": "Ba",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Barium?",
+    "answers": [
+      "58",
+      "55",
+      "57",
+      "56"
+    ],
+    "correct_answer": "56",
+    "points": 2
+  },
+  {
+    "id": "grp_56",
+    "element": "Ba",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Barium belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "3",
+      "2"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_57",
+    "element": "La",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Lanthanum?",
+    "answers": [
+      "L",
+      "La",
+      "Lax",
+      "Option 35"
+    ],
+    "correct_answer": "La",
+    "points": 1
+  },
+  {
+    "id": "num_57",
+    "element": "La",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Lanthanum?",
+    "answers": [
+      "56",
+      "58",
+      "59",
+      "57"
+    ],
+    "correct_answer": "57",
+    "points": 2
+  },
+  {
+    "id": "grp_57",
+    "element": "La",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Lanthanum belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_58",
+    "element": "Ce",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Cerium?",
+    "answers": [
+      "Ce",
+      "C",
+      "Cex",
+      "Option 82"
+    ],
+    "correct_answer": "Ce",
+    "points": 1
+  },
+  {
+    "id": "num_58",
+    "element": "Ce",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Cerium?",
+    "answers": [
+      "59",
+      "57",
+      "60",
+      "58"
+    ],
+    "correct_answer": "58",
+    "points": 2
+  },
+  {
+    "id": "grp_58",
+    "element": "Ce",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Cerium belong to?",
+    "answers": [
+      "4",
+      "3",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_59",
+    "element": "Pr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Praseodymium?",
+    "answers": [
+      "Pr",
+      "P",
+      "Prx",
+      "Option 49"
+    ],
+    "correct_answer": "Pr",
+    "points": 1
+  },
+  {
+    "id": "num_59",
+    "element": "Pr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Praseodymium?",
+    "answers": [
+      "60",
+      "59",
+      "61",
+      "58"
+    ],
+    "correct_answer": "59",
+    "points": 2
+  },
+  {
+    "id": "grp_59",
+    "element": "Pr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Praseodymium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_60",
+    "element": "Nd",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Neodymium?",
+    "answers": [
+      "Ne",
+      "Ndx",
+      "N",
+      "Nd"
+    ],
+    "correct_answer": "Nd",
+    "points": 1
+  },
+  {
+    "id": "num_60",
+    "element": "Nd",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Neodymium?",
+    "answers": [
+      "60",
+      "61",
+      "59",
+      "62"
+    ],
+    "correct_answer": "60",
+    "points": 2
+  },
+  {
+    "id": "grp_60",
+    "element": "Nd",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Neodymium belong to?",
+    "answers": [
+      "4",
+      "Transition",
+      "Halogen",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_61",
+    "element": "Pm",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Promethium?",
+    "answers": [
+      "Pm",
+      "Pr",
+      "P",
+      "Pmx"
+    ],
+    "correct_answer": "Pm",
+    "points": 1
+  },
+  {
+    "id": "num_61",
+    "element": "Pm",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Promethium?",
+    "answers": [
+      "60",
+      "63",
+      "62",
+      "61"
+    ],
+    "correct_answer": "61",
+    "points": 2
+  },
+  {
+    "id": "grp_61",
+    "element": "Pm",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Promethium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_62",
+    "element": "Sm",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Samarium?",
+    "answers": [
+      "Sa",
+      "Sm",
+      "S",
+      "Smx"
+    ],
+    "correct_answer": "Sm",
+    "points": 1
+  },
+  {
+    "id": "num_62",
+    "element": "Sm",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Samarium?",
+    "answers": [
+      "64",
+      "61",
+      "63",
+      "62"
+    ],
+    "correct_answer": "62",
+    "points": 2
+  },
+  {
+    "id": "grp_62",
+    "element": "Sm",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Samarium belong to?",
+    "answers": [
+      "4",
+      "3",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_63",
+    "element": "Eu",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Europium?",
+    "answers": [
+      "Eux",
+      "E",
+      "Eu",
+      "Option 62"
+    ],
+    "correct_answer": "Eu",
+    "points": 1
+  },
+  {
+    "id": "num_63",
+    "element": "Eu",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Europium?",
+    "answers": [
+      "64",
+      "65",
+      "63",
+      "62"
+    ],
+    "correct_answer": "63",
+    "points": 2
+  },
+  {
+    "id": "grp_63",
+    "element": "Eu",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Europium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "3",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_64",
+    "element": "Gd",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Gadolinium?",
+    "answers": [
+      "G",
+      "Ga",
+      "Gd",
+      "Gdx"
+    ],
+    "correct_answer": "Gd",
+    "points": 1
+  },
+  {
+    "id": "num_64",
+    "element": "Gd",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Gadolinium?",
+    "answers": [
+      "64",
+      "65",
+      "66",
+      "63"
+    ],
+    "correct_answer": "64",
+    "points": 2
+  },
+  {
+    "id": "grp_64",
+    "element": "Gd",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Gadolinium belong to?",
+    "answers": [
+      "Halogen",
+      "3",
+      "Transition",
+      "4"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_65",
+    "element": "Tb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Terbium?",
+    "answers": [
+      "Te",
+      "Tbx",
+      "T",
+      "Tb"
+    ],
+    "correct_answer": "Tb",
+    "points": 1
+  },
+  {
+    "id": "num_65",
+    "element": "Tb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Terbium?",
+    "answers": [
+      "64",
+      "67",
+      "65",
+      "66"
+    ],
+    "correct_answer": "65",
+    "points": 2
+  },
+  {
+    "id": "grp_65",
+    "element": "Tb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Terbium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "Transition",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_66",
+    "element": "Dy",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Dysprosium?",
+    "answers": [
+      "Dyx",
+      "D",
+      "Dy",
+      "Option 86"
+    ],
+    "correct_answer": "Dy",
+    "points": 1
+  },
+  {
+    "id": "num_66",
+    "element": "Dy",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Dysprosium?",
+    "answers": [
+      "68",
+      "65",
+      "67",
+      "66"
+    ],
+    "correct_answer": "66",
+    "points": 2
+  },
+  {
+    "id": "grp_66",
+    "element": "Dy",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Dysprosium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_67",
+    "element": "Ho",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Holmium?",
+    "answers": [
+      "Ho",
+      "H",
+      "Hox",
+      "Option 4"
+    ],
+    "correct_answer": "Ho",
+    "points": 1
+  },
+  {
+    "id": "num_67",
+    "element": "Ho",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Holmium?",
+    "answers": [
+      "66",
+      "69",
+      "68",
+      "67"
+    ],
+    "correct_answer": "67",
+    "points": 2
+  },
+  {
+    "id": "grp_67",
+    "element": "Ho",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Holmium belong to?",
+    "answers": [
+      "Halogen",
+      "3",
+      "4",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_68",
+    "element": "Er",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Erbium?",
+    "answers": [
+      "Er",
+      "E",
+      "Erx",
+      "Option 65"
+    ],
+    "correct_answer": "Er",
+    "points": 1
+  },
+  {
+    "id": "num_68",
+    "element": "Er",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Erbium?",
+    "answers": [
+      "68",
+      "69",
+      "67",
+      "70"
+    ],
+    "correct_answer": "68",
+    "points": 2
+  },
+  {
+    "id": "grp_68",
+    "element": "Er",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Erbium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "3",
+      "4"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_69",
+    "element": "Tm",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Thulium?",
+    "answers": [
+      "Th",
+      "Tmx",
+      "T",
+      "Tm"
+    ],
+    "correct_answer": "Tm",
+    "points": 1
+  },
+  {
+    "id": "num_69",
+    "element": "Tm",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Thulium?",
+    "answers": [
+      "68",
+      "69",
+      "71",
+      "70"
+    ],
+    "correct_answer": "69",
+    "points": 2
+  },
+  {
+    "id": "grp_69",
+    "element": "Tm",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Thulium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_70",
+    "element": "Yb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Ytterbium?",
+    "answers": [
+      "Yb",
+      "Ybx",
+      "Yt",
+      "Y"
+    ],
+    "correct_answer": "Yb",
+    "points": 1
+  },
+  {
+    "id": "num_70",
+    "element": "Yb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Ytterbium?",
+    "answers": [
+      "69",
+      "70",
+      "71",
+      "72"
+    ],
+    "correct_answer": "70",
+    "points": 2
+  },
+  {
+    "id": "grp_70",
+    "element": "Yb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Ytterbium belong to?",
+    "answers": [
+      "Transition",
+      "3",
+      "Halogen",
+      "4"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_71",
+    "element": "Lu",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Lutetium?",
+    "answers": [
+      "Lu",
+      "L",
+      "Lux",
+      "Option 3"
+    ],
+    "correct_answer": "Lu",
+    "points": 1
+  },
+  {
+    "id": "num_71",
+    "element": "Lu",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Lutetium?",
+    "answers": [
+      "70",
+      "72",
+      "71",
+      "73"
+    ],
+    "correct_answer": "71",
+    "points": 2
+  },
+  {
+    "id": "grp_71",
+    "element": "Lu",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Lutetium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "3",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_72",
+    "element": "Hf",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Hafnium?",
+    "answers": [
+      "Ha",
+      "Hfx",
+      "H",
+      "Hf"
+    ],
+    "correct_answer": "Hf",
+    "points": 1
+  },
+  {
+    "id": "num_72",
+    "element": "Hf",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Hafnium?",
+    "answers": [
+      "72",
+      "74",
+      "73",
+      "71"
+    ],
+    "correct_answer": "72",
+    "points": 2
+  },
+  {
+    "id": "grp_72",
+    "element": "Hf",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Hafnium belong to?",
+    "answers": [
+      "Halogen",
+      "5",
+      "4",
+      "Transition"
+    ],
+    "correct_answer": "4",
+    "points": 3
+  },
+  {
+    "id": "sym_73",
+    "element": "Ta",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Tantalum?",
+    "answers": [
+      "Ta",
+      "T",
+      "Tax",
+      "Option 78"
+    ],
+    "correct_answer": "Ta",
+    "points": 1
+  },
+  {
+    "id": "num_73",
+    "element": "Ta",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Tantalum?",
+    "answers": [
+      "72",
+      "74",
+      "73",
+      "75"
+    ],
+    "correct_answer": "73",
+    "points": 2
+  },
+  {
+    "id": "grp_73",
+    "element": "Ta",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Tantalum belong to?",
+    "answers": [
+      "Halogen",
+      "5",
+      "6",
+      "Transition"
+    ],
+    "correct_answer": "5",
+    "points": 3
+  },
+  {
+    "id": "sym_74",
+    "element": "W",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Tungsten?",
+    "answers": [
+      "Tu",
+      "Wx",
+      "W",
+      "Option 58"
+    ],
+    "correct_answer": "W",
+    "points": 1
+  },
+  {
+    "id": "num_74",
+    "element": "W",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Tungsten?",
+    "answers": [
+      "76",
+      "73",
+      "75",
+      "74"
+    ],
+    "correct_answer": "74",
+    "points": 2
+  },
+  {
+    "id": "grp_74",
+    "element": "W",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Tungsten belong to?",
+    "answers": [
+      "Halogen",
+      "6",
+      "7",
+      "Transition"
+    ],
+    "correct_answer": "6",
+    "points": 3
+  },
+  {
+    "id": "sym_75",
+    "element": "Re",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Rhenium?",
+    "answers": [
+      "Rex",
+      "R",
+      "Rh",
+      "Re"
+    ],
+    "correct_answer": "Re",
+    "points": 1
+  },
+  {
+    "id": "num_75",
+    "element": "Re",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Rhenium?",
+    "answers": [
+      "77",
+      "74",
+      "75",
+      "76"
+    ],
+    "correct_answer": "75",
+    "points": 2
+  },
+  {
+    "id": "grp_75",
+    "element": "Re",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Rhenium belong to?",
+    "answers": [
+      "7",
+      "8",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "7",
+    "points": 3
+  },
+  {
+    "id": "sym_76",
+    "element": "Os",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Osmium?",
+    "answers": [
+      "Osx",
+      "O",
+      "Os",
+      "Option 73"
+    ],
+    "correct_answer": "Os",
+    "points": 1
+  },
+  {
+    "id": "num_76",
+    "element": "Os",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Osmium?",
+    "answers": [
+      "78",
+      "75",
+      "77",
+      "76"
+    ],
+    "correct_answer": "76",
+    "points": 2
+  },
+  {
+    "id": "grp_76",
+    "element": "Os",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Osmium belong to?",
+    "answers": [
+      "Transition",
+      "8",
+      "Halogen",
+      "9"
+    ],
+    "correct_answer": "8",
+    "points": 3
+  },
+  {
+    "id": "sym_77",
+    "element": "Ir",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Iridium?",
+    "answers": [
+      "Irx",
+      "Ir",
+      "I",
+      "Option 15"
+    ],
+    "correct_answer": "Ir",
+    "points": 1
+  },
+  {
+    "id": "num_77",
+    "element": "Ir",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Iridium?",
+    "answers": [
+      "77",
+      "78",
+      "79",
+      "76"
+    ],
+    "correct_answer": "77",
+    "points": 2
+  },
+  {
+    "id": "grp_77",
+    "element": "Ir",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Iridium belong to?",
+    "answers": [
+      "Transition",
+      "10",
+      "9",
+      "Halogen"
+    ],
+    "correct_answer": "9",
+    "points": 3
+  },
+  {
+    "id": "sym_78",
+    "element": "Pt",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Platinum?",
+    "answers": [
+      "Ptx",
+      "Pl",
+      "Pt",
+      "P"
+    ],
+    "correct_answer": "Pt",
+    "points": 1
+  },
+  {
+    "id": "num_78",
+    "element": "Pt",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Platinum?",
+    "answers": [
+      "79",
+      "78",
+      "77",
+      "80"
+    ],
+    "correct_answer": "78",
+    "points": 2
+  },
+  {
+    "id": "grp_78",
+    "element": "Pt",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Platinum belong to?",
+    "answers": [
+      "Halogen",
+      "11",
+      "10",
+      "Transition"
+    ],
+    "correct_answer": "10",
+    "points": 3
+  },
+  {
+    "id": "sym_79",
+    "element": "Au",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Gold?",
+    "answers": [
+      "Go",
+      "Aux",
+      "A",
+      "Au"
+    ],
+    "correct_answer": "Au",
+    "points": 1
+  },
+  {
+    "id": "num_79",
+    "element": "Au",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Gold?",
+    "answers": [
+      "81",
+      "78",
+      "80",
+      "79"
+    ],
+    "correct_answer": "79",
+    "points": 2
+  },
+  {
+    "id": "grp_79",
+    "element": "Au",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Gold belong to?",
+    "answers": [
+      "12",
+      "11",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "11",
+    "points": 3
+  },
+  {
+    "id": "sym_80",
+    "element": "Hg",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Mercury?",
+    "answers": [
+      "Hg",
+      "H",
+      "Hgx",
+      "Me"
+    ],
+    "correct_answer": "Hg",
+    "points": 1
+  },
+  {
+    "id": "num_80",
+    "element": "Hg",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Mercury?",
+    "answers": [
+      "82",
+      "80",
+      "79",
+      "81"
+    ],
+    "correct_answer": "80",
+    "points": 2
+  },
+  {
+    "id": "grp_80",
+    "element": "Hg",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Mercury belong to?",
+    "answers": [
+      "Transition",
+      "13",
+      "12",
+      "Halogen"
+    ],
+    "correct_answer": "12",
+    "points": 3
+  },
+  {
+    "id": "sym_81",
+    "element": "Tl",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Thallium?",
+    "answers": [
+      "T",
+      "Tl",
+      "Tlx",
+      "Th"
+    ],
+    "correct_answer": "Tl",
+    "points": 1
+  },
+  {
+    "id": "num_81",
+    "element": "Tl",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Thallium?",
+    "answers": [
+      "82",
+      "80",
+      "81",
+      "83"
+    ],
+    "correct_answer": "81",
+    "points": 2
+  },
+  {
+    "id": "grp_81",
+    "element": "Tl",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Thallium belong to?",
+    "answers": [
+      "13",
+      "14",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_82",
+    "element": "Pb",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Lead?",
+    "answers": [
+      "Le",
+      "Pbx",
+      "P",
+      "Pb"
+    ],
+    "correct_answer": "Pb",
+    "points": 1
+  },
+  {
+    "id": "num_82",
+    "element": "Pb",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Lead?",
+    "answers": [
+      "83",
+      "82",
+      "81",
+      "84"
+    ],
+    "correct_answer": "82",
+    "points": 2
+  },
+  {
+    "id": "grp_82",
+    "element": "Pb",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Lead belong to?",
+    "answers": [
+      "Halogen",
+      "15",
+      "14",
+      "Transition"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_83",
+    "element": "Bi",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Bismuth?",
+    "answers": [
+      "Bi",
+      "B",
+      "Bix",
+      "Option 65"
+    ],
+    "correct_answer": "Bi",
+    "points": 1
+  },
+  {
+    "id": "num_83",
+    "element": "Bi",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Bismuth?",
+    "answers": [
+      "84",
+      "82",
+      "85",
+      "83"
+    ],
+    "correct_answer": "83",
+    "points": 2
+  },
+  {
+    "id": "grp_83",
+    "element": "Bi",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Bismuth belong to?",
+    "answers": [
+      "16",
+      "15",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_84",
+    "element": "Po",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Polonium?",
+    "answers": [
+      "Pox",
+      "P",
+      "Po",
+      "Option 15"
+    ],
+    "correct_answer": "Po",
+    "points": 1
+  },
+  {
+    "id": "num_84",
+    "element": "Po",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Polonium?",
+    "answers": [
+      "84",
+      "85",
+      "86",
+      "83"
+    ],
+    "correct_answer": "84",
+    "points": 2
+  },
+  {
+    "id": "grp_84",
+    "element": "Po",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Polonium belong to?",
+    "answers": [
+      "16",
+      "Halogen",
+      "17",
+      "Transition"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_85",
+    "element": "At",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Astatine?",
+    "answers": [
+      "A",
+      "As",
+      "Atx",
+      "At"
+    ],
+    "correct_answer": "At",
+    "points": 1
+  },
+  {
+    "id": "num_85",
+    "element": "At",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Astatine?",
+    "answers": [
+      "85",
+      "87",
+      "86",
+      "84"
+    ],
+    "correct_answer": "85",
+    "points": 2
+  },
+  {
+    "id": "grp_85",
+    "element": "At",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Astatine belong to?",
+    "answers": [
+      "17",
+      "Transition",
+      "18",
+      "Halogen"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_86",
+    "element": "Rn",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Radon?",
+    "answers": [
+      "Rnx",
+      "Ra",
+      "R",
+      "Rn"
+    ],
+    "correct_answer": "Rn",
+    "points": 1
+  },
+  {
+    "id": "num_86",
+    "element": "Rn",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Radon?",
+    "answers": [
+      "86",
+      "87",
+      "88",
+      "85"
+    ],
+    "correct_answer": "86",
+    "points": 2
+  },
+  {
+    "id": "grp_86",
+    "element": "Rn",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Radon belong to?",
+    "answers": [
+      "18",
+      "19",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_87",
+    "element": "Fr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Francium?",
+    "answers": [
+      "Frx",
+      "F",
+      "Fr",
+      "Option 23"
+    ],
+    "correct_answer": "Fr",
+    "points": 1
+  },
+  {
+    "id": "num_87",
+    "element": "Fr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Francium?",
+    "answers": [
+      "89",
+      "87",
+      "88",
+      "86"
+    ],
+    "correct_answer": "87",
+    "points": 2
+  },
+  {
+    "id": "grp_87",
+    "element": "Fr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Francium belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "2",
+      "1"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  },
+  {
+    "id": "sym_88",
+    "element": "Ra",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Radium?",
+    "answers": [
+      "Ra",
+      "R",
+      "Rax",
+      "Option 25"
+    ],
+    "correct_answer": "Ra",
+    "points": 1
+  },
+  {
+    "id": "num_88",
+    "element": "Ra",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Radium?",
+    "answers": [
+      "88",
+      "87",
+      "89",
+      "90"
+    ],
+    "correct_answer": "88",
+    "points": 2
+  },
+  {
+    "id": "grp_88",
+    "element": "Ra",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Radium belong to?",
+    "answers": [
+      "2",
+      "3",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "2",
+    "points": 3
+  },
+  {
+    "id": "sym_89",
+    "element": "Ac",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Actinium?",
+    "answers": [
+      "Acx",
+      "A",
+      "Ac",
+      "Option 33"
+    ],
+    "correct_answer": "Ac",
+    "points": 1
+  },
+  {
+    "id": "num_89",
+    "element": "Ac",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Actinium?",
+    "answers": [
+      "90",
+      "89",
+      "91",
+      "88"
+    ],
+    "correct_answer": "89",
+    "points": 2
+  },
+  {
+    "id": "grp_89",
+    "element": "Ac",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Actinium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_90",
+    "element": "Th",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Thorium?",
+    "answers": [
+      "Thx",
+      "T",
+      "Th",
+      "Option 69"
+    ],
+    "correct_answer": "Th",
+    "points": 1
+  },
+  {
+    "id": "num_90",
+    "element": "Th",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Thorium?",
+    "answers": [
+      "89",
+      "92",
+      "91",
+      "90"
+    ],
+    "correct_answer": "90",
+    "points": 2
+  },
+  {
+    "id": "grp_90",
+    "element": "Th",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Thorium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_91",
+    "element": "Pa",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Protactinium?",
+    "answers": [
+      "P",
+      "Pr",
+      "Pa",
+      "Pax"
+    ],
+    "correct_answer": "Pa",
+    "points": 1
+  },
+  {
+    "id": "num_91",
+    "element": "Pa",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Protactinium?",
+    "answers": [
+      "90",
+      "93",
+      "92",
+      "91"
+    ],
+    "correct_answer": "91",
+    "points": 2
+  },
+  {
+    "id": "grp_91",
+    "element": "Pa",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Protactinium belong to?",
+    "answers": [
+      "3",
+      "Transition",
+      "4",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_92",
+    "element": "U",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Uranium?",
+    "answers": [
+      "U",
+      "Ux",
+      "Ur",
+      "Option 21"
+    ],
+    "correct_answer": "U",
+    "points": 1
+  },
+  {
+    "id": "num_92",
+    "element": "U",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Uranium?",
+    "answers": [
+      "94",
+      "91",
+      "93",
+      "92"
+    ],
+    "correct_answer": "92",
+    "points": 2
+  },
+  {
+    "id": "grp_92",
+    "element": "U",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Uranium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_93",
+    "element": "Np",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Neptunium?",
+    "answers": [
+      "Np",
+      "N",
+      "Ne",
+      "Npx"
+    ],
+    "correct_answer": "Np",
+    "points": 1
+  },
+  {
+    "id": "num_93",
+    "element": "Np",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Neptunium?",
+    "answers": [
+      "93",
+      "94",
+      "95",
+      "92"
+    ],
+    "correct_answer": "93",
+    "points": 2
+  },
+  {
+    "id": "grp_93",
+    "element": "Np",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Neptunium belong to?",
+    "answers": [
+      "Halogen",
+      "3",
+      "4",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_94",
+    "element": "Pu",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Plutonium?",
+    "answers": [
+      "P",
+      "Pux",
+      "Pu",
+      "Pl"
+    ],
+    "correct_answer": "Pu",
+    "points": 1
+  },
+  {
+    "id": "num_94",
+    "element": "Pu",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Plutonium?",
+    "answers": [
+      "94",
+      "95",
+      "93",
+      "96"
+    ],
+    "correct_answer": "94",
+    "points": 2
+  },
+  {
+    "id": "grp_94",
+    "element": "Pu",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Plutonium belong to?",
+    "answers": [
+      "Transition",
+      "4",
+      "3",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_95",
+    "element": "Am",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Americium?",
+    "answers": [
+      "Am",
+      "Amx",
+      "A",
+      "Option 77"
+    ],
+    "correct_answer": "Am",
+    "points": 1
+  },
+  {
+    "id": "num_95",
+    "element": "Am",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Americium?",
+    "answers": [
+      "96",
+      "95",
+      "94",
+      "97"
+    ],
+    "correct_answer": "95",
+    "points": 2
+  },
+  {
+    "id": "grp_95",
+    "element": "Am",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Americium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_96",
+    "element": "Cm",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Curium?",
+    "answers": [
+      "Cmx",
+      "C",
+      "Cm",
+      "Cu"
+    ],
+    "correct_answer": "Cm",
+    "points": 1
+  },
+  {
+    "id": "num_96",
+    "element": "Cm",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Curium?",
+    "answers": [
+      "96",
+      "97",
+      "98",
+      "95"
+    ],
+    "correct_answer": "96",
+    "points": 2
+  },
+  {
+    "id": "grp_96",
+    "element": "Cm",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Curium belong to?",
+    "answers": [
+      "4",
+      "Halogen",
+      "3",
+      "Transition"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_97",
+    "element": "Bk",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Berkelium?",
+    "answers": [
+      "Bkx",
+      "Bk",
+      "B",
+      "Be"
+    ],
+    "correct_answer": "Bk",
+    "points": 1
+  },
+  {
+    "id": "num_97",
+    "element": "Bk",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Berkelium?",
+    "answers": [
+      "97",
+      "98",
+      "99",
+      "96"
+    ],
+    "correct_answer": "97",
+    "points": 2
+  },
+  {
+    "id": "grp_97",
+    "element": "Bk",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Berkelium belong to?",
+    "answers": [
+      "3",
+      "Transition",
+      "Halogen",
+      "4"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_98",
+    "element": "Cf",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Californium?",
+    "answers": [
+      "Cfx",
+      "C",
+      "Ca",
+      "Cf"
+    ],
+    "correct_answer": "Cf",
+    "points": 1
+  },
+  {
+    "id": "num_98",
+    "element": "Cf",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Californium?",
+    "answers": [
+      "98",
+      "99",
+      "100",
+      "97"
+    ],
+    "correct_answer": "98",
+    "points": 2
+  },
+  {
+    "id": "grp_98",
+    "element": "Cf",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Californium belong to?",
+    "answers": [
+      "3",
+      "4",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_99",
+    "element": "Es",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Einsteinium?",
+    "answers": [
+      "Es",
+      "E",
+      "Esx",
+      "Ei"
+    ],
+    "correct_answer": "Es",
+    "points": 1
+  },
+  {
+    "id": "num_99",
+    "element": "Es",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Einsteinium?",
+    "answers": [
+      "100",
+      "99",
+      "101",
+      "98"
+    ],
+    "correct_answer": "99",
+    "points": 2
+  },
+  {
+    "id": "grp_99",
+    "element": "Es",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Einsteinium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_100",
+    "element": "Fm",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Fermium?",
+    "answers": [
+      "Fe",
+      "Fmx",
+      "F",
+      "Fm"
+    ],
+    "correct_answer": "Fm",
+    "points": 1
+  },
+  {
+    "id": "num_100",
+    "element": "Fm",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Fermium?",
+    "answers": [
+      "99",
+      "102",
+      "101",
+      "100"
+    ],
+    "correct_answer": "100",
+    "points": 2
+  },
+  {
+    "id": "grp_100",
+    "element": "Fm",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Fermium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_101",
+    "element": "Md",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Mendelevium?",
+    "answers": [
+      "Me",
+      "M",
+      "Md",
+      "Mdx"
+    ],
+    "correct_answer": "Md",
+    "points": 1
+  },
+  {
+    "id": "num_101",
+    "element": "Md",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Mendelevium?",
+    "answers": [
+      "100",
+      "103",
+      "102",
+      "101"
+    ],
+    "correct_answer": "101",
+    "points": 2
+  },
+  {
+    "id": "grp_101",
+    "element": "Md",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Mendelevium belong to?",
+    "answers": [
+      "3",
+      "Transition",
+      "Halogen",
+      "4"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_102",
+    "element": "No",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Nobelium?",
+    "answers": [
+      "Nox",
+      "N",
+      "No",
+      "Option 60"
+    ],
+    "correct_answer": "No",
+    "points": 1
+  },
+  {
+    "id": "num_102",
+    "element": "No",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Nobelium?",
+    "answers": [
+      "104",
+      "101",
+      "103",
+      "102"
+    ],
+    "correct_answer": "102",
+    "points": 2
+  },
+  {
+    "id": "grp_102",
+    "element": "No",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Nobelium belong to?",
+    "answers": [
+      "Transition",
+      "4",
+      "3",
+      "Halogen"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_103",
+    "element": "Lr",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Lawrencium?",
+    "answers": [
+      "Lr",
+      "La",
+      "L",
+      "Lrx"
+    ],
+    "correct_answer": "Lr",
+    "points": 1
+  },
+  {
+    "id": "num_103",
+    "element": "Lr",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Lawrencium?",
+    "answers": [
+      "105",
+      "102",
+      "104",
+      "103"
+    ],
+    "correct_answer": "103",
+    "points": 2
+  },
+  {
+    "id": "grp_103",
+    "element": "Lr",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Lawrencium belong to?",
+    "answers": [
+      "4",
+      "Transition",
+      "Halogen",
+      "3"
+    ],
+    "correct_answer": "3",
+    "points": 3
+  },
+  {
+    "id": "sym_104",
+    "element": "Rf",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Rutherfordium?",
+    "answers": [
+      "Ru",
+      "Rfx",
+      "R",
+      "Rf"
+    ],
+    "correct_answer": "Rf",
+    "points": 1
+  },
+  {
+    "id": "num_104",
+    "element": "Rf",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Rutherfordium?",
+    "answers": [
+      "104",
+      "105",
+      "106",
+      "103"
+    ],
+    "correct_answer": "104",
+    "points": 2
+  },
+  {
+    "id": "grp_104",
+    "element": "Rf",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Rutherfordium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "5",
+      "4"
+    ],
+    "correct_answer": "4",
+    "points": 3
+  },
+  {
+    "id": "sym_105",
+    "element": "Db",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Dubnium?",
+    "answers": [
+      "Du",
+      "D",
+      "Dbx",
+      "Db"
+    ],
+    "correct_answer": "Db",
+    "points": 1
+  },
+  {
+    "id": "num_105",
+    "element": "Db",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Dubnium?",
+    "answers": [
+      "107",
+      "104",
+      "106",
+      "105"
+    ],
+    "correct_answer": "105",
+    "points": 2
+  },
+  {
+    "id": "grp_105",
+    "element": "Db",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Dubnium belong to?",
+    "answers": [
+      "6",
+      "Halogen",
+      "Transition",
+      "5"
+    ],
+    "correct_answer": "5",
+    "points": 3
+  },
+  {
+    "id": "sym_106",
+    "element": "Sg",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Seaborgium?",
+    "answers": [
+      "Sgx",
+      "S",
+      "Se",
+      "Sg"
+    ],
+    "correct_answer": "Sg",
+    "points": 1
+  },
+  {
+    "id": "num_106",
+    "element": "Sg",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Seaborgium?",
+    "answers": [
+      "105",
+      "108",
+      "107",
+      "106"
+    ],
+    "correct_answer": "106",
+    "points": 2
+  },
+  {
+    "id": "grp_106",
+    "element": "Sg",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Seaborgium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "7",
+      "6"
+    ],
+    "correct_answer": "6",
+    "points": 3
+  },
+  {
+    "id": "sym_107",
+    "element": "Bh",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Bohrium?",
+    "answers": [
+      "B",
+      "Bo",
+      "Bh",
+      "Bhx"
+    ],
+    "correct_answer": "Bh",
+    "points": 1
+  },
+  {
+    "id": "num_107",
+    "element": "Bh",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Bohrium?",
+    "answers": [
+      "109",
+      "107",
+      "108",
+      "106"
+    ],
+    "correct_answer": "107",
+    "points": 2
+  },
+  {
+    "id": "grp_107",
+    "element": "Bh",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Bohrium belong to?",
+    "answers": [
+      "Halogen",
+      "8",
+      "7",
+      "Transition"
+    ],
+    "correct_answer": "7",
+    "points": 3
+  },
+  {
+    "id": "sym_108",
+    "element": "Hs",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Hassium?",
+    "answers": [
+      "Hs",
+      "H",
+      "Ha",
+      "Hsx"
+    ],
+    "correct_answer": "Hs",
+    "points": 1
+  },
+  {
+    "id": "num_108",
+    "element": "Hs",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Hassium?",
+    "answers": [
+      "107",
+      "109",
+      "110",
+      "108"
+    ],
+    "correct_answer": "108",
+    "points": 2
+  },
+  {
+    "id": "grp_108",
+    "element": "Hs",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Hassium belong to?",
+    "answers": [
+      "Halogen",
+      "Transition",
+      "9",
+      "8"
+    ],
+    "correct_answer": "8",
+    "points": 3
+  },
+  {
+    "id": "sym_109",
+    "element": "Mt",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Meitnerium?",
+    "answers": [
+      "Mt",
+      "M",
+      "Mtx",
+      "Me"
+    ],
+    "correct_answer": "Mt",
+    "points": 1
+  },
+  {
+    "id": "num_109",
+    "element": "Mt",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Meitnerium?",
+    "answers": [
+      "109",
+      "110",
+      "108",
+      "111"
+    ],
+    "correct_answer": "109",
+    "points": 2
+  },
+  {
+    "id": "grp_109",
+    "element": "Mt",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Meitnerium belong to?",
+    "answers": [
+      "10",
+      "Transition",
+      "9",
+      "Halogen"
+    ],
+    "correct_answer": "9",
+    "points": 3
+  },
+  {
+    "id": "sym_110",
+    "element": "Ds",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Darmstadtium?",
+    "answers": [
+      "Ds",
+      "D",
+      "Dsx",
+      "Da"
+    ],
+    "correct_answer": "Ds",
+    "points": 1
+  },
+  {
+    "id": "num_110",
+    "element": "Ds",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Darmstadtium?",
+    "answers": [
+      "111",
+      "110",
+      "109",
+      "112"
+    ],
+    "correct_answer": "110",
+    "points": 2
+  },
+  {
+    "id": "grp_110",
+    "element": "Ds",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Darmstadtium belong to?",
+    "answers": [
+      "10",
+      "11",
+      "Halogen",
+      "Transition"
+    ],
+    "correct_answer": "10",
+    "points": 3
+  },
+  {
+    "id": "sym_111",
+    "element": "Rg",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Roentgenium?",
+    "answers": [
+      "Rg",
+      "R",
+      "Ro",
+      "Rgx"
+    ],
+    "correct_answer": "Rg",
+    "points": 1
+  },
+  {
+    "id": "num_111",
+    "element": "Rg",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Roentgenium?",
+    "answers": [
+      "113",
+      "110",
+      "112",
+      "111"
+    ],
+    "correct_answer": "111",
+    "points": 2
+  },
+  {
+    "id": "grp_111",
+    "element": "Rg",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Roentgenium belong to?",
+    "answers": [
+      "12",
+      "Transition",
+      "Halogen",
+      "11"
+    ],
+    "correct_answer": "11",
+    "points": 3
+  },
+  {
+    "id": "sym_112",
+    "element": "Cn",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Copernicium?",
+    "answers": [
+      "C",
+      "Cn",
+      "Co",
+      "Cnx"
+    ],
+    "correct_answer": "Cn",
+    "points": 1
+  },
+  {
+    "id": "num_112",
+    "element": "Cn",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Copernicium?",
+    "answers": [
+      "111",
+      "114",
+      "113",
+      "112"
+    ],
+    "correct_answer": "112",
+    "points": 2
+  },
+  {
+    "id": "grp_112",
+    "element": "Cn",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Copernicium belong to?",
+    "answers": [
+      "Transition",
+      "Halogen",
+      "13",
+      "12"
+    ],
+    "correct_answer": "12",
+    "points": 3
+  },
+  {
+    "id": "sym_113",
+    "element": "Nh",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Nihonium?",
+    "answers": [
+      "Ni",
+      "Nh",
+      "N",
+      "Nhx"
+    ],
+    "correct_answer": "Nh",
+    "points": 1
+  },
+  {
+    "id": "num_113",
+    "element": "Nh",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Nihonium?",
+    "answers": [
+      "114",
+      "115",
+      "112",
+      "113"
+    ],
+    "correct_answer": "113",
+    "points": 2
+  },
+  {
+    "id": "grp_113",
+    "element": "Nh",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Nihonium belong to?",
+    "answers": [
+      "Halogen",
+      "14",
+      "13",
+      "Transition"
+    ],
+    "correct_answer": "13",
+    "points": 3
+  },
+  {
+    "id": "sym_114",
+    "element": "Fl",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Flerovium?",
+    "answers": [
+      "Flx",
+      "F",
+      "Fl",
+      "Option 75"
+    ],
+    "correct_answer": "Fl",
+    "points": 1
+  },
+  {
+    "id": "num_114",
+    "element": "Fl",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Flerovium?",
+    "answers": [
+      "116",
+      "113",
+      "115",
+      "114"
+    ],
+    "correct_answer": "114",
+    "points": 2
+  },
+  {
+    "id": "grp_114",
+    "element": "Fl",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Flerovium belong to?",
+    "answers": [
+      "Transition",
+      "15",
+      "14",
+      "Halogen"
+    ],
+    "correct_answer": "14",
+    "points": 3
+  },
+  {
+    "id": "sym_115",
+    "element": "Mc",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Moscovium?",
+    "answers": [
+      "Mo",
+      "Mc",
+      "M",
+      "Mcx"
+    ],
+    "correct_answer": "Mc",
+    "points": 1
+  },
+  {
+    "id": "num_115",
+    "element": "Mc",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Moscovium?",
+    "answers": [
+      "115",
+      "116",
+      "114",
+      "117"
+    ],
+    "correct_answer": "115",
+    "points": 2
+  },
+  {
+    "id": "grp_115",
+    "element": "Mc",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Moscovium belong to?",
+    "answers": [
+      "15",
+      "16",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "15",
+    "points": 3
+  },
+  {
+    "id": "sym_116",
+    "element": "Lv",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Livermorium?",
+    "answers": [
+      "Lv",
+      "Li",
+      "L",
+      "Lvx"
+    ],
+    "correct_answer": "Lv",
+    "points": 1
+  },
+  {
+    "id": "num_116",
+    "element": "Lv",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Livermorium?",
+    "answers": [
+      "118",
+      "117",
+      "116",
+      "115"
+    ],
+    "correct_answer": "116",
+    "points": 2
+  },
+  {
+    "id": "grp_116",
+    "element": "Lv",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Livermorium belong to?",
+    "answers": [
+      "Halogen",
+      "17",
+      "16",
+      "Transition"
+    ],
+    "correct_answer": "16",
+    "points": 3
+  },
+  {
+    "id": "sym_117",
+    "element": "Ts",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Tennessine?",
+    "answers": [
+      "Ts",
+      "T",
+      "Tsx",
+      "Te"
+    ],
+    "correct_answer": "Ts",
+    "points": 1
+  },
+  {
+    "id": "num_117",
+    "element": "Ts",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Tennessine?",
+    "answers": [
+      "117",
+      "118",
+      "116",
+      "119"
+    ],
+    "correct_answer": "117",
+    "points": 2
+  },
+  {
+    "id": "grp_117",
+    "element": "Ts",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Tennessine belong to?",
+    "answers": [
+      "17",
+      "Halogen",
+      "Transition",
+      "18"
+    ],
+    "correct_answer": "17",
+    "points": 3
+  },
+  {
+    "id": "sym_118",
+    "element": "Og",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Oganesson?",
+    "answers": [
+      "Og",
+      "O",
+      "Ogx",
+      "Option 92"
+    ],
+    "correct_answer": "Og",
+    "points": 1
+  },
+  {
+    "id": "num_118",
+    "element": "Og",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Oganesson?",
+    "answers": [
+      "120",
+      "118",
+      "119",
+      "117"
+    ],
+    "correct_answer": "118",
+    "points": 2
+  },
+  {
+    "id": "grp_118",
+    "element": "Og",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Oganesson belong to?",
+    "answers": [
+      "18",
+      "19",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "18",
+    "points": 3
+  },
+  {
+    "id": "sym_119",
+    "element": "Uue",
+    "topic": "Symbols",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for Ununennium?",
+    "answers": [
+      "Uue",
+      "Uuex",
+      "U",
+      "Un"
+    ],
+    "correct_answer": "Uue",
+    "points": 1
+  },
+  {
+    "id": "num_119",
+    "element": "Uue",
+    "topic": "Atomic Structure",
+    "difficulty": "medium",
+    "question": "What is the atomic number of Ununennium?",
+    "answers": [
+      "118",
+      "121",
+      "120",
+      "119"
+    ],
+    "correct_answer": "119",
+    "points": 2
+  },
+  {
+    "id": "grp_119",
+    "element": "Uue",
+    "topic": "Periodic Trends",
+    "difficulty": "hard",
+    "question": "Which group does Ununennium belong to?",
+    "answers": [
+      "1",
+      "2",
+      "Transition",
+      "Halogen"
+    ],
+    "correct_answer": "1",
+    "points": 3
+  }
+]

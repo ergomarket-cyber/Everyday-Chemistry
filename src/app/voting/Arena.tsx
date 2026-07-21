@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, Beaker, Flame, Trophy, Music, Sparkles, CheckCircle2, AlignLeft, ChevronDown, ChevronUp, User, LogOut, Users, Settings } from 'lucide-react';
+import { Play, Pause, Beaker, Flame, Trophy, Music, Sparkles, CheckCircle2, AlignLeft, ChevronDown, ChevronUp, User, LogOut, Users, Settings, Gamepad2 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Arena({ initialTeams, students10, students11 }: any) {
   const [currentUser, setCurrentUser] = useState<any>(null);
   const [playingId, setPlayingId] = useState<string | null>(null);
+  const [editingTeam, setEditingTeam] = useState<any>(null);
   const [votes, setVotes] = useState<any>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [activeTab, setActiveTab] = useState<number>(10);
@@ -136,6 +138,10 @@ export default function Arena({ initialTeams, students10, students11 }: any) {
               ChemBeats '26
             </span>
           </h1>
+          <Link href="/" className="inline-flex items-center text-sm font-bold text-slate-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full w-fit">
+            <Gamepad2 className="w-4 h-4 mr-2 text-blue-400" />
+            Educational Hub
+          </Link>
           <p className="text-slate-400 text-sm font-medium">Rate the tracks. Be honest.</p>
         </div>
 
@@ -165,6 +171,7 @@ export default function Arena({ initialTeams, students10, students11 }: any) {
             votes={votes[team.id]}
             onVote={handleVote}
             currentUser={currentUser}
+            onEdit={setEditingTeam}
           />
         ))}
       </main>
@@ -191,6 +198,7 @@ export default function Arena({ initialTeams, students10, students11 }: any) {
           </button>
         </div>
       </div>
+      {editingTeam && <EditTeamModal team={editingTeam} onClose={() => setEditingTeam(null)} students={editingTeam.grade === 10 ? students10 : students11} currentUser={currentUser} />}
     </div>
   );
 }
@@ -271,8 +279,8 @@ function LoginScreen({ students10, students11, onLogin }: any) {
               className="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3.5 text-white font-medium appearance-none outline-none focus:border-purple-500 transition-colors"
             >
               <option value="" disabled>Select your name...</option>
-              {selectedGrade && studentOptions.map((name: string) => (
-                <option key={name} value={name}>{name}</option>
+              {selectedGrade && studentOptions.map((student: any) => (
+                <option key={student.id} value={student.name}>{student.name}</option>
               ))}
             </select>
           </div>
@@ -310,10 +318,9 @@ function LoginScreen({ students10, students11, onLogin }: any) {
   );
 }
 
-function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser }: any) {
+function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser, onEdit }: any) {
   const [showLyrics, setShowLyrics] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
   const isMyTeam = team.members.includes(currentUser.name);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -335,9 +342,7 @@ function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser }: any) 
         <audio ref={audioRef} src={team.audioUrl} loop onEnded={onPlay} />
       )}
       
-      {isEditing && (
-        <EditTeamModal team={team} onClose={() => setIsEditing(false)} />
-      )}
+
       
       <div className="flex items-center gap-4 mb-4">
         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-3xl bg-gradient-to-br ${team.color} shadow-lg shrink-0`}>
@@ -425,7 +430,7 @@ function TeamCard({ team, isPlaying, onPlay, votes, onVote, currentUser }: any) 
             </div>
             {currentUser.isCaptain && (
               <button 
-                onClick={() => setIsEditing(true)}
+                onClick={() => onEdit(team)}
                 className="w-full py-2.5 bg-white/5 hover:bg-white/10 rounded-xl text-sm font-bold text-white transition-colors flex items-center justify-center gap-2 border border-white/10"
               >
                 <Settings className="w-4 h-4" /> Edit Team Profile
@@ -550,7 +555,7 @@ function LeaderRow({ name, score, votesCount }: any) {
   );
 }
 
-function EditTeamModal({ team, onClose }: any) {
+function EditTeamModal({ team, onClose, students, currentUser }: any) {
   const [formData, setFormData] = useState({
     name: team.name,
     topic: team.topic,
@@ -559,8 +564,18 @@ function EditTeamModal({ team, onClose }: any) {
     audioUrl: team.audioUrl || ''
   });
   const [isSaving, setIsSaving] = useState(false);
+  const [selectedMembers, setSelectedMembers] = useState<string[]>([]);
+  const unassignedStudents = students?.filter((s: any) => !s.teamId || s.teamId === team.id) || [];
+  
+  const toggleMember = (id: string) => {
+    if (selectedMembers.includes(id)) {
+      setSelectedMembers(prev => prev.filter(m => m !== id));
+    } else if (selectedMembers.length < 7) {
+      setSelectedMembers(prev => [...prev, id]);
+    }
+  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSaving(true);
     try {
@@ -569,10 +584,23 @@ function EditTeamModal({ team, onClose }: any) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ teamId: team.id, ...formData })
       });
-      if (res.ok) {
+      
+      let recruitOk = true;
+      if (!team.isRosterLocked && selectedMembers.length > 0) {
+        const recruitRes = await fetch('/api/team/recruit', {
+           method: 'POST',
+           headers: { 'Content-Type': 'application/json' },
+           body: JSON.stringify({ teamId: team.id, studentIds: selectedMembers, captainId: currentUser.id })
+        });
+        if (!recruitRes.ok) {
+           recruitOk = false;
+        }
+      }
+
+      if (res.ok && recruitOk) {
         window.location.reload(); // Refresh to see changes
       } else {
-        alert('Failed to save');
+        alert('Failed to save profile or members');
       }
     } catch (err) {
       alert('Error saving');
@@ -581,7 +609,7 @@ function EditTeamModal({ team, onClose }: any) {
     }
   };
 
-  return (
+return (
     <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="bg-slate-900 border border-white/10 rounded-3xl w-full max-w-md max-h-[90vh] overflow-y-auto shadow-2xl">
         <div className="p-6">
@@ -641,6 +669,24 @@ function EditTeamModal({ team, onClose }: any) {
               />
             </div>
 
+            {!team.isRosterLocked && (
+              <div className="pt-4 border-t border-white/10 mt-2">
+                <label className="text-xs font-bold text-slate-400 uppercase mb-3 block">Recruit Team Members (Max 7)</label>
+                <div className="flex flex-wrap gap-2">
+                  {unassignedStudents.map((s: any) => (
+                    <button
+                      key={s.id}
+                      type="button"
+                      onClick={() => toggleMember(s.id)}
+                      className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${selectedMembers.includes(s.id) ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/30' : 'bg-slate-800 text-slate-300 hover:bg-slate-700'}`}
+                    >
+                      {s.name}
+                    </button>
+                  ))}
+                </div>
+                {unassignedStudents.length === 0 && <p className="text-sm text-slate-500 italic">No available students found.</p>}
+              </div>
+            )}
             <div className="flex gap-3 pt-4 border-t border-white/10 mt-6">
               <button 
                 type="button" 

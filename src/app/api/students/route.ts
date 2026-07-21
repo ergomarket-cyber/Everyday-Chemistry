@@ -10,6 +10,32 @@ function generatePin(name: string): string {
   return (positiveHash % 9000 + 1000).toString(); // 1000-9999
 }
 
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const grade = searchParams.get('grade');
+
+  if (!grade) {
+    return NextResponse.json({ error: 'Grade is required' }, { status: 400 });
+  }
+
+  try {
+    const students = await prisma.student.findMany({
+      where: {
+        grade: parseInt(grade),
+        teamId: null, // Only unassigned students
+      },
+      orderBy: {
+        name: 'asc'
+      }
+    });
+
+    return NextResponse.json({ students });
+  } catch (error) {
+    console.error('Failed to fetch students:', error);
+    return NextResponse.json({ error: 'Failed to fetch students' }, { status: 500 });
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const { name, grade, teamId, isCaptain, pin } = await request.json();

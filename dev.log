@@ -1,0 +1,45 @@
+
+> chembeats-voting@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.8:3000
+- Environments: .env
+✓ Ready in 337ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/mogilevandrei/Desktop/ServerProject/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/mogilevandrei/Desktop/ServerProject/chembeats-voting/package-lock.json
+
+
+⨯ Error [PrismaClientInitializationError]: 
+Invalid `{imported module ./chembeats-voting/src/lib/prisma.ts}["prisma"].team.findMany()` invocation in
+/Users/mogilevandrei/Desktop/ServerProject/chembeats-voting/.next/dev/server/chunks/ssr/[root-of-the-server]__0k_rek2._.js:96:180
+
+  93 ;
+  94 const dynamic = 'force-dynamic';
+  95 async function Home() {
+→ 96     const teams = await {imported module ./chembeats-voting/src/lib/prisma.ts}["prisma"].team.findMany(
+Can't reach database server at `aws-0-ap-northeast-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-0-ap-northeast-1.pooler.supabase.com:6543`.
+    at <unknown> (src/app/voting/page.tsx:7:35)
+    at async Home (src/app/voting/page.tsx:7:17)
+   5 |
+   6 | export default async function Home() {
+>  7 |   const teams = await prisma.team.findMany({
+     |                                   ^
+   8 |     include: {
+   9 |       members: true,
+  10 |     } {
+  clientVersion: '5.22.0',
+  errorCode: undefined,
+  digest: '3645584109'
+}
+ GET /voting 500 in 5.9s (next.js: 634ms, application-code: 5.2s)
+  Reload env: .env.local
+  Reload env: .env
+  Reload env: .env

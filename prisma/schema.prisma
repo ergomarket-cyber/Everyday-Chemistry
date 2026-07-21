@@ -3,55 +3,56 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
 }
 
 model Team {
-  id       String    @id
-  grade    Int
-  name     String
-  song     String
-  topic    String
-  color    String
-  avatar   String
-  lyrics   String
-  audioUrl String?
-  students Student[]
-  votes    Vote[]
-  teacherVote TeacherVote?
+  id             String       @id @default(uuid())
+  grade          Int
+  name           String
+  song           String
+  topic          String
+  color          String
+  avatar         String
+  lyrics         String
+  audioUrl       String?
+  isRosterLocked Boolean      @default(false)
+  members        Student[]
+  teacherVote    TeacherVote?
+  votes          Vote[]
 }
 
 model Student {
-  id       String @id @default(cuid())
-  name     String
-  grade    Int
-  pin      String
+  id        String  @id @default(uuid())
+  name      String
+  grade     Int
+  pin       String
   isCaptain Boolean @default(false)
-  teamId   String
-  team     Team   @relation(fields: [teamId], references: [id])
-  hasVoted Boolean @default(false)
-  votes    Vote[]
+  teamId    String?
+  hasVoted  Boolean @default(false)
+  team      Team?   @relation(fields: [teamId], references: [id], onDelete: Restrict)
+  votes     Vote[]
 }
 
 model Vote {
-  id           String  @id @default(cuid())
+  id           String   @id @default(cuid())
   studentId    String
-  student      Student @relation(fields: [studentId], references: [id])
   teamId       String
-  team         Team    @relation(fields: [teamId], references: [id])
   scienceScore Int
   bangerScore  Int
   createdAt    DateTime @default(now())
+  student      Student  @relation(fields: [studentId], references: [id])
+  team         Team     @relation(fields: [teamId], references: [id])
 
-  @@unique([studentId, teamId]) // One vote per student per team
+  @@unique([studentId, teamId])
 }
 
 model TeacherVote {
   id            String @id @default(cuid())
   teamId        String @unique
-  team          Team   @relation(fields: [teamId], references: [id])
   contentScore  Int
   accuracyScore Int
+  team          Team   @relation(fields: [teamId], references: [id])
 }

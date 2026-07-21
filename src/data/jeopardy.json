@@ -1,0 +1,152 @@
+{
+  "categories": [
+    {
+      "id": "ionic",
+      "name": "Ionic Bonding",
+      "questions": [
+        {
+          "points": 100,
+          "question": "What happens to electrons when an ionic bond is formed?",
+          "answer": "Electrons are transferred from a metal atom to a non-metal atom, forming oppositely charged ions (cations and anions).",
+          "imagePrompt": "Vibrant 3D render of electron transfer, glossy Sodium atom losing an electron to a glowing Chlorine atom, vivid orbits, chemistry visualization, dark background",
+          "imageUrl": "/images/jeopardy/ionic_100.png"
+        },
+        {
+          "points": 200,
+          "question": "Why do solid ionic compounds fail to conduct electricity, but conduct when molten or dissolved in water?",
+          "answer": "In a solid, the ions are fixed in a giant lattice and cannot move. When molten or dissolved, the lattice breaks, allowing ions to move freely and carry electrical charge.",
+          "imagePrompt": "Side-by-side 3D render: left side showing a rigid glowing cubic lattice of alternating positive and negative ions; right side showing separated ions drifting freely in water molecules, 3D molecular physics graphic",
+          "imageUrl": "/images/jeopardy/ionic_200.png"
+        },
+        {
+          "points": 300,
+          "question": "What is the chemical formula for Aluminium Oxide?",
+          "answer": "Al2O3 (Al³⁺ and O²⁻ ions combine in a 2:3 ratio to balance the overall charge to neutral).",
+          "imagePrompt": "3D stylistic rendering of Al2O3 chemical formula surrounded by volumetric glossy spheres representing two Al3+ ions and three O2- ions grouped together",
+          "imageUrl": "/images/jeopardy/ionic_300.png"
+        },
+        {
+          "points": 400,
+          "question": "Explain why Sodium Chloride (NaCl) has a very high melting point.",
+          "answer": "It has a giant ionic lattice structure with strong electrostatic forces of attraction between oppositely charged ions. Breaking these strong bonds requires a massive amount of thermal energy.",
+          "imagePrompt": "Macro 3D render of a giant NaCl crystal lattice, interlocking glowing green and purple spheres, strong light rays representing electrostatic forces, deep contrast",
+          "imageUrl": "/images/jeopardy/ionic_400.png"
+        }
+      ]
+    },
+    {
+      "id": "covalent",
+      "name": "Covalent Bonding",
+      "questions": [
+        {
+          "points": 100,
+          "question": "How is a covalent bond formed?",
+          "answer": "A covalent bond is formed when pairs of electrons are shared between non-metal atoms to achieve stable outer shells.",
+          "imagePrompt": "3D render of a covalent bond, overlapping glowing electron shells of two non-metal atoms, bright neon shared electron pairs in the intersection, stylized scientific illustration",
+          "imageUrl": "/images/jeopardy/covalent_100.png"
+        },
+        {
+          "points": 200,
+          "question": "Name a giant covalent structure made entirely of carbon that can conduct electricity, and explain why it can.",
+          "answer": "Graphite. Each carbon atom forms only three bonds, leaving one delocalised electron per atom that is free to move through the layers.",
+          "imagePrompt": "Vibrant 3D molecular model of graphite layers, hexagonal sheets of carbon atoms with glowing neon trails between layers showing free delocalised electrons, dark ambient lighting",
+          "imageUrl": "/images/jeopardy/covalent_200.png"
+        },
+        {
+          "points": 300,
+          "question": "Why does diamond have an extremely high melting point and exceptional hardness?",
+          "answer": "Each carbon atom is covalently bonded to four other carbon atoms in a rigid, giant tetrahedral structure. Massive energy is required to break these numerous, exceptionally strong covalent bonds.",
+          "imagePrompt": "Intricate 3D tetrahedral network of diamond structure, glossy dark carbon atoms interconnected by thick glowing neon beams representing strong covalent bonds",
+          "imageUrl": "/images/jeopardy/covalent_300.png"
+        },
+        {
+          "points": 400,
+          "question": "Describe the bonding in a molecule of Nitrogen (N2). How many electrons are shared?",
+          "answer": "Two nitrogen atoms share three pairs of electrons, forming a strong triple covalent bond (6 shared electrons in total).",
+          "imagePrompt": "3D molecular render of a Nitrogen molecule N2, two spheres bound tightly by three thick glowing neon cylinders representing the triple bond, highly digital and stylized",
+          "imageUrl": "/images/jeopardy/covalent_400.png"
+        }
+      ]
+    },
+    {
+      "id": "metallic",
+      "name": "Metallic Bonding",
+      "questions": [
+        {
+          "points": 100,
+          "question": "Describe the standard structural model of a metal.",
+          "answer": "A regular giant lattice of positive metal ions surrounded by a 'sea' of mobile, delocalised electrons.",
+          "imagePrompt": "3D metallic bonding model, regular array of glowing chrome positive ions embedded in a fluid, glowing cyan sea of tiny fast-moving electrons, futuristic sci-fi chemistry render",
+          "imageUrl": "/images/jeopardy/metallic_100.png"
+        },
+        {
+          "points": 200,
+          "question": "Metals are described as malleable. What does this mean, and why are they malleable?",
+          "answer": "Malleable means they can be beaten or hammered into sheets. This is because layers of positive ions can slide over each other without breaking the metallic bond, as the sea of electrons adapts.",
+          "imagePrompt": "3D animation freeze-frame showing layers of metallic ions shifting horizontally under pressure, while the neon electron cloud flows smoothly around them keeping them cohesive",
+          "imageUrl": "/images/jeopardy/metallic_200.png"
+        },
+        {
+          "points": 300,
+          "question": "Why are metals excellent conductors of heat and electricity?",
+          "answer": "The delocalised electrons are highly mobile and free to move throughout the entire metallic structure, carrying thermal energy or electric charge.",
+          "imagePrompt": "3D visualization of electrical conductivity in metal, neon electric current flowing through a metallic lattice as tiny blue electrons rush in one direction through the atom array",
+          "imageUrl": "/images/jeopardy/metallic_300.png"
+        },
+        {
+          "points": 400,
+          "question": "How does making an alloy change the physical properties of a pure metal?",
+          "answer": "Alloys contain atoms of different sizes. This disrupts the regular arrangement of the lattice, making it much harder for the layers of ions to slide over each other.",
+          "imagePrompt": "3D atomic structure of an alloy, a lattice of uniform metal spheres disrupted by larger, distinctly colored foreign atoms, showing warped, distorted rows that cannot slide",
+          "imageUrl": "/images/jeopardy/metallic_400.png"
+        }
+      ]
+    },
+    {
+      "id": "intermolecular",
+      "name": "Intermolecular Forces",
+      "questions": [
+        {
+          "points": 100,
+          "question": "Which is stronger: a typical covalent bond within a molecule, or the intermolecular force between two molecules?",
+          "answer": "The covalent bond (intramolecular) is much stronger. Intermolecular forces are weak in comparison.",
+          "imagePrompt": "3D illustration comparing forces: solid neon beams inside a molecule vs weak, thin, flickering dotted particles connecting separate molecules",
+          "imageUrl": "/images/jeopardy/intermolecular_100.png"
+        },
+        {
+          "points": 200,
+          "question": "Water (H2O) has a much higher boiling point than Methane (CH4), even though they are similar in size. Why?",
+          "answer": "Water molecules are held together by much stronger intermolecular forces (specifically, hydrogen bonds) compared to the weak forces between methane molecules.",
+          "imagePrompt": "Beautiful 3D molecular scene of water molecules, oxygen and hydrogen spheres with bright, pulsing dotted lines representing strong intermolecular hydrogen bonds between them",
+          "imageUrl": "/images/jeopardy/intermolecular_200.png"
+        },
+        {
+          "points": 300,
+          "question": "What exactly happens to the intermolecular forces when a simple molecular solid like ice melts into liquid water?",
+          "answer": "Thermal energy increases the kinetic energy of the molecules, overcoming and breaking the weak intermolecular forces holding them in a fixed lattice.",
+          "imagePrompt": "3D crystal lattice of ice collapsing, crystalline order turning into chaotic fluid arrangement as weak binding dotted lines break apart due to heat",
+          "imageUrl": "/images/jeopardy/intermolecular_300.png"
+        },
+        {
+          "points": 400,
+          "question": "Explain why Iodine (I2) is a solid at room temperature, while Chlorine (Cl2) is a gas.",
+          "answer": "Iodine molecules are larger and have more electrons than chlorine molecules. This makes the intermolecular forces between iodine molecules significantly stronger.",
+          "imagePrompt": "3D graphic comparison: large violet Iodine molecules closely packed with thick attractive fields vs small green Chlorine molecules flying far apart with negligible attraction",
+          "imageUrl": "/images/jeopardy/intermolecular_400.png"
+        }
+      ]
+    }
+  ],
+  "finalRound": {
+    "title": "The Ultimate Climax: The Bonding Mystery",
+    "question": "Identify the type of structure and bonding in three unknown solids based on properties: A (melts at 801°C, conducts only when fluid), B (melts at 114°C, non-conductor), C (melts at 1610°C, non-conductor, insoluble). Explain the massive melting point gap between B and C.",
+    "answers": [
+      "Substance A: Giant Ionic Lattice (Ionic Bonding).",
+      "Substance B: Simple Molecular Structure (Covalent Bonding).",
+      "Substance C: Giant Covalent Structure / Macromolecular.",
+      "Explanation: Melting B only requires overcoming weak intermolecular forces between molecules. Melting C requires breaking incredibly strong covalent bonds between atoms across the entire giant network."
+    ],
+    "imagePrompt": "Triptych layout 3D render showing three distinct structures side by side: A glowing cubic ionic lattice, a collection of separate simple molecules with faint connections, and a massive continuous network of strong covalent crystal bonds.",
+    "imageUrl": "/images/jeopardy/final_round.png"
+  }
+}

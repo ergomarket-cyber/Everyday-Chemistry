@@ -43,7 +43,7 @@ export default async function TeacherPage() {
     name: s.name,
     grade: s.grade,
     teamId: s.teamId,
-    teamName: s.team.name,
+    teamName: s.team?.name || 'Unassigned',
     isCaptain: s.isCaptain,
     hasVoted: s.hasVoted,
     pin: s.pin

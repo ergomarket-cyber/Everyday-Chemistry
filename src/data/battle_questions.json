@@ -1,0 +1,2108 @@
+{
+  "gameConfig": {
+    "title": "Periodic Table Battle",
+    "teams": [
+      {
+        "id": "blue",
+        "defaultName": "Alkali Boyz",
+        "color": "#00E5FF",
+        "startCell": "H"
+      },
+      {
+        "id": "red",
+        "defaultName": "Noble Flow",
+        "color": "#FF0055",
+        "startCell": "He"
+      }
+    ],
+    "overtakePenalty": 100
+  },
+  "questionDatabase": {
+    "type_1_multiple_choice": {
+      "typeName": "Multiple Choice",
+      "pool": [
+        {
+          "id": "mc6",
+          "element": "Si",
+          "q": "Silicon is best categorized as a:",
+          "a": "Metalloid",
+          "opts": [
+            "Metal",
+            "Non-metal",
+            "Metalloid",
+            "Noble Gas"
+          ],
+          "desc": "Silicon has intermediate properties, making it a metalloid."
+        },
+        {
+          "id": "mc1",
+          "element": "K",
+          "q": "What is the correct chemical symbol for Potassium?",
+          "a": "K",
+          "opts": [
+            "P",
+            "Po",
+            "K",
+            "Pt"
+          ],
+          "desc": "Potassium takes its symbol K from its Latin name Kalium."
+        },
+        {
+          "id": "mc_noble_2",
+          "element": "Ar",
+          "q": "Which of the following explains Argon's lack of chemical reactivity?",
+          "opts": [
+            "It has 8 valence electrons",
+            "It is a transition metal",
+            "It has equal numbers of protons and neutrons",
+            "It has a low boiling point"
+          ],
+          "a": "It has 8 valence electrons",
+          "desc": "Argon has 8 valence electrons (a full octet), making it a stable, unreactive noble gas."
+        },
+        {
+          "id": "mc_ion_2",
+          "element": "O",
+          "q": "What charge does an Oxygen (O) ion typically form?",
+          "opts": [
+            "-2",
+            "-1",
+            "+2",
+            "+6"
+          ],
+          "a": "-2",
+          "desc": "Oxygen is in Group 6. It gains 2 electrons to complete its octet, forming an O2- ion."
+        },
+        {
+          "id": "mc2",
+          "element": "Cl",
+          "q": "Which of these elements belongs to Group 7 (The Halogens)?",
+          "a": "Cl",
+          "opts": [
+            "Cl",
+            "Ar",
+            "O",
+            "Na"
+          ],
+          "desc": "Chlorine is a halogen in Group 7."
+        },
+        {
+          "id": "mc5",
+          "element": "Cu",
+          "q": "Copper is classified as which type of element?",
+          "a": "Transition Metal",
+          "opts": [
+            "Transition Metal",
+            "Alkali Metal",
+            "Halogen",
+            "Non-metal"
+          ],
+          "desc": "Copper sits in the central d-block, making it a transition metal."
+        },
+        {
+          "id": "mc4",
+          "element": "He",
+          "q": "Which of the following is a noble gas found in Period 1?",
+          "a": "Helium",
+          "opts": [
+            "Hydrogen",
+            "Neon",
+            "Argon",
+            "Helium"
+          ],
+          "desc": "Helium is the only noble gas located in Period 1."
+        },
+        {
+          "id": "mc_ion_1",
+          "element": "Na",
+          "q": "What charge does a Sodium (Na) ion typically form?",
+          "opts": [
+            "+1",
+            "+2",
+            "-1",
+            "-2"
+          ],
+          "a": "+1",
+          "desc": "Sodium is in Group 1, so it loses 1 valence electron to achieve a full outer shell, forming a Na+ ion."
+        },
+        {
+          "id": "mc10",
+          "element": "Fe",
+          "q": "Which property is highly typical of transition metals like Iron?",
+          "a": "Variable oxidation states",
+          "opts": [
+            "Low melting point",
+            "Forms only 1+ ions",
+            "Variable oxidation states",
+            "White/colourless compounds"
+          ],
+          "desc": "Transition metals typically exhibit variable oxidation states."
+        },
+        {
+          "id": "mc_bond_2",
+          "element": "Mg",
+          "q": "When Magnesium (Mg) reacts with Oxygen, what type of bond is formed?",
+          "opts": [
+            "Ionic",
+            "Covalent",
+            "Metallic",
+            "Polar Covalent"
+          ],
+          "a": "Ionic",
+          "desc": "Magnesium (metal) transfers electrons to Oxygen (non-metal), forming an ionic bond."
+        },
+        {
+          "id": "mc_ion_4",
+          "element": "Cl",
+          "q": "What charge does a Chlorine (Cl) ion typically form?",
+          "opts": [
+            "-1",
+            "-2",
+            "+1",
+            "+7"
+          ],
+          "a": "-1",
+          "desc": "Chlorine is in Group 7 (Halogens) and gains 1 electron to form a Cl- ion."
+        },
+        {
+          "id": "mc8",
+          "element": "P",
+          "q": "Which group does Phosphorus belong to?",
+          "a": "Group 5",
+          "opts": [
+            "Group 5",
+            "Group 3",
+            "Group 5",
+            "Group 7"
+          ],
+          "desc": "Phosphorus shares Group 5 with Nitrogen."
+        },
+        {
+          "id": "mc_ion_3",
+          "element": "Al",
+          "q": "What is the charge of an Aluminum (Al) ion?",
+          "opts": [
+            "+3",
+            "+1",
+            "-3",
+            "-1"
+          ],
+          "a": "+3",
+          "desc": "Aluminum is in Group 3, so it loses 3 electrons to achieve stability, forming Al3+."
+        },
+        {
+          "id": "mc_noble_1",
+          "element": "Ne",
+          "q": "Why is Neon (Ne) completely unreactive?",
+          "opts": [
+            "It has a full outer electron shell",
+            "It is a gas at room temperature",
+            "It forms covalent bonds easily",
+            "It is lighter than air"
+          ],
+          "a": "It has a full outer electron shell",
+          "desc": "Noble gases like Neon have a completely full valence shell (stable octet), so they do not need to lose, gain, or share electrons."
+        },
+        {
+          "id": "mc3",
+          "element": "O",
+          "q": "Which element has the atomic number 8?",
+          "a": "Oxygen",
+          "opts": [
+            "Carbon",
+            "Oxygen",
+            "Nitrogen",
+            "Fluorine"
+          ],
+          "desc": "Oxygen has 8 protons, making its atomic number 8."
+        },
+        {
+          "id": "mc7",
+          "element": "Hg",
+          "q": "Which metal is uniquely liquid at room temperature?",
+          "a": "Mercury",
+          "opts": [
+            "Gallium",
+            "Mercury",
+            "Bromine",
+            "Cesium"
+          ],
+          "desc": "Mercury (Hg) is the only metal that remains liquid at standard room temperature."
+        },
+        {
+          "id": "mc9",
+          "element": "Br",
+          "q": "What is the physical state and appearance of Bromine at room temperature?",
+          "a": "Red-brown liquid",
+          "opts": [
+            "Grey solid",
+            "Green gas",
+            "Purple gas",
+            "Red-brown liquid"
+          ],
+          "desc": "Bromine is a volatile red-brown liquid at room temperature."
+        },
+        {
+          "id": "mc_bond_1",
+          "element": "C",
+          "q": "What type of bonding does Carbon (C) typically form in compounds like CO2?",
+          "opts": [
+            "Covalent",
+            "Ionic",
+            "Metallic",
+            "Hydrogen"
+          ],
+          "a": "Covalent",
+          "desc": "Carbon is a non-metal and typically shares electrons to form covalent bonds."
+        }
+      ]
+    },
+    "type_2_short_answer": {
+      "typeName": "Short Answer",
+      "pool": [
+        {
+          "id": "gen_sa_112",
+          "element": "Cl",
+          "q": "What is the atomic number of Chlorine?",
+          "a": "17",
+          "opts": [
+            "19",
+            "25",
+            "9",
+            "17"
+          ],
+          "desc": "Chlorine has exactly 17 protons."
+        },
+        {
+          "id": "gen_sa_122",
+          "element": "Al",
+          "q": "Which element is represented by the symbol Al?",
+          "a": "Aluminium",
+          "opts": [
+            "Aluminium",
+            "Sodium",
+            "Lithium",
+            "Carbon"
+          ],
+          "desc": "The symbol Al stands for Aluminium."
+        },
+        {
+          "id": "gen_sa_134",
+          "element": "Be",
+          "q": "What is the atomic number of Beryllium?",
+          "a": "4",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "12"
+          ],
+          "desc": "Beryllium has exactly 4 protons."
+        },
+        {
+          "id": "gen_sa_136",
+          "element": "Na",
+          "q": "What is the atomic number of Sodium?",
+          "a": "11",
+          "opts": [
+            "13",
+            "10",
+            "12",
+            "11"
+          ],
+          "desc": "Sodium has exactly 11 protons."
+        },
+        {
+          "id": "sa9",
+          "element": "F",
+          "q": "Name the most reactive halogen element in Group 7.",
+          "a": "Fluorine",
+          "desc": "Fluorine is at the top of Group 7.",
+          "opts": [
+            "Fluorine",
+            "Chlorine",
+            "Oxygen",
+            "Neon"
+          ]
+        },
+        {
+          "id": "gen_sa_131",
+          "element": "Ne",
+          "q": "What is the atomic number of Neon?",
+          "a": "10",
+          "opts": [
+            "11",
+            "18",
+            "10",
+            "12"
+          ],
+          "desc": "Neon has exactly 10 protons."
+        },
+        {
+          "id": "gen_sa_123",
+          "element": "Mg",
+          "q": "What is the chemical symbol for Magnesium?",
+          "a": "Mg",
+          "opts": [
+            "Mg",
+            "N",
+            "O",
+            "K"
+          ],
+          "desc": "Magnesium is represented by the symbol Mg."
+        },
+        {
+          "id": "sa8",
+          "element": "Ne",
+          "q": "Write the chemical symbol for Neon.",
+          "a": "Ne",
+          "desc": "Neon is represented as Ne.",
+          "opts": [
+            "Na",
+            "Ni",
+            "Ne",
+            "N"
+          ]
+        },
+        {
+          "id": "gen_sa_120",
+          "element": "F",
+          "q": "What is the atomic number of Fluorine?",
+          "a": "9",
+          "opts": [
+            "9",
+            "17",
+            "10",
+            "11"
+          ],
+          "desc": "Fluorine has exactly 9 protons."
+        },
+        {
+          "id": "sa7",
+          "element": "S",
+          "q": "Name the element with the atomic number 16.",
+          "a": "Sulfur",
+          "desc": "Sulfur is located in Group 6, Period 3.",
+          "opts": [
+            "Chlorine",
+            "Sulfur",
+            "Phosphorus",
+            "Oxygen"
+          ]
+        },
+        {
+          "id": "sa5",
+          "element": "N",
+          "q": "What is the atomic number of Nitrogen?",
+          "a": "7",
+          "desc": "Nitrogen follows Carbon with an atomic number of 7.",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "id": "gen_sa_138",
+          "element": "He",
+          "q": "What is the atomic number of Helium?",
+          "a": "2",
+          "opts": [
+            "3",
+            "4",
+            "1",
+            "2"
+          ],
+          "desc": "Helium has exactly 2 protons."
+        },
+        {
+          "id": "gen_sa_118",
+          "element": "Ne",
+          "q": "Which element is represented by the symbol Ne?",
+          "a": "Neon",
+          "opts": [
+            "Neon",
+            "Silicon",
+            "Phosphorus",
+            "Hydrogen"
+          ],
+          "desc": "The symbol Ne stands for Neon."
+        },
+        {
+          "id": "gen_sa_124",
+          "element": "Ar",
+          "q": "What is the chemical symbol for Argon?",
+          "a": "Ar",
+          "opts": [
+            "Ca",
+            "C",
+            "Be",
+            "Ar"
+          ],
+          "desc": "Argon is represented by the symbol Ar."
+        },
+        {
+          "id": "sa3",
+          "element": "Cl",
+          "q": "Name the element that corresponds to the chemical symbol Cl.",
+          "a": "Chlorine",
+          "desc": "Cl stands for Chlorine.",
+          "opts": [
+            "Oxygen",
+            "Argon",
+            "Fluorine",
+            "Chlorine"
+          ]
+        },
+        {
+          "id": "gen_sa_110",
+          "element": "H",
+          "q": "Which element is represented by the symbol H?",
+          "a": "Hydrogen",
+          "opts": [
+            "Carbon",
+            "Hydrogen",
+            "Fluorine",
+            "Nitrogen"
+          ],
+          "desc": "The symbol H stands for Hydrogen."
+        },
+        {
+          "id": "gen_sa_113",
+          "element": "N",
+          "q": "What is the chemical symbol for Nitrogen?",
+          "a": "N",
+          "opts": [
+            "Si",
+            "Ar",
+            "C",
+            "N"
+          ],
+          "desc": "Nitrogen is represented by the symbol N."
+        },
+        {
+          "id": "gen_sa_115",
+          "element": "Mg",
+          "q": "What is the atomic number of Magnesium?",
+          "a": "12",
+          "opts": [
+            "12",
+            "20",
+            "11",
+            "4"
+          ],
+          "desc": "Magnesium has exactly 12 protons."
+        },
+        {
+          "id": "gen_sa_119",
+          "element": "F",
+          "q": "What is the chemical symbol for Fluorine?",
+          "a": "F",
+          "opts": [
+            "P",
+            "Mg",
+            "Cl",
+            "F"
+          ],
+          "desc": "Fluorine is represented by the symbol F."
+        },
+        {
+          "id": "gen_sa_139",
+          "element": "He",
+          "q": "Which element is represented by the symbol He?",
+          "a": "Helium",
+          "opts": [
+            "Aluminium",
+            "Oxygen",
+            "Boron",
+            "Helium"
+          ],
+          "desc": "The symbol He stands for Helium."
+        },
+        {
+          "id": "gen_sa_103",
+          "element": "Ca",
+          "q": "Which element is represented by the symbol Ca?",
+          "a": "Calcium",
+          "opts": [
+            "Chlorine",
+            "Calcium",
+            "Oxygen",
+            "Hydrogen"
+          ],
+          "desc": "The symbol Ca stands for Calcium."
+        },
+        {
+          "id": "gen_sa_125",
+          "element": "H",
+          "q": "What is the atomic number of Hydrogen?",
+          "a": "1",
+          "opts": [
+            "2",
+            "3",
+            "9",
+            "1"
+          ],
+          "desc": "Hydrogen has exactly 1 protons."
+        },
+        {
+          "id": "gen_sa_128",
+          "element": "Li",
+          "q": "What is the chemical symbol for Lithium?",
+          "a": "Li",
+          "opts": [
+            "Li",
+            "Ne",
+            "P",
+            "N"
+          ],
+          "desc": "Lithium is represented by the symbol Li."
+        },
+        {
+          "id": "sa2",
+          "element": "Mg",
+          "q": "Write the chemical symbol for Magnesium.",
+          "a": "Mg",
+          "desc": "Magnesium is represented by Mg.",
+          "opts": [
+            "Mn",
+            "Mg",
+            "Ma",
+            "Mo"
+          ]
+        },
+        {
+          "id": "gen_sa_106",
+          "element": "K",
+          "q": "What is the chemical symbol for Potassium?",
+          "a": "K",
+          "opts": [
+            "S",
+            "Al",
+            "H",
+            "K"
+          ],
+          "desc": "Potassium is represented by the symbol K."
+        },
+        {
+          "id": "gen_sa_109",
+          "element": "H",
+          "q": "What is the chemical symbol for Hydrogen?",
+          "a": "H",
+          "opts": [
+            "H",
+            "Li",
+            "Cl",
+            "B"
+          ],
+          "desc": "Hydrogen is represented by the symbol H."
+        },
+        {
+          "id": "sa6",
+          "element": "Ca",
+          "q": "Write the chemical symbol for Calcium.",
+          "a": "Ca",
+          "desc": "Calcium's symbol is Ca.",
+          "opts": [
+            "Ca",
+            "Cu",
+            "Co",
+            "C"
+          ]
+        },
+        {
+          "id": "sa4",
+          "element": "Li",
+          "q": "Name the lightest alkali metal found in Group 1.",
+          "a": "Lithium",
+          "desc": "Lithium has an atomic number of 3.",
+          "opts": [
+            "Beryllium",
+            "Lithium",
+            "Sodium",
+            "Hydrogen"
+          ]
+        },
+        {
+          "id": "gen_sa_102",
+          "element": "B",
+          "q": "Which element is represented by the symbol B?",
+          "a": "Boron",
+          "opts": [
+            "Boron",
+            "Beryllium",
+            "Hydrogen",
+            "Helium"
+          ],
+          "desc": "The symbol B stands for Boron."
+        },
+        {
+          "id": "gen_sa_130",
+          "element": "Cl",
+          "q": "Which element is represented by the symbol Cl?",
+          "a": "Chlorine",
+          "opts": [
+            "Hydrogen",
+            "Beryllium",
+            "Chlorine",
+            "Silicon"
+          ],
+          "desc": "The symbol Cl stands for Chlorine."
+        },
+        {
+          "id": "gen_sa_114",
+          "element": "P",
+          "q": "What is the chemical symbol for Phosphorus?",
+          "a": "P",
+          "opts": [
+            "P",
+            "C",
+            "O",
+            "Mg"
+          ],
+          "desc": "Phosphorus is represented by the symbol P."
+        },
+        {
+          "id": "sa1",
+          "element": "C",
+          "q": "What is the atomic number of Carbon?",
+          "a": "6",
+          "desc": "Carbon has exactly 6 protons in its nucleus.",
+          "opts": [
+            "6",
+            "12",
+            "14",
+            "4"
+          ]
+        },
+        {
+          "id": "gen_sa_129",
+          "element": "Be",
+          "q": "What is the chemical symbol for Beryllium?",
+          "a": "Be",
+          "opts": [
+            "Be",
+            "B",
+            "N",
+            "Si"
+          ],
+          "desc": "Beryllium is represented by the symbol Be."
+        },
+        {
+          "id": "sa10",
+          "element": "Al",
+          "q": "What is the atomic number of Aluminium?",
+          "a": "13",
+          "desc": "Aluminium has 13 protons.",
+          "opts": [
+            "13",
+            "14",
+            "15",
+            "12"
+          ]
+        },
+        {
+          "id": "gen_sa_104",
+          "element": "B",
+          "q": "What is the chemical symbol for Boron?",
+          "a": "B",
+          "opts": [
+            "Ar",
+            "Ne",
+            "B",
+            "Si"
+          ],
+          "desc": "Boron is represented by the symbol B."
+        },
+        {
+          "id": "gen_sa_121",
+          "element": "S",
+          "q": "What is the atomic number of Sulfur?",
+          "a": "16",
+          "opts": [
+            "8",
+            "15",
+            "17",
+            "16"
+          ],
+          "desc": "Sulfur has exactly 16 protons."
+        },
+        {
+          "id": "gen_sa_127",
+          "element": "Li",
+          "q": "What is the atomic number of Lithium?",
+          "a": "3",
+          "opts": [
+            "3",
+            "11",
+            "2",
+            "4"
+          ],
+          "desc": "Lithium has exactly 3 protons."
+        },
+        {
+          "id": "gen_sa_126",
+          "element": "O",
+          "q": "What is the atomic number of Oxygen?",
+          "a": "8",
+          "opts": [
+            "9",
+            "10",
+            "8",
+            "16"
+          ],
+          "desc": "Oxygen has exactly 8 protons."
+        },
+        {
+          "id": "gen_sa_117",
+          "element": "Ca",
+          "q": "What is the atomic number of Calcium?",
+          "a": "20",
+          "opts": [
+            "19",
+            "20",
+            "22",
+            "28"
+          ],
+          "desc": "Calcium has exactly 20 protons."
+        },
+        {
+          "id": "gen_sa_135",
+          "element": "Mg",
+          "q": "Which element is represented by the symbol Mg?",
+          "a": "Magnesium",
+          "opts": [
+            "Argon",
+            "Magnesium",
+            "Helium",
+            "Neon"
+          ],
+          "desc": "The symbol Mg stands for Magnesium."
+        },
+        {
+          "id": "gen_sa_116",
+          "element": "Be",
+          "q": "Which element is represented by the symbol Be?",
+          "a": "Beryllium",
+          "opts": [
+            "Sodium",
+            "Hydrogen",
+            "Boron",
+            "Beryllium"
+          ],
+          "desc": "The symbol Be stands for Beryllium."
+        }
+      ]
+    },
+    "type_3_electron_configuration": {
+      "typeName": "Electron Configuration",
+      "pool": [
+        {
+          "id": "gen_ec_114",
+          "element": "S",
+          "q": "Which element has the electron configuration 2,8,6?",
+          "a": "Sulfur",
+          "opts": [
+            "Sulfur",
+            "Potassium",
+            "Hydrogen",
+            "Nitrogen"
+          ],
+          "desc": "The configuration 2,8,6 sums to 16 electrons, which is Sulfur."
+        },
+        {
+          "id": "gen_ec_139",
+          "element": "Ar",
+          "q": "Which element has the electron configuration 2,8,8?",
+          "a": "Argon",
+          "opts": [
+            "Argon",
+            "Hydrogen",
+            "Calcium",
+            "Beryllium"
+          ],
+          "desc": "The configuration 2,8,8 sums to 18 electrons, which is Argon."
+        },
+        {
+          "id": "ec6",
+          "element": "Al",
+          "q": "What is the electron configuration of an Aluminium atom?",
+          "a": "2,8,3",
+          "desc": "Aluminium has 13 electrons arranged as 2,8,3.",
+          "opts": [
+            "2,8,3",
+            "2,8,2",
+            "2,3",
+            "3,8,2"
+          ]
+        },
+        {
+          "id": "gen_ec_126",
+          "element": "P",
+          "q": "Which element has the electron configuration 2,8,5?",
+          "a": "Phosphorus",
+          "opts": [
+            "Phosphorus",
+            "Oxygen",
+            "Fluorine",
+            "Neon"
+          ],
+          "desc": "The configuration 2,8,5 sums to 15 electrons, which is Phosphorus."
+        },
+        {
+          "id": "gen_ec_105",
+          "element": "N",
+          "q": "Which element has the electron configuration 2,5?",
+          "a": "Nitrogen",
+          "opts": [
+            "Argon",
+            "Helium",
+            "Nitrogen",
+            "Hydrogen"
+          ],
+          "desc": "The configuration 2,5 sums to 7 electrons, which is Nitrogen."
+        },
+        {
+          "id": "gen_ec_132",
+          "element": "Li",
+          "q": "What is the electron configuration of a neutral Lithium atom?",
+          "a": "2,1",
+          "opts": [
+            "2,1",
+            "2,8,7",
+            "2",
+            "2,8,3"
+          ],
+          "desc": "Lithium has 3 electrons arranged as 2,1."
+        },
+        {
+          "id": "gen_ec_113",
+          "element": "S",
+          "q": "What is the electron configuration of a neutral Sulfur atom?",
+          "a": "2,8,6",
+          "opts": [
+            "2,8,2",
+            "2,8,1",
+            "2,8,6",
+            "2,6"
+          ],
+          "desc": "Sulfur has 16 electrons arranged as 2,8,6."
+        },
+        {
+          "id": "gen_ec_138",
+          "element": "Si",
+          "q": "What is the electron configuration of a neutral Silicon atom?",
+          "a": "2,8,4",
+          "opts": [
+            "2,8,4",
+            "2,3",
+            "2,8,8",
+            "2,5"
+          ],
+          "desc": "Silicon has 14 electrons arranged as 2,8,4."
+        },
+        {
+          "id": "gen_ec_106",
+          "element": "F",
+          "q": "What is the electron configuration of a neutral Fluorine atom?",
+          "a": "2,7",
+          "opts": [
+            "2,8,2",
+            "2,1",
+            "2,4",
+            "2,7"
+          ],
+          "desc": "Fluorine has 9 electrons arranged as 2,7."
+        },
+        {
+          "id": "gen_ec_118",
+          "element": "H",
+          "q": "Which element has the electron configuration 1?",
+          "a": "Hydrogen",
+          "opts": [
+            "Hydrogen",
+            "Nitrogen",
+            "Fluorine",
+            "Chlorine"
+          ],
+          "desc": "The configuration 1 sums to 1 electrons, which is Hydrogen."
+        },
+        {
+          "id": "gen_ec_127",
+          "element": "K",
+          "q": "What is the electron configuration of a neutral Potassium atom?",
+          "a": "2,8,8,1",
+          "opts": [
+            "2,8,8,1",
+            "2,8,3",
+            "2,6",
+            "2,5"
+          ],
+          "desc": "Potassium has 19 electrons arranged as 2,8,8,1."
+        },
+        {
+          "id": "gen_ec_101",
+          "element": "Cl",
+          "q": "What is the electron configuration of a neutral Chlorine atom?",
+          "a": "2,8,7",
+          "opts": [
+            "2,3",
+            "2,1",
+            "2,5",
+            "2,8,7"
+          ],
+          "desc": "Chlorine has 17 electrons arranged as 2,8,7."
+        },
+        {
+          "id": "gen_ec_128",
+          "element": "Na",
+          "q": "Which element has the electron configuration 2,8,1?",
+          "a": "Sodium",
+          "opts": [
+            "Oxygen",
+            "Lithium",
+            "Aluminium",
+            "Sodium"
+          ],
+          "desc": "The configuration 2,8,1 sums to 11 electrons, which is Sodium."
+        },
+        {
+          "id": "ec4",
+          "element": "O",
+          "q": "What is the electron configuration of a neutral Oxygen atom?",
+          "a": "2,6",
+          "desc": "Oxygen has 8 total electrons distributed as 2,6.",
+          "opts": [
+            "2,8",
+            "2,4",
+            "2,6",
+            "2,8,6"
+          ]
+        },
+        {
+          "id": "gen_ec_137",
+          "element": "Ar",
+          "q": "What is the electron configuration of a neutral Argon atom?",
+          "a": "2,8,8",
+          "opts": [
+            "2,8,8",
+            "2,8,5",
+            "2,8,4",
+            "2,8,6"
+          ],
+          "desc": "Argon has 18 electrons arranged as 2,8,8."
+        },
+        {
+          "id": "gen_ec_117",
+          "element": "C",
+          "q": "What is the electron configuration of a neutral Carbon atom?",
+          "a": "2,4",
+          "opts": [
+            "2,8,8,1",
+            "2,4",
+            "2,3",
+            "2,7"
+          ],
+          "desc": "Carbon has 6 electrons arranged as 2,4."
+        },
+        {
+          "id": "ec2",
+          "element": "Cl",
+          "q": "Which neutral element corresponds to the electron configuration 2,8,7?",
+          "a": "Chlorine",
+          "desc": "2+8+7 = 17 electrons, which is Chlorine.",
+          "opts": [
+            "Fluorine",
+            "Chlorine",
+            "Argon",
+            "Oxygen"
+          ]
+        },
+        {
+          "id": "ec9",
+          "element": "F",
+          "q": "What is the electron configuration of a Fluorine atom?",
+          "a": "2,7",
+          "desc": "Fluorine has 9 total electrons arranged as 2,7.",
+          "opts": [
+            "2,8",
+            "2,5",
+            "2,8,7",
+            "2,7"
+          ]
+        },
+        {
+          "id": "ec7",
+          "element": "N",
+          "q": "How many valence (outermost) electrons does a Nitrogen atom possess?",
+          "a": "5",
+          "desc": "Nitrogen (2,5) has 5 outer valence electrons.",
+          "opts": [
+            "5",
+            "6",
+            "7",
+            "4"
+          ]
+        },
+        {
+          "id": "ec3",
+          "element": "Mg",
+          "q": "How many fully occupied electron shells does a neutral Magnesium atom (2,8,2) have?",
+          "a": "2",
+          "desc": "The first two shells are completely full (2 and 8).",
+          "opts": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "id": "gen_ec_109",
+          "element": "Mg",
+          "q": "What is the electron configuration of a neutral Magnesium atom?",
+          "a": "2,8,2",
+          "opts": [
+            "2,8,1",
+            "2,8,6",
+            "2,1",
+            "2,8,2"
+          ],
+          "desc": "Magnesium has 12 electrons arranged as 2,8,2."
+        },
+        {
+          "id": "ec5",
+          "element": "Ca",
+          "q": "What is the electron configuration of a Calcium atom (Atomic Number = 20)?",
+          "a": "2,8,8,2",
+          "desc": "Calcium's 20 electrons fill the shells up to 2,8,8,2.",
+          "opts": [
+            "2,8,2",
+            "2,8,8,2",
+            "2,8,8",
+            "2,8,8,1"
+          ]
+        },
+        {
+          "id": "gen_ec_116",
+          "element": "Cl",
+          "q": "Which element has the electron configuration 2,8,7?",
+          "a": "Chlorine",
+          "opts": [
+            "Helium",
+            "Hydrogen",
+            "Chlorine",
+            "Nitrogen"
+          ],
+          "desc": "The configuration 2,8,7 sums to 17 electrons, which is Chlorine."
+        },
+        {
+          "id": "gen_ec_129",
+          "element": "Be",
+          "q": "Which element has the electron configuration 2,2?",
+          "a": "Beryllium",
+          "opts": [
+            "Fluorine",
+            "Boron",
+            "Phosphorus",
+            "Beryllium"
+          ],
+          "desc": "The configuration 2,2 sums to 4 electrons, which is Beryllium."
+        },
+        {
+          "id": "gen_ec_125",
+          "element": "Na",
+          "q": "What is the electron configuration of a neutral Sodium atom?",
+          "a": "2,8,1",
+          "opts": [
+            "2,8,2",
+            "1",
+            "2,5",
+            "2,8,1"
+          ],
+          "desc": "Sodium has 11 electrons arranged as 2,8,1."
+        },
+        {
+          "id": "ec1",
+          "element": "Na",
+          "q": "What is the standard electron configuration of a neutral Sodium atom?",
+          "a": "2,8,1",
+          "desc": "Sodium has 11 electrons: 2, 8, and 1 valence electron.",
+          "opts": [
+            "2,8,1",
+            "2,8,8,1",
+            "2,8,2",
+            "2,8"
+          ]
+        },
+        {
+          "id": "gen_ec_107",
+          "element": "Li",
+          "q": "Which element has the electron configuration 2,1?",
+          "a": "Lithium",
+          "opts": [
+            "Argon",
+            "Calcium",
+            "Fluorine",
+            "Lithium"
+          ],
+          "desc": "The configuration 2,1 sums to 3 electrons, which is Lithium."
+        },
+        {
+          "id": "gen_ec_102",
+          "element": "Mg",
+          "q": "Which element has the electron configuration 2,8,2?",
+          "a": "Magnesium",
+          "opts": [
+            "Magnesium",
+            "Hydrogen",
+            "Sodium",
+            "Chlorine"
+          ],
+          "desc": "The configuration 2,8,2 sums to 12 electrons, which is Magnesium."
+        },
+        {
+          "id": "gen_ec_100",
+          "element": "Al",
+          "q": "What is the electron configuration of a neutral Aluminium atom?",
+          "a": "2,8,3",
+          "opts": [
+            "2,8,3",
+            "2,8,5",
+            "1",
+            "2,1"
+          ],
+          "desc": "Aluminium has 13 electrons arranged as 2,8,3."
+        },
+        {
+          "id": "gen_ec_121",
+          "element": "F",
+          "q": "Which element has the electron configuration 2,7?",
+          "a": "Fluorine",
+          "opts": [
+            "Chlorine",
+            "Oxygen",
+            "Fluorine",
+            "Lithium"
+          ],
+          "desc": "The configuration 2,7 sums to 9 electrons, which is Fluorine."
+        },
+        {
+          "id": "gen_ec_130",
+          "element": "He",
+          "q": "What is the electron configuration of a neutral Helium atom?",
+          "a": "2",
+          "opts": [
+            "2,1",
+            "2,7",
+            "2,8,2",
+            "2"
+          ],
+          "desc": "Helium has 2 electrons arranged as 2."
+        },
+        {
+          "id": "gen_ec_115",
+          "element": "Ca",
+          "q": "What is the electron configuration of a neutral Calcium atom?",
+          "a": "2,8,8,2",
+          "opts": [
+            "2,8,8,2",
+            "2,8,6",
+            "2,2",
+            "2,8,2"
+          ],
+          "desc": "Calcium has 20 electrons arranged as 2,8,8,2."
+        },
+        {
+          "id": "ec8",
+          "element": "Ar",
+          "q": "What is the electron configuration of Argon (Atomic Number = 18)?",
+          "a": "2,8,8",
+          "desc": "Argon has a stable full outer shell configuration of 2,8,8.",
+          "opts": [
+            "2,8,8",
+            "2,8,2",
+            "2,8,18,8",
+            "2,8"
+          ]
+        },
+        {
+          "id": "ec10",
+          "element": "Li",
+          "q": "What is the electron configuration of a Lithium atom?",
+          "a": "2,1",
+          "desc": "Lithium has 3 total electrons arranged as 2,1.",
+          "opts": [
+            "2,1",
+            "2,8,1",
+            "2,3",
+            "2,2"
+          ]
+        },
+        {
+          "id": "gen_ec_123",
+          "element": "B",
+          "q": "What is the electron configuration of a neutral Boron atom?",
+          "a": "2,3",
+          "opts": [
+            "2,3",
+            "2,8",
+            "2,4",
+            "2,8,8"
+          ],
+          "desc": "Boron has 5 electrons arranged as 2,3."
+        }
+      ]
+    },
+    "type_4_position_on_periodic_table": {
+      "typeName": "Position on Periodic Table",
+      "pool": [
+        {
+          "id": "gen_pos_134",
+          "element": "H",
+          "q": "Which element is located in Period 1, Group 1?",
+          "a": "Hydrogen",
+          "opts": [
+            "Hydrogen",
+            "Magnesium",
+            "Oxygen",
+            "Sodium"
+          ],
+          "desc": "Hydrogen has 1 shells and 1 valence electrons."
+        },
+        {
+          "id": "gen_pos_126",
+          "element": "Be",
+          "q": "Which element is located in Period 2, Group 2?",
+          "a": "Beryllium",
+          "opts": [
+            "Chlorine",
+            "Fluorine",
+            "Argon",
+            "Beryllium"
+          ],
+          "desc": "Beryllium has 2 shells and 2 valence electrons."
+        },
+        {
+          "id": "gen_pos_130",
+          "element": "Mg",
+          "q": "Which element is located in Period 3, Group 2?",
+          "a": "Magnesium",
+          "opts": [
+            "Hydrogen",
+            "Magnesium",
+            "Boron",
+            "Aluminium"
+          ],
+          "desc": "Magnesium has 3 shells and 2 valence electrons."
+        },
+        {
+          "id": "gen_pos_104",
+          "element": "Si",
+          "q": "Which element is located in Period 3, Group 4?",
+          "a": "Silicon",
+          "opts": [
+            "Silicon",
+            "Sulfur",
+            "Fluorine",
+            "Oxygen"
+          ],
+          "desc": "Silicon has 3 shells and 4 valence electrons."
+        },
+        {
+          "id": "pt7",
+          "element": "Na",
+          "q": "In which Group number is Sodium found?",
+          "a": "1",
+          "desc": "Sodium is an alkali metal in Group 1.",
+          "opts": [
+            "2",
+            "3",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "id": "gen_pos_122",
+          "element": "Na",
+          "q": "Which element is located in Period 3, Group 1?",
+          "a": "Sodium",
+          "opts": [
+            "Lithium",
+            "Sodium",
+            "Beryllium",
+            "Silicon"
+          ],
+          "desc": "Sodium has 3 shells and 1 valence electrons."
+        },
+        {
+          "id": "gen_pos_127",
+          "element": "Ne",
+          "q": "Which element is located in Period 2, Group 8?",
+          "a": "Neon",
+          "opts": [
+            "Helium",
+            "Neon",
+            "Nitrogen",
+            "Fluorine"
+          ],
+          "desc": "Neon has 2 shells and 8 valence electrons."
+        },
+        {
+          "id": "pt1",
+          "element": "Cl",
+          "q": "In which Group number is Chlorine found?",
+          "a": "7",
+          "desc": "Chlorine is located in Group 7 (Halogens).",
+          "opts": [
+            "9",
+            "7",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "id": "gen_pos_100",
+          "element": "Cl",
+          "q": "Which element is located in Period 3, Group 7?",
+          "a": "Chlorine",
+          "opts": [
+            "Magnesium",
+            "Oxygen",
+            "Chlorine",
+            "Sodium"
+          ],
+          "desc": "Chlorine has 3 shells and 7 valence electrons."
+        },
+        {
+          "id": "pt5",
+          "element": "C",
+          "q": "In which Group number is Carbon located?",
+          "a": "4",
+          "desc": "Carbon sits at the head of Group 4.",
+          "opts": [
+            "4",
+            "5",
+            "6",
+            "3"
+          ]
+        },
+        {
+          "id": "gen_pos_139",
+          "element": "Li",
+          "q": "Which element is located in Period 2, Group 1?",
+          "a": "Lithium",
+          "opts": [
+            "Sodium",
+            "Boron",
+            "Lithium",
+            "Phosphorus"
+          ],
+          "desc": "Lithium has 2 shells and 1 valence electrons."
+        },
+        {
+          "id": "pt9",
+          "element": "P",
+          "q": "In which horizontal Period is Phosphorus located?",
+          "a": "3",
+          "desc": "Phosphorus is found in Period 3, Group 5.",
+          "opts": [
+            "2",
+            "4",
+            "5",
+            "3"
+          ]
+        },
+        {
+          "id": "pt3",
+          "element": "Mg",
+          "q": "Identify the element found precisely in Group 2, Period 3.",
+          "a": "Magnesium",
+          "desc": "Moving down to Period 3 and across to Group 2 reveals Magnesium.",
+          "opts": [
+            "Aluminium",
+            "Calcium",
+            "Sodium",
+            "Magnesium"
+          ]
+        },
+        {
+          "id": "gen_pos_115",
+          "element": "P",
+          "q": "Which element is located in Period 3, Group 5?",
+          "a": "Phosphorus",
+          "opts": [
+            "Chlorine",
+            "Beryllium",
+            "Carbon",
+            "Phosphorus"
+          ],
+          "desc": "Phosphorus has 3 shells and 5 valence electrons."
+        },
+        {
+          "id": "gen_pos_105",
+          "element": "N",
+          "q": "Which element is located in Period 2, Group 5?",
+          "a": "Nitrogen",
+          "opts": [
+            "Nitrogen",
+            "Sulfur",
+            "Argon",
+            "Lithium"
+          ],
+          "desc": "Nitrogen has 2 shells and 5 valence electrons."
+        },
+        {
+          "id": "gen_pos_137",
+          "element": "K",
+          "q": "Which element is located in Period 4, Group 1?",
+          "a": "Potassium",
+          "opts": [
+            "Silicon",
+            "Chlorine",
+            "Fluorine",
+            "Potassium"
+          ],
+          "desc": "Potassium has 4 shells and 1 valence electrons."
+        },
+        {
+          "id": "gen_pos_123",
+          "element": "B",
+          "q": "Which element is located in Period 2, Group 3?",
+          "a": "Boron",
+          "opts": [
+            "Chlorine",
+            "Calcium",
+            "Nitrogen",
+            "Boron"
+          ],
+          "desc": "Boron has 2 shells and 3 valence electrons."
+        },
+        {
+          "id": "pt6",
+          "element": "S",
+          "q": "An element is in Group 6, Period 3. Name this element.",
+          "a": "Sulfur",
+          "desc": "Sulfur sits directly beneath Oxygen in Period 3.",
+          "opts": [
+            "Oxygen",
+            "Phosphorus",
+            "Sulfur",
+            "Chlorine"
+          ]
+        },
+        {
+          "id": "pt4",
+          "element": "K",
+          "q": "In which horizontal Period is Potassium located?",
+          "a": "4",
+          "desc": "Potassium is the first element in Period 4.",
+          "opts": [
+            "5",
+            "3",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "id": "gen_pos_116",
+          "element": "Ca",
+          "q": "Which element is located in Period 4, Group 2?",
+          "a": "Calcium",
+          "opts": [
+            "Calcium",
+            "Nitrogen",
+            "Aluminium",
+            "Hydrogen"
+          ],
+          "desc": "Calcium has 4 shells and 2 valence electrons."
+        },
+        {
+          "id": "pt10",
+          "element": "Be",
+          "q": "Identify the element found in Group 2, Period 2.",
+          "a": "Beryllium",
+          "desc": "Beryllium is the top element of Group 2 in Period 2.",
+          "opts": [
+            "Beryllium",
+            "Magnesium",
+            "Boron",
+            "Lithium"
+          ]
+        },
+        {
+          "id": "gen_pos_131",
+          "element": "He",
+          "q": "Which element is located in Period 1, Group 8?",
+          "a": "Helium",
+          "opts": [
+            "Helium",
+            "Argon",
+            "Oxygen",
+            "Potassium"
+          ],
+          "desc": "Helium has 1 shells and 8 valence electrons."
+        },
+        {
+          "id": "gen_pos_110",
+          "element": "O",
+          "q": "Which element is located in Period 2, Group 6?",
+          "a": "Oxygen",
+          "opts": [
+            "Boron",
+            "Carbon",
+            "Nitrogen",
+            "Oxygen"
+          ],
+          "desc": "Oxygen has 2 shells and 6 valence electrons."
+        },
+        {
+          "id": "gen_pos_133",
+          "element": "S",
+          "q": "Which element is located in Period 3, Group 6?",
+          "a": "Sulfur",
+          "opts": [
+            "Argon",
+            "Sodium",
+            "Beryllium",
+            "Sulfur"
+          ],
+          "desc": "Sulfur has 3 shells and 6 valence electrons."
+        },
+        {
+          "id": "pt8",
+          "element": "He",
+          "q": "In which Group number is Helium located?",
+          "a": "8",
+          "desc": "Helium is grouped with noble gases in Group 8.",
+          "opts": [
+            "9",
+            "10",
+            "8",
+            "7"
+          ]
+        },
+        {
+          "id": "gen_pos_129",
+          "element": "C",
+          "q": "Which element is located in Period 2, Group 4?",
+          "a": "Carbon",
+          "opts": [
+            "Aluminium",
+            "Hydrogen",
+            "Nitrogen",
+            "Carbon"
+          ],
+          "desc": "Carbon has 2 shells and 4 valence electrons."
+        },
+        {
+          "id": "gen_pos_114",
+          "element": "Ar",
+          "q": "Which element is located in Period 3, Group 8?",
+          "a": "Argon",
+          "opts": [
+            "Lithium",
+            "Carbon",
+            "Potassium",
+            "Argon"
+          ],
+          "desc": "Argon has 3 shells and 8 valence electrons."
+        },
+        {
+          "id": "pt2",
+          "element": "Li",
+          "q": "In which horizontal Period is Lithium located?",
+          "a": "2",
+          "desc": "Lithium is the first element of Period 2.",
+          "opts": [
+            "4",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ]
+    },
+    "type_5_compare_elements": {
+      "typeName": "Compare Elements",
+      "pool": [
+        {
+          "id": "ce8",
+          "element": "F",
+          "q": "Which element has a higher boiling point: Fluorine (F) or Iodine (I)?",
+          "a": "Iodine",
+          "desc": "Iodine molecules are larger with stronger intermolecular forces.",
+          "opts": [
+            "Fluorine",
+            "Bromine",
+            "Iodine",
+            "Chlorine"
+          ]
+        },
+        {
+          "id": "gen_comp_105",
+          "element": "K",
+          "q": "Which is more reactive with water: Potassium or Sodium?",
+          "a": "Potassium",
+          "opts": [
+            "Potassium",
+            "Sodium",
+            "Both react equally",
+            "Neither reacts"
+          ],
+          "desc": "Reactivity increases down Group 1. Potassium is lower in the group."
+        },
+        {
+          "id": "gen_comp_110",
+          "element": "K",
+          "q": "Which is more reactive with water: Potassium or Lithium?",
+          "a": "Potassium",
+          "opts": [
+            "Lithium",
+            "Both react equally",
+            "Neither reacts",
+            "Potassium"
+          ],
+          "desc": "Reactivity increases down Group 1. Potassium is lower in the group."
+        },
+        {
+          "id": "ce7",
+          "element": "Na",
+          "q": "Which element reacts more vigorously with cold water: Sodium (Na) or Lithium (Li)?",
+          "a": "Sodium",
+          "desc": "Reactivity increases down Group 1; Sodium is lower down than Lithium.",
+          "opts": [
+            "Oxygen",
+            "Carbon",
+            "Sodium",
+            "Nitrogen"
+          ]
+        },
+        {
+          "id": "ce2",
+          "element": "Mg",
+          "q": "Which ion has a smaller ionic radius: Na+ or Mg2+?",
+          "a": "Mg2+",
+          "desc": "Mg2+ has more protons pulling the same number of electrons closer.",
+          "opts": [
+            "Mg2+",
+            "Ca2+",
+            "Al3+",
+            "Na+"
+          ]
+        },
+        {
+          "id": "gen_comp_100",
+          "element": "Na",
+          "q": "Which is more reactive with water: Lithium or Sodium?",
+          "a": "Sodium",
+          "opts": [
+            "Lithium",
+            "Sodium",
+            "Both react equally",
+            "Neither reacts"
+          ],
+          "desc": "Reactivity increases down Group 1. Sodium is lower in the group."
+        },
+        {
+          "id": "gen_comp_109",
+          "element": "Na",
+          "q": "Which is more reactive with water: Sodium or Lithium?",
+          "a": "Sodium",
+          "opts": [
+            "Neither reacts",
+            "Both react equally",
+            "Lithium",
+            "Sodium"
+          ],
+          "desc": "Reactivity increases down Group 1. Sodium is lower in the group."
+        },
+        {
+          "id": "ce4",
+          "element": "K",
+          "q": "Which metal has a lower first ionization energy: Lithium (Li) or Potassium (K)?",
+          "a": "Potassium",
+          "desc": "Potassium's outer electron is further from the nucleus, making it easier to remove.",
+          "opts": [
+            "Rubidium",
+            "Potassium",
+            "Sodium",
+            "Calcium"
+          ]
+        },
+        {
+          "id": "gen_comp_117",
+          "element": "K",
+          "q": "Which is more reactive with water: Sodium or Potassium?",
+          "a": "Potassium",
+          "opts": [
+            "Both react equally",
+            "Neither reacts",
+            "Potassium",
+            "Sodium"
+          ],
+          "desc": "Reactivity increases down Group 1. Potassium is lower in the group."
+        },
+        {
+          "id": "ce3",
+          "element": "Ca",
+          "q": "Which atom has more occupied electron shells: Magnesium (Mg) or Calcium (Ca)?",
+          "a": "Calcium",
+          "desc": "Calcium has 4 shells (Period 4) while Magnesium only has 3 (Period 3).",
+          "opts": [
+            "Argon",
+            "Potassium",
+            "Magnesium",
+            "Calcium"
+          ]
+        },
+        {
+          "id": "gen_comp_101",
+          "element": "K",
+          "q": "Which is more reactive with water: Lithium or Potassium?",
+          "a": "Potassium",
+          "opts": [
+            "Potassium",
+            "Both react equally",
+            "Neither reacts",
+            "Lithium"
+          ],
+          "desc": "Reactivity increases down Group 1. Potassium is lower in the group."
+        },
+        {
+          "id": "ce10",
+          "element": "He",
+          "q": "Which atom has a higher first ionization energy: Helium (He) or Neon (Ne)?",
+          "a": "Helium",
+          "desc": "Helium's outer electrons are closer to the nucleus with zero inner shell shielding.",
+          "opts": [
+            "Neon",
+            "Hydrogen",
+            "Lithium",
+            "Helium"
+          ]
+        },
+        {
+          "id": "ce6",
+          "element": "Cl",
+          "q": "Which element is more non-metallic in its properties: Silicon (Si) or Chlorine (Cl)?",
+          "a": "Chlorine",
+          "desc": "Non-metallic character increases from left to right across a period.",
+          "opts": [
+            "Fluorine",
+            "Chlorine",
+            "Oxygen",
+            "Argon"
+          ]
+        },
+        {
+          "id": "ce9",
+          "element": "Al",
+          "q": "Which element has a higher electrical conductivity: Aluminium (Al) or Sulfur (S)?",
+          "a": "Aluminium",
+          "desc": "Aluminium is a metal with a sea of delocalised electrons.",
+          "opts": [
+            "Aluminium",
+            "Magnesium",
+            "Silicon",
+            "Boron"
+          ]
+        },
+        {
+          "id": "ce5",
+          "element": "O",
+          "q": "Which element has a higher shielding effect: Oxygen (O) or Sulfur (S)?",
+          "a": "Sulfur",
+          "desc": "Sulfur has more filled inner electron shells to shield its outer electrons.",
+          "opts": [
+            "Chlorine",
+            "Sulfur",
+            "Oxygen",
+            "Phosphorus"
+          ]
+        },
+        {
+          "id": "ce1",
+          "element": "F",
+          "q": "Which element is more electronegative: Fluorine (F) or Oxygen (O)?",
+          "a": "Fluorine",
+          "desc": "Fluorine is the most electronegative element on the entire periodic table.",
+          "opts": [
+            "Fluorine",
+            "Chlorine",
+            "Neon",
+            "Oxygen"
+          ]
+        }
+      ]
+    },
+    "type_6_periodic_trends": {
+      "typeName": "Periodic Trends",
+      "pool": [
+        {
+          "id": "tr8",
+          "element": "Cl",
+          "q": "What trend is observed for melting points down Group 7 (Halogens)?",
+          "a": "They increase",
+          "desc": "Down Group 7, molecules get larger, creating stronger intermolecular forces.",
+          "opts": [
+            "They increase",
+            "They fluctuate",
+            "They decrease",
+            "They remain constant"
+          ]
+        },
+        {
+          "id": "tr4",
+          "element": "F",
+          "q": "As you move DOWN Group 7 (Halogens), what happens to the reactivity of the elements?",
+          "a": "It decreases",
+          "desc": "Increased shielding down the group makes it harder to attract an incoming electron.",
+          "opts": [
+            "It decreases",
+            "It fluctuates",
+            "It increases",
+            "It remains constant"
+          ]
+        },
+        {
+          "id": "tr10",
+          "element": "P",
+          "q": "Why does nuclear charge increase across a period?",
+          "a": "Number of protons increases",
+          "desc": "Each subsequent element adds one proton to the nucleus.",
+          "opts": [
+            "Atomic radius increases",
+            "Number of neutrons increases",
+            "Number of protons increases",
+            "Electron shielding increases"
+          ]
+        },
+        {
+          "id": "tr3",
+          "element": "Ar",
+          "q": "Briefly state why Noble Gases (Group 8) are extremely unreactive.",
+          "a": "They have full outer electron shells",
+          "desc": "A complete outer shell provides maximum stability.",
+          "opts": [
+            "They have a high density",
+            "They have full outer electron shells",
+            "They are all gases",
+            "They are covalently bonded"
+          ]
+        },
+        {
+          "id": "tr2",
+          "element": "K",
+          "q": "Which element is MORE reactive when reacting with water: Lithium (Li) or Potassium (K)?",
+          "a": "Potassium",
+          "desc": "Group 1 reactivity increases downwards because the outer electron is lost more easily.",
+          "opts": [
+            "Potassium",
+            "Sodium",
+            "Calcium",
+            "Rubidium"
+          ]
+        },
+        {
+          "id": "tr1",
+          "element": "Na",
+          "q": "Which atom has a LARGER atomic radius: Sodium (Na) or Chlorine (Cl)?",
+          "a": "Sodium",
+          "desc": "Atomic radius decreases across a period due to increasing nuclear charge pulling the same shells closer.",
+          "opts": [
+            "Oxygen",
+            "Sodium",
+            "Carbon",
+            "Nitrogen"
+          ]
+        },
+        {
+          "id": "tr6",
+          "element": "He",
+          "q": "Which corner of the periodic table contains elements with the highest electronegativity?",
+          "a": "Top right",
+          "desc": "Excluding noble gases, the top right (Fluorine) has the highest electronegativity.",
+          "opts": [
+            "Bottom left",
+            "Bottom right",
+            "Top left",
+            "Top right"
+          ]
+        },
+        {
+          "id": "tr5",
+          "element": "Mg",
+          "q": "What is the general trend in metallic character as you move from left to right across Period 3?",
+          "a": "It decreases",
+          "desc": "Elements transition from metals on the left to non-metals on the right.",
+          "opts": [
+            "It decreases",
+            "It increases",
+            "It remains constant",
+            "It fluctuates"
+          ]
+        },
+        {
+          "id": "tr9",
+          "element": "Li",
+          "q": "What trend is observed for melting points down Group 1 (Alkali Metals)?",
+          "a": "They decrease",
+          "desc": "Positive ions get larger down the group, weakening the metallic bond attraction.",
+          "opts": [
+            "They increase",
+            "They fluctuate",
+            "They decrease",
+            "They remain constant"
+          ]
+        },
+        {
+          "id": "tr7",
+          "element": "Fr",
+          "q": "Which region of the periodic table houses the atoms with the largest atomic radius?",
+          "a": "Bottom left",
+          "desc": "Atomic radius increases moving down groups and moving right to left.",
+          "opts": [
+            "Top left",
+            "Bottom right",
+            "Top right",
+            "Bottom left"
+          ]
+        }
+      ]
+    },
+    "type_7_visual_error_challenge": {
+      "typeName": "Visual Error Challenge (Draw Alternative)",
+      "pool": [
+        {
+          "id": "ve1",
+          "element": "Na",
+          "q": "Four 3D Bohr models of a Sodium atom are shown. Model A has configuration 2,8,1. Model B has 2,9. Model C has 2,8,2. Model D has 1,8,2. Which model is correct?",
+          "a": "Model A",
+          "opts": [
+            "Model A",
+            "Model B",
+            "Model C",
+            "Model D"
+          ],
+          "desc": "Sodium must have 11 total electrons arranged strictly as 2,8,1."
+        },
+        {
+          "id": "ve2",
+          "element": "O",
+          "q": "A student draws a diagram for an Oxygen ion (O2-). Model A shows 6 outer electrons. Model B shows 8 outer electrons and a 2- charge. Model C shows 8 outer electrons and a 2+ charge. Which is correct?",
+          "a": "Model B",
+          "opts": [
+            "Model A",
+            "Model B",
+            "Model C"
+          ],
+          "desc": "An oxide ion has gained 2 electrons to complete its octet (8), giving it a net 2- charge."
+        },
+        {
+          "id": "ve3",
+          "element": "Mg",
+          "q": "Three models show a Magnesium ion (Mg2+). Model A has 3 electron shells occupied. Model B has only 2 electron shells occupied and a 2+ charge. Model C has 2 shells and a 2- charge. Which is correct?",
+          "a": "Model B",
+          "opts": [
+            "Model A",
+            "Model B",
+            "Model C"
+          ],
+          "desc": "Mg (2,8,2) loses its 2 outer valence electrons, stripping it down to 2 full inner shells with a 2+ charge."
+        },
+        {
+          "id": "ve10",
+          "element": "C",
+          "q": "A 3D model of a Methane molecule (CH4) shows Carbon at the center sharing 1 electron with each of the four Hydrogen atoms. What is the structural error?",
+          "a": "Carbon must share pairs of electrons",
+          "opts": [
+            "It should be an ionic lattice",
+            "Carbon must share pairs of electrons",
+            "Hydrogen needs more shells",
+            "No error"
+          ],
+          "desc": "Each single covalent bond consists of a shared pair of electrons (one from C, one from H)."
+        },
+        {
+          "id": "ve4",
+          "element": "Cl",
+          "q": "A diagram shows a Chlorine molecule (Cl2). Model A shows a double covalent bond shared. Model B shows a single covalent bond where 1 electron pair is shared. Model C shows a transfer of electrons. Which is correct?",
+          "a": "Model B",
+          "opts": [
+            "Model A",
+            "Model B",
+            "Model C"
+          ],
+          "desc": "Chlorine atoms require only 1 shared electron pair to finish their octets, forming a single covalent bond."
+        },
+        {
+          "id": "ve9",
+          "element": "F",
+          "q": "A diagram of Fluorine gas shows a shared pair of electrons, but one Fluorine atom has 9 remaining unshared valence electrons. What is the error?",
+          "a": "It has too many unshared electrons",
+          "opts": [
+            "It has too many unshared electrons",
+            "It lacks a covalent bond",
+            "It should be an ionic model",
+            "No error"
+          ],
+          "desc": "An unshared pool should only hold 6 electrons per atom, total 7 outer electrons including the shared one."
+        },
+        {
+          "id": "ve7",
+          "element": "N",
+          "q": "A Lewis structure of Nitrogen gas (N2) shows a double bond. What is the structural error?",
+          "a": "It requires a triple bond",
+          "opts": [
+            "It requires an ionic bond",
+            "It requires a single bond",
+            "It requires a triple bond",
+            "No error"
+          ],
+          "desc": "Nitrogen atoms must share 3 pairs of electrons (triple bond) to achieve full outer shells."
+        },
+        {
+          "id": "ve5",
+          "element": "Li",
+          "q": "A 3D model of a Lithium atom shows 3 protons and 4 neutrons in the core, with 3 electrons in the first shell. What is the error?",
+          "a": "Too many electrons in the first shell",
+          "opts": [
+            "Wrong number of protons",
+            "Too many electrons in the first shell",
+            "Wrong number of neutrons",
+            "No error"
+          ],
+          "desc": "The first innermost electron shell can only accommodate a maximum of 2 electrons."
+        },
+        {
+          "id": "ve8",
+          "element": "He",
+          "q": "A diagram of Helium shows two protons in the nucleus and two electrons spinning in separate outer valence shells. What is the error?",
+          "a": "Both electrons must be in the same inner shell",
+          "opts": [
+            "Helium has no electrons",
+            "Both electrons must be in the same inner shell",
+            "It should have 4 electrons",
+            "No error"
+          ],
+          "desc": "Helium's 2 electrons reside in the exact same innermost shell (n=1)."
+        },
+        {
+          "id": "ve6",
+          "element": "H",
+          "q": "A diagram of a Hydrogen molecule (H2) shows two spheres sharing four electrons between them. What is the error?",
+          "a": "It should only share 2 electrons",
+          "opts": [
+            "It should transfer electrons",
+            "It should only share 2 electrons",
+            "It should share 6 electrons",
+            "No error"
+          ],
+          "desc": "Each Hydrogen atom contributes 1 electron, making a total of 2 shared electrons (a single covalent bond)."
+        }
+      ]
+    }
+  }
+}
