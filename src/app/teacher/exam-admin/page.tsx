@@ -1,9 +1,14 @@
 import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
+import ExamParser from './ExamParser';
 
 export const dynamic = 'force-dynamic';
 
 export default async function ExamAdminPage() {
+  const topics = await prisma.topic.findMany({
+    include: { subtopics: true }
+  });
+
   const questions = await prisma.examQuestion.findMany({
     include: {
       subtopic: {
@@ -31,6 +36,9 @@ export default async function ExamAdminPage() {
             Back to Teacher Hub
           </Link>
         </div>
+
+        <ExamParser topics={topics} />
+
 
         <div className="grid gap-6">
           {questions.map(q => (
