@@ -53,12 +53,27 @@ Instructions:
 Do not include any markdown formatting around the JSON (e.g., no \`\`\`json). Just return the raw JSON object.
 `;
 
-    const result = await ai.models.generateContent({
-        model: 'gemini-1.5-pro',
-        contents: prompt,
-    });
+    let result;
+    let retries = 3;
+    let delay = 1000;
+
+    while (retries > 0) {
+      try {
+        result = await ai.models.generateContent({
+            model: 'gemini-1.5-pro',
+            contents: prompt,
+        });
+        break;
+      } catch (error: any) {
+        retries--;
+        console.warn(`Gemini API Error in grading. Retries left: ${retries}`, error?.message);
+        if (retries === 0) throw error;
+        await new Promise(resolve => setTimeout(resolve, delay));
+        delay *= 2;
+      }
+    }
     
-    const responseText = result.text || "";
+    const responseText = result?.text || "";
     
     // Parse JSON
     let parsedResponse;
