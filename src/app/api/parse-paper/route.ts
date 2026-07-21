@@ -64,18 +64,25 @@ Format example:
       model: 'gemini-2.5-flash',
       contents: [
         {
-          inlineData: {
-            mimeType: 'application/pdf',
-            data: paperBase64
-          }
-        },
-        {
-          inlineData: {
-            mimeType: 'application/pdf',
-            data: markschemeBase64
-          }
-        },
-        prompt
+          role: 'user',
+          parts: [
+            {
+              inlineData: {
+                mimeType: 'application/pdf',
+                data: paperBase64
+              }
+            },
+            {
+              inlineData: {
+                mimeType: 'application/pdf',
+                data: markschemeBase64
+              }
+            },
+            {
+              text: prompt
+            }
+          ]
+        }
       ],
     });
 
