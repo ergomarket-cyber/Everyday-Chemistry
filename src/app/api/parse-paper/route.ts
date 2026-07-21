@@ -60,41 +60,24 @@ Format example:
 ]
 `;
 
-    let result;
-    let retries = 3;
-    let delay = 2000; // 2 seconds
-
-    while (retries > 0) {
-      try {
-        result = await ai.models.generateContent({
-          model: 'gemini-2.5-flash',
-          contents: [
-            {
-              inlineData: {
-                mimeType: 'application/pdf',
-                data: paperBase64
-              }
-            },
-            {
-              inlineData: {
-                mimeType: 'application/pdf',
-                data: markschemeBase64
-              }
-            },
-            prompt
-          ],
-        });
-        break; // Success, exit retry loop
-      } catch (error: any) {
-        retries--;
-        console.warn(`Gemini API Error. Retries left: ${retries}`, error?.message);
-        if (retries === 0) {
-          throw error; // Throw on last failure
-        }
-        await new Promise(resolve => setTimeout(resolve, delay));
-        delay *= 2; // Exponential backoff
-      }
-    }
+    const result = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: [
+        {
+          inlineData: {
+            mimeType: 'application/pdf',
+            data: paperBase64
+          }
+        },
+        {
+          inlineData: {
+            mimeType: 'application/pdf',
+            data: markschemeBase64
+          }
+        },
+        prompt
+      ],
+    });
 
     let text = result?.text || '';
     
