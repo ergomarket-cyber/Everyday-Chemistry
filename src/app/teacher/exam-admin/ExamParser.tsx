@@ -203,7 +203,7 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
             <label className="text-sm font-bold text-slate-300">1. Past Paper — Google Drive Link</label>
             <input 
-              type="url"
+              type="text"
               placeholder="https://drive.google.com/file/d/..."
               value={paperUrl}
               onChange={(e) => setPaperUrl(e.target.value)}
@@ -214,7 +214,7 @@ export default function ExamParser({ topics, pastPapers: initialPastPapers }: { 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-3">
             <label className="text-sm font-bold text-slate-300">2. Mark Scheme — Google Drive Link</label>
             <input 
-              type="url"
+              type="text"
               placeholder="https://drive.google.com/file/d/..."
               value={markschemeUrl}
               onChange={(e) => setMarkschemeUrl(e.target.value)}
