@@ -54,7 +54,7 @@ Do not include any markdown formatting around the JSON (e.g., no \`\`\`json). Ju
 `;
 
     const result = await ai.models.generateContent({
-        model: 'gemini-flash-latest',
+        model: 'gemini-1.5-pro',
         contents: prompt,
     });
     

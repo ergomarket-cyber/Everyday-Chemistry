@@ -59,7 +59,7 @@ Format example:
 `;
 
     const result = await ai.models.generateContent({
-      model: 'gemini-flash-latest',
+      model: 'gemini-1.5-pro',
       contents: [
         {
           inlineData: {
