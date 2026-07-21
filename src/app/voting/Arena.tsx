@@ -317,12 +317,12 @@ function LoginScreen({ students10, students11, onLogin }: any) {
     </div>
   );
 }
-
 const formatAudioUrl = (url: string) => {
   if (!url) return '';
   const match = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
   if (match && match[1]) {
-    return `https://drive.google.com/uc?export=download&id=${match[1]}`;
+    const directUrl = `https://drive.google.com/uc?export=download&id=${match[1]}`;
+    return `/api/proxy-audio?url=${encodeURIComponent(directUrl)}`;
   }
   return url;
 };
