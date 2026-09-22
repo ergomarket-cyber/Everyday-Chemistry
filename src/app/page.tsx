@@ -46,20 +46,30 @@ export default function HubPage() {
             </div>
           </Link>
 
-          {/* Experiments Card */}
-          <div className="group relative rounded-3xl bg-slate-900/50 border border-white/10 p-8 opacity-70 shadow-2xl overflow-hidden flex flex-col cursor-not-allowed">
-            <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
-              <FlaskConical className="w-8 h-8" />
+          {/* Interactive Experiments Section */}
+          <Link href="/experiments" className="group">
+            <div className="h-full bg-slate-900/50 border border-slate-700/50 rounded-2xl p-8 hover:bg-slate-800/50 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all"></div>
+              
+              <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 border border-emerald-500/30">
+                <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+
+              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                Our Experiments
+              </h2>
+              <p className="text-slate-400 mb-8 flex-grow">Access interactive chemistry experiments, record your core practical results, and analyze data across teams.</p>
+              
+              <div className="flex items-center text-emerald-400 font-semibold group-hover:translate-x-2 transition-transform">
+                <span>View Experiments</span>
+                <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </div>
-            <h2 className="text-2xl font-bold mb-3 text-white flex justify-between items-center">
-              Our Experiments
-              <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded-full font-bold uppercase tracking-wider">Soon</span>
-            </h2>
-            <p className="text-slate-400 mb-8 flex-grow">Virtual labs and interactive chemistry experiments are currently in development.</p>
-            <div className="flex items-center text-emerald-400/50 font-semibold">
-              <span>Coming Soon</span>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

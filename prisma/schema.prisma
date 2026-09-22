@@ -22,6 +22,7 @@ model Team {
   members        Student[]
   teacherVote    TeacherVote?
   votes          Vote[]
+  experimentResults ExperimentResult[]
 }
 
 model Student {
@@ -109,5 +110,25 @@ model StudentAttempt {
   
   student          Student  @relation(fields: [studentId], references: [id])
   question         ExamQuestion @relation(fields: [questionId], references: [id])
+}
+
+model Experiment {
+  id          String   @id @default(uuid())
+  number      Int      @unique
+  title       String
+  description String?
+  results     ExperimentResult[]
+}
+
+model ExperimentResult {
+  id           String     @id @default(uuid())
+  experimentId String
+  teamId       String
+  data         Json       // Stores the JSON data array for the specific experiment
+
+  experiment   Experiment @relation(fields: [experimentId], references: [id])
+  team         Team       @relation(fields: [teamId], references: [id])
+
+  @@unique([experimentId, teamId])
 }
 
